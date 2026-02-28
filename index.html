@@ -1,0 +1,1618 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONECTA INGENIERÍA | Digitalización de Subestaciones y Cambio de Remotas</title>
+    <meta name="description"
+        content="Especialistas en digitalización de subestaciones, cambio de remotas (RTU), ciberseguridad industrial y gateways de comunicación para cumplimiento normativo eléctrico en Chile.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <style>
+        /* CSS Variables & Reset */
+        :root {
+            --brand-dark: #071324;
+            --brand-blue: #1e3a8a;
+            --brand-accent: #2563eb;
+            --brand-alert: #eab308;
+            --text-main: #1e293b;
+            --text-muted: #64748b;
+            --bg-page: #f8fafc;
+            --bg-card: #ffffff;
+            --border-light: #e2e8f0;
+            --radius-sm: 8px;
+            --radius-md: 12px;
+            --radius-lg: 20px;
+            --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+            --shadow-md: 0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -4px rgba(0, 0, 0, 0.05);
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-page);
+            color: var(--text-main);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Typographic System */
+        h1,
+        h2,
+        h3,
+        h4 {
+            font-family: 'Outfit', sans-serif;
+            font-weight: 700;
+            color: var(--brand-dark);
+            line-height: 1.2;
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: var(--transition);
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* Navigation Bar */
+        .navbar {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--border-light);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            padding: 18px 0;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .brand {
+            font-family: 'Outfit', sans-serif;
+            font-weight: 800;
+            font-size: 1.5rem;
+            letter-spacing: -0.5px;
+            color: var(--brand-dark);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .brand span {
+            color: var(--brand-accent);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 32px;
+            align-items: center;
+        }
+
+        .nav-links a {
+            font-size: 0.95rem;
+            font-weight: 500;
+            color: var(--text-muted);
+        }
+
+        .nav-links a:hover {
+            color: var(--brand-accent);
+        }
+
+        .btn-contact {
+            background: var(--brand-accent);
+            color: white !important;
+            padding: 10px 20px;
+            border-radius: 100px;
+            font-weight: 600;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .btn-contact:hover {
+            background: #1d4ed8;
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 100px 0 120px;
+            background: linear-gradient(to bottom, #ffffff, #f1f5f9);
+            overflow: hidden;
+            position: relative;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -20%;
+            right: -10%;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(37, 99, 235, 0.08) 0%, rgba(255, 255, 255, 0) 70%);
+            border-radius: 50%;
+            z-index: 0;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(37, 99, 235, 0.1);
+            color: var(--brand-accent);
+            padding: 6px 16px;
+            border-radius: 100px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            margin-bottom: 24px;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 24px;
+            letter-spacing: -1px;
+        }
+
+        .hero h1 span {
+            color: var(--brand-accent);
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            color: var(--text-muted);
+            margin-bottom: 40px;
+        }
+
+        .hero-actions {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+        }
+
+        .btn-primary {
+            background: var(--brand-dark);
+            color: white;
+            padding: 16px 32px;
+            border-radius: var(--radius-sm);
+            font-weight: 600;
+            font-size: 1.05rem;
+        }
+
+        .btn-primary:hover {
+            background: #000;
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .btn-secondary {
+            background: white;
+            color: var(--text-main);
+            padding: 16px 32px;
+            border-radius: var(--radius-sm);
+            border: 1px solid var(--border-light);
+            font-weight: 600;
+            font-size: 1.05rem;
+        }
+
+        .btn-secondary:hover {
+            border-color: var(--text-muted);
+        }
+
+        /* Brands Banner */
+        .brands-section {
+            padding: 40px 0;
+            background: white;
+            border-top: 1px solid var(--border-light);
+            border-bottom: 1px solid var(--border-light);
+        }
+
+        .brands-title {
+            text-align: center;
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 24px;
+        }
+
+        .brands-grid {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 64px;
+            flex-wrap: wrap;
+            opacity: 0.6;
+            filter: grayscale(100%);
+            transition: var(--transition);
+        }
+
+        .brands-grid:hover {
+            opacity: 1;
+            filter: grayscale(0%);
+        }
+
+        .brand-logo {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+            color: var(--brand-dark);
+        }
+
+        .brand-logo.supcon {
+            color: #d32f2f;
+        }
+
+        /* Supcon Red */
+        .brand-logo.novatech {
+            color: #0033a0;
+        }
+
+        .brand-logo.belden {
+            color: #f26522;
+        }
+
+        /* Authority Stats Section */
+        .stats-section {
+            padding: 80px 0;
+            background: var(--brand-dark);
+            color: white;
+            position: relative;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 40px;
+            text-align: center;
+        }
+
+        .stat-item {
+            padding: 24px;
+        }
+
+        .stat-number {
+            font-family: 'Outfit', sans-serif;
+            font-size: 3.5rem;
+            font-weight: 800;
+            color: var(--brand-accent);
+            margin-bottom: 8px;
+            line-height: 1;
+        }
+
+        .stat-title {
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 12px;
+            color: white;
+        }
+
+        .stat-desc {
+            color: #94a3b8;
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+
+        .stat-badge {
+            display: inline-block;
+            background: rgba(37, 99, 235, 0.2);
+            color: #60a5fa;
+            font-size: 0.75rem;
+            font-weight: 700;
+            padding: 4px 10px;
+            border-radius: 4px;
+            text-transform: uppercase;
+            margin-bottom: 16px;
+        }
+
+        /* Solutions Matrix (Hybrid B2B) */
+        .solutions {
+            padding: 100px 0;
+            background: var(--bg-page);
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 64px;
+            max-width: 600px;
+            margin-inline: auto;
+        }
+
+        .section-header h2 {
+            font-size: 2.5rem;
+            margin-bottom: 16px;
+        }
+
+        .section-header p {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+        }
+
+        .grid-solutions {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 24px;
+        }
+
+        .sol-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-light);
+            border-radius: var(--radius-lg);
+            padding: 40px 32px;
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .sol-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-md);
+            border-color: rgba(37, 99, 235, 0.3);
+        }
+
+        .sol-icon {
+            width: 48px;
+            height: 48px;
+            background: rgba(37, 99, 235, 0.1);
+            color: var(--brand-accent);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            margin-bottom: 24px;
+        }
+
+        .sol-card h3 {
+            font-size: 1.35rem;
+            margin-bottom: 12px;
+        }
+
+        .sol-card p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin-bottom: 24px;
+            flex-grow: 1;
+        }
+
+        .sol-brands {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 16px;
+        }
+
+        .sol-brand-tag {
+            font-size: 0.75rem;
+            font-weight: 600;
+            padding: 4px 10px;
+            background: #f1f5f9;
+            color: var(--text-muted);
+            border-radius: 6px;
+        }
+
+        .sol-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            color: var(--brand-accent);
+            margin-top: auto;
+        }
+
+        .sol-link:hover {
+            gap: 10px;
+        }
+
+        /* News & Media Section */
+        .news-section {
+            padding: 80px 0;
+            background: #ffffff;
+            border-top: 1px solid var(--border-light);
+        }
+
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 32px;
+            margin-top: 40px;
+            align-items: stretch;
+        }
+
+        .news-card {
+            background: var(--bg-page);
+            border: 1px solid var(--border-light);
+            border-radius: var(--radius-md);
+            padding: 32px;
+            transition: var(--transition);
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .news-card:hover {
+            box-shadow: var(--shadow-md);
+            transform: translateY(-4px);
+            background: #ffffff;
+            border-color: #cbd5e1;
+        }
+
+        .news-source {
+            display: inline-block;
+            background: #0f172a;
+            color: #ffffff;
+            font-size: 0.75rem;
+            font-weight: 700;
+            padding: 4px 10px;
+            border-radius: 4px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 16px;
+        }
+
+        .news-source.mch {
+            background: #ea580c;
+        }
+
+        /* MCH Orange-red styling */
+
+        .news-card h3 {
+            font-size: 1.25rem;
+            margin-bottom: 16px;
+        }
+
+        .news-card p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin-bottom: 24px;
+        }
+
+        .news-link {
+            font-weight: 600;
+            font-size: 0.9rem;
+            color: var(--brand-accent);
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            margin-top: auto;
+        }
+
+        .news-link:hover {
+            gap: 10px;
+        }
+
+        /* B2B Contact Section */
+        .contact-section {
+            padding: 100px 0;
+            background: #f8fafc;
+            border-top: 1px solid var(--border-light);
+        }
+
+        .contact-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            background: #ffffff;
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-xl);
+            border: 1px solid var(--border-light);
+        }
+
+        .contact-info {
+            background: var(--brand-dark);
+            color: #ffffff;
+            padding: 60px 48px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .contact-info h3 {
+            font-size: 2rem;
+            margin-bottom: 24px;
+            line-height: 1.2;
+        }
+
+        .contact-info p {
+            color: #94a3b8;
+            font-size: 1.1rem;
+            margin-bottom: 40px;
+        }
+
+        .contact-details {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        .detail-item {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .detail-icon {
+            width: 48px;
+            height: 48px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.25rem;
+        }
+
+        .contact-form {
+            padding: 60px 48px;
+        }
+
+        .contact-form h4 {
+            font-size: 1.5rem;
+            color: var(--text-dark);
+            margin-bottom: 32px;
+        }
+
+        .form-group {
+            margin-bottom: 24px;
+        }
+
+        .form-label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: var(--text-dark);
+            font-size: 0.95rem;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 14px 16px;
+            border: 1px solid var(--border-light);
+            border-radius: var(--radius-sm);
+            font-family: 'Inter', sans-serif;
+            font-size: 1rem;
+            transition: var(--transition);
+            background: #f8fafc;
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: var(--brand-blue);
+            background: #ffffff;
+            box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+        }
+
+        .btn-submit {
+            width: 100%;
+            background: var(--brand-blue);
+            color: white;
+            padding: 16px;
+            border: none;
+            border-radius: var(--radius-sm);
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .btn-submit:hover {
+            background: #1d4ed8;
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+        }
+
+        @media (max-width: 900px) {
+            .contact-wrapper {
+                grid-template-columns: 1fr;
+            }
+
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* "Pain" Section (SEO / Normativa) */
+        .pain-section {
+            padding: 100px 0;
+            background: var(--brand-dark);
+            color: white;
+        }
+
+        .pain-section .section-header h2 {
+            color: white;
+        }
+
+        .pain-section .section-header p {
+            color: #94a3b8;
+        }
+
+        .pain-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: stretch;
+        }
+
+        .pain-feature {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: var(--radius-lg);
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .pain-feature.alert {
+            border-color: rgba(234, 179, 8, 0.3);
+            background: rgba(234, 179, 8, 0.05);
+        }
+
+        .alert-badge {
+            display: inline-block;
+            background: rgba(234, 179, 8, 0.2);
+            color: #fde047;
+            padding: 4px 12px;
+            border-radius: 100px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 16px;
+            border: 1px solid rgba(234, 179, 8, 0.4);
+        }
+
+        .pain-feature h3 {
+            color: white;
+            font-size: 1.75rem;
+            margin-bottom: 16px;
+        }
+
+        .pain-feature p {
+            color: #94a3b8;
+            font-size: 1.05rem;
+            margin-bottom: 32px;
+            flex-grow: 1;
+        }
+
+        .pain-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: white;
+            color: var(--brand-dark);
+            padding: 12px 24px;
+            border-radius: var(--radius-sm);
+            font-weight: 600;
+            font-size: 0.95rem;
+            margin-top: auto;
+        }
+
+        .pain-link:hover {
+            background: var(--brand-alert);
+        }
+
+        /* Footer */
+        .footer {
+            padding: 80px 0 40px;
+            background: white;
+            border-top: 1px solid var(--border-light);
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 64px;
+            margin-bottom: 64px;
+        }
+
+        .footer-desc {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            max-width: 300px;
+            margin-top: 16px;
+        }
+
+        .footer h4 {
+            font-size: 1.1rem;
+            margin-bottom: 24px;
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 12px;
+        }
+
+        .footer-links a {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        .footer-links a:hover {
+            color: var(--brand-accent);
+        }
+
+        .footer-bottom {
+            padding-top: 32px;
+            border-top: 1px solid var(--border-light);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+
+        @media (max-width: 900px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .pain-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+        }
+
+        /* Success Cases Section */
+        .cases-section {
+            padding: 100px 0;
+            background: #f1f5f9;
+            border-top: 1px solid var(--border-light);
+            background-image: radial-gradient(#e2e8f0 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+
+        .cases-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 32px;
+            margin-top: 60px;
+        }
+
+        .case-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-light);
+            border-radius: var(--radius-md);
+            padding: 40px 32px;
+            transition: var(--transition);
+            box-shadow: var(--shadow-sm);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .case-image {
+            width: 100%;
+            height: 180px;
+            object-fit: contain;
+            margin-bottom: 24px;
+            border-radius: 8px;
+            padding: 12px;
+        }
+
+        .case-card:hover {
+            box-shadow: var(--shadow-md);
+            transform: translateY(-5px);
+            border-color: var(--brand-blue);
+        }
+
+        .case-industry {
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--brand-accent);
+            margin-bottom: 12px;
+            display: inline-block;
+        }
+
+        .case-card h3 {
+            font-size: 1.35rem;
+            margin-bottom: 16px;
+            color: var(--brand-dark);
+            line-height: 1.3;
+        }
+
+        .case-card p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin-bottom: 24px;
+            line-height: 1.6;
+            flex-grow: 1;
+        }
+
+        .case-footer {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding-top: 24px;
+            border-top: 1px solid var(--border-light);
+            margin-top: auto;
+        }
+
+        .case-tech {
+            font-family: 'Outfit', sans-serif;
+            font-weight: 700;
+            color: var(--brand-dark);
+            font-size: 0.95rem;
+        }
+
+        .tech-badge {
+            background: #e0e7ff;
+            color: #3730a3;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="brand">CONECTA<span>.</span></div>
+            <div class="nav-links">
+                <a href="#sistemas">División Sistemas</a>
+                <a href="#equipos">Venta de Equipos</a>
+                <a href="#normativa">Hub Normativo</a>
+                <a href="#contacto" class="btn-contact">Evaluar Proyecto</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <header class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <span class="pill">⚡ Soluciones de Ingeniería | Electrical Knowledge as a Service</span>
+                <h1>Digitalización de Subestaciones y Cumplimiento Normativo <span>Sin Estrés</span>.</h1>
+                <p>Nuestra ingeniería está diseñada para resolver sus problemas reales: desde el <b>cambio de remotas en
+                        subestación</b> y la implementación de <b>gateways de comunicaciones</b> multiprotocolo, hasta
+                    <b>RTUs con ciberseguridad industrial</b>. Asegure su continuidad operativa y evite multas ante el
+                    Coordinador Eléctrico.
+                </p>
+                <div class="hero-actions">
+                    <a href="#sistemas" class="btn-primary">Soluciones de Automatización y Control</a>
+                    <a href="#equipos" class="btn-secondary">Explorar Catálogo B2B</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- CLIENTES Y AUTORIDAD (TRUST GRID CATEGORIZADO) -->
+    <section class="brands-section" style="background: var(--bg-page); border-top: none;">
+        <div class="container">
+            <div class="brands-title" style="margin-bottom: 40px;">Protegemos la Continuidad Operativa de Clientes
+                Críticos en Todos los Sectores</div>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px;">
+
+                <!-- Sector Transmisión y Distribución -->
+                <div style="text-align: center;">
+                    <div
+                        style="font-size: 0.8rem; font-weight: 700; color: var(--brand-accent); text-transform: uppercase; margin-bottom: 32px; letter-spacing: 0.05em; border-bottom: 1px solid var(--border-light); padding-bottom: 8px;">
+                        Transmisión & Distribución</div>
+                    <div class="brands-grid" style="flex-direction: column; gap: 20px;">
+                        <div class="brand-logo" style="color: #16a34a; font-size: 1.25rem;">Transelec</div>
+                        <div class="brand-logo" style="color: #ea580c; font-size: 1.25rem;">Chilquinta</div>
+                        <div class="brand-logo" style="color: #dc2626; font-size: 1.25rem;">CGE</div>
+                        <div class="brand-logo" style="color: #0d9488; font-size: 1.25rem;">Grupo Saesa</div>
+                        <div class="brand-logo" style="color: #1d4ed8; font-size: 1.25rem;">ISA Interchile</div>
+                        <div class="brand-logo" style="color: #9333ea; font-size: 1.25rem;">Celeo Redes</div>
+                        <div class="brand-logo" style="color: #4338ca; font-size: 1.25rem;">Eletrans</div>
+                        <div class="brand-logo" style="color: #0284c7; font-size: 1.25rem;">CRELL</div>
+                    </div>
+                </div>
+
+                <!-- Sector Generación Renovable -->
+                <div style="text-align: center;">
+                    <div
+                        style="font-size: 0.8rem; font-weight: 700; color: var(--brand-accent); text-transform: uppercase; margin-bottom: 32px; letter-spacing: 0.05em; border-bottom: 1px solid var(--border-light); padding-bottom: 8px;">
+                        Generación ERNC</div>
+                    <div class="brands-grid" style="flex-direction: column; gap: 20px;">
+                        <div class="brand-logo" style="color: #dc2626; font-size: 1.25rem;">AES Andes</div>
+                        <div class="brand-logo" style="color: #2563eb; font-size: 1.25rem;">Colbún</div>
+                        <div class="brand-logo" style="color: #0ea5e9; font-size: 1.25rem;">ENGIE</div>
+                        <div class="brand-logo" style="color: #dc2626; font-size: 1.25rem;">Acciona</div>
+                        <div class="brand-logo" style="color: #0284c7; font-size: 1.25rem;">Statkraft</div>
+                        <div class="brand-logo" style="color: #eab308; font-size: 1.25rem;">Sonnedix</div>
+                        <div class="brand-logo" style="color: #16a34a; font-size: 1.25rem;">Mainstream Renewables</div>
+                        <div class="brand-logo" style="color: #f59e0b; font-size: 1.25rem;">Verano Energy</div>
+                        <div class="brand-logo" style="color: #0ea5e9; font-size: 1.25rem;">Innergex</div>
+                        <div class="brand-logo" style="color: #10b981; font-size: 1.25rem;">Aela Energía</div>
+                    </div>
+                </div>
+
+                <!-- Sector Minería -->
+                <div style="text-align: center;">
+                    <div
+                        style="font-size: 0.8rem; font-weight: 700; color: var(--brand-accent); text-transform: uppercase; margin-bottom: 32px; letter-spacing: 0.05em; border-bottom: 1px solid var(--border-light); padding-bottom: 8px;">
+                        Minería</div>
+                    <div class="brands-grid" style="flex-direction: column; gap: 20px;">
+                        <div class="brand-logo" style="color: #ea580c; font-size: 1.25rem;">CODELCO</div>
+                        <div class="brand-logo" style="color: #f97316; font-size: 1.25rem;">Minera Escondida</div>
+                        <div class="brand-logo" style="color: #dc2626; font-size: 1.25rem;">Collahuasi</div>
+                        <div class="brand-logo" style="color: #0284c7; font-size: 1.25rem;">SQM</div>
+                        <div class="brand-logo" style="color: #0d9488; font-size: 1.25rem;">AMSA (Antofagasta Minerals)
+                        </div>
+                        <div class="brand-logo" style="color: #e11d48; font-size: 1.25rem;">Teck</div>
+                        <div class="brand-logo" style="color: #f59e0b; font-size: 1.25rem;">Capstone Copper</div>
+                        <div class="brand-logo" style="color: #b45309; font-size: 1.25rem;">Minera Meridian</div>
+                        <div class="brand-logo" style="color: #b91c1c; font-size: 1.25rem;">Atacama Kozan</div>
+                    </div>
+                </div>
+
+                <!-- Sector Industria y Sanitarias -->
+                <div style="text-align: center;">
+                    <div
+                        style="font-size: 0.8rem; font-weight: 700; color: var(--brand-accent); text-transform: uppercase; margin-bottom: 32px; letter-spacing: 0.05em; border-bottom: 1px solid var(--border-light); padding-bottom: 8px;">
+                        Sanitarias & Industria</div>
+                    <div class="brands-grid" style="flex-direction: column; gap: 20px;">
+                        <div class="brand-logo" style="color: #16a34a; font-size: 1.25rem;">Arauco</div>
+                        <div class="brand-logo" style="color: #0284c7; font-size: 1.25rem;">ENAP</div>
+                        <div class="brand-logo" style="color: #475569; font-size: 1.25rem;">CAP / CMP</div>
+                        <div class="brand-logo" style="color: #e11d48; font-size: 1.25rem;">Metro de Santiago</div>
+                        <div class="brand-logo" style="color: #2563eb; font-size: 1.25rem;">Aguas Antofagasta</div>
+                        <div class="brand-logo" style="color: #e11d48; font-size: 1.25rem;">Agrosuper</div>
+                        <div class="brand-logo" style="color: #1e40af; font-size: 1.25rem;">Cementos Melón</div>
+                        <div class="brand-logo" style="color: #64748b; font-size: 1.25rem;">Petroquim</div>
+                        <div class="brand-logo" style="color: #2563eb; font-size: 1.25rem;">ENAMI</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- BRANDS LAUREL CON JUSTIFICACIONES -->
+    <section class="brands-section">
+        <div class="container">
+            <div class="brands-title">Tecnologías de Clase Mundial Integradas por CONECTA</div>
+            <div class="brands-grid" style="align-items: flex-start; text-align: center;">
+                <div>
+                    <div class="brand-logo supcon">SUPCON</div>
+                    <div style="font-size:0.75rem; color:var(--text-muted); margin-top:8px; font-weight:500;">DCS &
+                        Instrumentación</div>
+                </div>
+                <div>
+                    <img src="assets/novatech_img/nt-logo-blue.svg" alt="NovaTech"
+                        style="height: 36px; margin: 0 auto;">
+                    <div style="font-size:0.75rem; color:var(--text-muted); margin-top:8px; font-weight:500;">RTUs de
+                        S/E & Automatización</div>
+                </div>
+                <div>
+                    <div class="brand-logo" style="color:#000;">VIZIMAX</div>
+                    <div style="font-size:0.75rem; color:var(--text-muted); margin-top:8px; font-weight:500;">Protección
+                        de Transformadores</div>
+                </div>
+                <div>
+                    <div class="brand-logo" style="color:#004b87;">NR Electric</div>
+                    <div style="font-size:0.75rem; color:var(--text-muted); margin-top:8px; font-weight:500;">
+                        Protecciones Homologadas CEN</div>
+                </div>
+                <div>
+                    <div class="brand-logo" style="color:#10b981;">ELPROS</div>
+                    <div style="font-size:0.75rem; color:var(--text-muted); margin-top:8px; font-weight:500;">Software
+                        SCADA y Gestión de PMU</div>
+                </div>
+                <div>
+                    <div class="brand-logo" style="color:#FF6B00; font-weight: 900; letter-spacing: 0;">OPAL-RT</div>
+                    <div style="font-size:0.75rem; color:var(--text-muted); margin-top:8px; font-weight:500;">Simulación
+                        Hardware In-The-Loop</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERIENCIA COMPROBADA SECTION -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="section-header" style="margin-bottom: 40px; color: white;">
+                <h2 style="color: white;">Experiencia Comprobada en Infraestructura Crítica</h2>
+                <p style="color: #94a3b8;">Desarrollo, normalización e integración tecnológica para las empresas
+                    eléctricas e industriales más exigentes de Chile.</p>
+            </div>
+            <div class="stats-grid">
+                <!-- Achievement 1 -->
+                <div class="stat-item" style="border: 1px solid rgba(255,255,255,0.1); border-radius: 8px;">
+                    <span class="stat-badge">Transmisión Nacional</span>
+                    <div class="stat-title" style="margin-top: 16px; color: var(--brand-accent);">Transelec</div>
+                    <div class="stat-desc">Centralización de Puntos de Toma de Medida (PMU) y modernización de equipos
+                        de protección y control en más de 20 subestaciones.</div>
+                </div>
+
+                <!-- Achievement 2 -->
+                <div class="stat-item" style="border: 1px solid rgba(255,255,255,0.1); border-radius: 8px;">
+                    <span class="stat-badge">Sector Industrial</span>
+                    <div class="stat-title" style="margin-top: 16px; color: var(--brand-accent);">Agrosuper</div>
+                    <div class="stat-desc">Implementación del primer anillo de Fibra Óptica industrial con switches
+                        redundantes y ciberseguridad O.T. garantizada.</div>
+                </div>
+
+                <!-- Achievement 3 -->
+                <div class="stat-item" style="border: 1px solid rgba(255,255,255,0.1); border-radius: 8px;">
+                    <span class="stat-badge">Gran Minería</span>
+                    <div class="stat-title" style="margin-top: 16px; color: var(--brand-accent);">Minera Meridian</div>
+                    <div class="stat-desc">Ingeniería y normalización completa de esquemas EDAC y SITR para cumplimiento
+                        estricto ante el Coordinador Eléctrico Nacional.</div>
+                </div>
+
+                <!-- Achievement 4 -->
+                <div class="stat-item" style="border: 1px solid rgba(255,255,255,0.1); border-radius: 8px;">
+                    <span class="stat-badge">Control de Flota</span>
+                    <div class="stat-title" style="margin-top: 16px; color: var(--brand-accent);">Chilquinta</div>
+                    <div class="stat-desc">Suministro e integración del Control Automático de Frecuencia y Voltaje
+                        (SCADA EMS) para garantizar la calidad del suministro.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 1. DIVISIÓN: SISTEMAS E INTEGRACIÓN -->
+    <section id="sistemas" class="solutions" style="background: var(--bg-page);">
+        <div class="container">
+            <div class="section-header">
+                <h2>El Plan para su Continuidad Operativa</h2>
+                <p>Nuestra ingeniería aplicada está diseñada para eliminar la burocracia técnica, blindar sus procesos
+                    frente a fallas y garantizar su aprobación ante el Coordinador Eléctrico.</p>
+            </div>
+
+            <!-- Sub-sección: Sistemas Eléctricos y Normativos -->
+            <h3
+                style="margin-bottom: 32px; font-size: 1.5rem; color: var(--brand-blue); border-bottom: 2px solid var(--border-light); padding-bottom: 8px;">
+                1. Automatización y Control en Sistemas de Potencia</h3>
+            <div class="grid-solutions" style="margin-bottom: 64px;">
+                <!-- SCADA -->
+                <div class="sol-card">
+                    <div class="sol-icon"><i data-lucide="activity"></i></div>
+                    <h3>SCADA Redundante y Anexo SITR</h3>
+                    <p>Desarrollamos centros de control con <b>arquitecturas redundantes de alta disponibilidad
+                            (Activo-Activo)</b> y enlaces DNP3/ICCP para recuperar su visibilidad total y asegurar
+                        cumplimiento estricto del Anexo Técnico SITR del CEN.</p>
+                    <a href="#contacto" class="sol-link">Auditar mi conexión SITR →</a>
+                </div>
+
+                <!-- Modernización S/E -->
+                <div class="sol-card">
+                    <div class="sol-icon"><i data-lucide="cpu"></i></div>
+                    <h3>Cambio de Remotas y Digitalización</h3>
+                    <p>Resolvemos radicalmente la obsolescencia técnica. <b>Cambio de remotas</b> en subestación y
+                        <b>digitalización</b> completa hacia el estándar IEC 61850 de forma limpia y sin detener su
+                        operación comercial.
+                    </p>
+                    <a href="#contacto" class="sol-link">Digitalizar mi Subestación →</a>
+                </div>
+
+                <!-- EDAC / SITR / SLRP -->
+                <div class="sol-card">
+                    <div class="sol-icon"><i data-lucide="line-chart"></i></div>
+                    <h3>Estudio y Normalización EDAC</h3>
+                    <p>Adecuación de señales al Coordinador Nacional. Ejecutamos la <b>normalización de Esquemas de
+                            Desconexión de Carga (EDAC/EDAG)</b> para aprobar sin reparos las auditorías anuales del
+                        CEN.</p>
+                    <a href="#contacto" class="sol-link">Adecuar mi esquema Normativo →</a>
+                </div>
+
+                <!-- Sincrofasores PMUS -->
+                <div class="sol-card" style="border: 2px solid var(--brand-blue);">
+                    <div class="sol-icon"><i data-lucide="zap"></i></div>
+                    <h3>Integración PMU y Software ELPROS</h3>
+                    <p>Evite rechazos técnicos en sus proyectos de Generación. Integración llave en mano de armarios
+                        PMUS (IEC/IEEE) más la plataforma ELPROS oficial exigida por el CEN.</p>
+                    <div style="margin-top:12px; font-size: 0.8rem; font-weight: bold; color: var(--brand-blue);">
+                        #1 en Base Instalada Nacional • 100% Compatibilidad CEN
+                    </div>
+                    <a href="#contacto" class="sol-link" style="margin-top:12px;">Contactar Equipo Sincrofasores →</a>
+                </div>
+
+                <!-- Sistemas EMS BESS -->
+                <div class="sol-card">
+                    <div class="sol-icon"><i data-lucide="battery-charging"></i></div>
+                    <h3>BESS y Normativa PMGD 2026</h3>
+                    <p>Sistemas EMS robustos para integración de <b>Sistemas de Almacenamiento (BESS)</b> en proyectos
+                        PMGD, cumpliendo anticipadamente las nuevas exigencias de recortes por sobreoferta e inyección.
+                    </p>
+                    <a href="#contacto" class="sol-link">Diseñar Arquitectura EMS BESS →</a>
+                </div>
+
+                <!-- Ciberseguridad OT -->
+                <div class="sol-card">
+                    <div class="sol-icon"><i data-lucide="shield-check"></i></div>
+                    <h3>Ciberseguridad y Ley 21.663</h3>
+                    <p>Blindamos infraestructuras críticas. Suministramos RTUs nativamente seguras bajo estándar <b>NERC
+                            CIP</b> y arquitecturas PRP para cumplir con las exigencias de la nueva <b>Ley Marco de
+                            Ciberseguridad (21.663)</b>.</p>
+                    <a href="#contacto" class="sol-link">Blindar mi Red O.T. →</a>
+                </div>
+            </div>
+
+            <!-- Sub-sección: Sistemas de Procesos (SUPCON) -->
+            <h3
+                style="margin-bottom: 32px; font-size: 1.5rem; color: var(--brand-blue); border-bottom: 2px solid var(--border-light); padding-bottom: 8px;">
+                Integración de Procesos Industriales</h3>
+            <div class="grid-solutions">
+                <!-- Control Distribuido -->
+                <div class="sol-card">
+                    <div class="sol-icon"><i data-lucide="factory"></i></div>
+                    <h3>Control Distribuido (DCS/SIS/UCS)</h3>
+                    <p>Sistemas Inteligentes integrados con tecnología avanzada para control continuo y discreto de
+                        procesos de manufactura, minería y energía (Misión Crítica).</p>
+                    <div class="sol-brands"><span class="sol-brand-tag">DCS / SIS / UCS</span></div>
+                    <a href="#contacto" class="sol-link">Explorar Plataformas →</a>
+                </div>
+
+                <!-- Soluciones IA -->
+                <div class="sol-card">
+                    <div class="sol-icon"><i data-lucide="brain"></i></div>
+                    <h3>Inteligencia Artificial Industrial</h3>
+                    <p>Implementación de gemelos digitales y modelos predictivos impulsados para migrar hacia plantas de
+                        proceso totalmente autónomas y eficientes.</p>
+                    <div class="sol-brands"><span class="sol-brand-tag">Algoritmos Integrados</span></div>
+                    <a href="#contacto" class="sol-link">Innovación IA →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. DIVISIÓN: VENTA DE EQUIPOS -->
+    <section id="equipos" class="solutions"
+        style="background: #ffffff; border-top: 1px solid var(--border-light); border-bottom: 1px solid var(--border-light);">
+        <div class="container">
+            <div class="section-header">
+                <h2>División Comercial: Equipamiento Industrial</h2>
+                <p>Representantes exclusivos y distribuidores oficiales. Venta y provisión directa de las marcas de
+                    clase mundial que soportan nuestra ingeniería.</p>
+            </div>
+
+            <div class="grid-solutions">
+                <!-- Instrumentación SUPCON -->
+                <div class="sol-card" style="border-top: 4px solid #d32f2f;">
+                    <div class="sol-icon" style="color:#d32f2f; background: rgba(211,47,47,0.1);"><i data-lucide="gauge"></i></div>
+                    <h3>Instrumentación Inteligente</h3>
+                    <p>Venta de caudalímetros, transmisores de presión y sensores de alta exactitud para control
+                        estricto de cualquier tipo de proceso físico en terreno.</p>
+                    <div class="sol-brands"><span class="sol-brand-tag">SUPCON</span></div>
+                    <a href="catalogo_supcon.html" class="sol-link" style="color:#d32f2f;">Catálogo SUPCON →</a>
+                </div>
+
+                <!-- NovaTech -->
+                <div class="sol-card" style="border-top: 4px solid #0033a0;">
+                    <img src="assets/novatech_img/orionlx_plus.png" alt="Orion Serie LX"
+                        style="height: 100px; object-fit: contain; margin-bottom: 24px;">
+                    <h3>Gateways de Comunicaciones</h3>
+                    <p>Suministro de la familia OrionLX, una potente solución para integrar múltiples protocolos legacy
+                        como <b>Gateways de Comunicaciones</b> nativos, vitales para la automatización de subestaciones
+                        (IEC 61850).</p>
+                    <div class="sol-brands"><span class="sol-brand-tag">NovaTech Automation</span></div>
+                    <a href="catalogo_novatech.html" class="sol-link" style="color:#0033a0;">Catálogo NovaTech →</a>
+                </div>
+
+                <!-- Reemplazo GE D20 y Obsoletos -->
+                <div class="sol-card" style="border-top: 4px solid #0033a0;">
+                    <div class="sol-icon" style="color:#0033a0; background: rgba(0,51,160,0.1);"><i data-lucide="refresh-ccw"></i></div>
+                    <h3>Retrofit Remotas GE D20 y Legacy</h3>
+                    <p>Contamos con basta experiencia ejecutando el <b>reemplazo de remotas D20 de GE</b> y RTUs
+                        obsoletas. Migramos sus señales hacia arquitecturas OrionLX sin cortes prolongados y a una
+                        fracción del costo de un gabinete nuevo.</p>
+                    <div class="sol-brands"><span class="sol-brand-tag">Migración GE D20</span><span
+                            class="sol-brand-tag">RTU Upgrade</span></div>
+                    <a href="catalogo_novatech.html" class="sol-link" style="color:#0033a0;">Ver solución de Retrofit
+                        →</a>
+                </div>
+
+                <!-- Redes -->
+                <div class="sol-card" style="border-top: 4px solid #f26522;">
+                    <div class="sol-icon" style="color:#f26522; background: rgba(242,101,34,0.1);"><i data-lucide="router"></i></div>
+                    <h3>Switches O.T. y Fibra Óptica</h3>
+                    <p>Suministro de routers, switches industriales IEC 61850 y cables especializados para otorgar la
+                        máxima flexibilidad y robustez en redes críticas.</p>
+                    <div class="sol-brands">
+                        <span class="sol-brand-tag">Hirschmann</span>
+                        <span class="sol-brand-tag">Belden</span>
+                    </div>
+                    <a href="#contacto" class="sol-link" style="color:#f26522;">Catálogo de Redes →</a>
+                </div>
+
+                <!-- NR Electric / Vizimax -->
+                <div class="sol-card" style="border-top: 4px solid #004b87;">
+                    <div class="sol-icon" style="color:#004b87; background: rgba(0,75,135,0.1);">🛡️</div>
+                    <h3>Retrofit Protecciones Obsoletas</h3>
+                    <p>Venta de equipos de protección secundaria para MT/AT y <b>servicios de retrofit plug-and-play</b>
+                        para reemplazar relés electromecánicos o digitales descontinuados, manteniendo su
+                        infraestructura actual.</p>
+                    <div class="sol-brands"><span class="sol-brand-tag">NR Electric</span><span
+                            class="sol-brand-tag">Vizimax</span></div>
+                    <a href="#contacto" class="sol-link" style="color:#004b87;">Catálogo NR & Vizimax →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PR & MEDIA SECTION -->
+    <section class="news-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>CONECTA en la Prensa</h2>
+                <p>Nuestros últimos hitos y alianzas estratégicas destacadas por los principales medios de la industria
+                    chilena.</p>
+            </div>
+
+            <div class="news-grid">
+                <!-- News 1 -->
+                <div class="news-card">
+                    <span class="news-source mch">Revista Minería Chilena</span>
+                    <h3>Alianza Estratégica con SUPCON para IA Industrial</h3>
+                    <p>Conecta Ingeniería, liderada por Víctor Vilche Díaz, firma un acuerdo histórico con el gigante
+                        tecnológico asiático SUPCON para introducir algoritmos de Inteligencia Artificial enfocados en
+                        la transición hacia plantas mineras autónomas en Chile.</p>
+                    <a href="https://www.mch.cl" target="_blank" class="news-link">Ir a MCH.cl →</a>
+                </div>
+
+                <!-- News 2 -->
+                <div class="news-card">
+                    <span class="news-source mch">Revista Minería Chilena</span>
+                    <h3>Exitoso Lanzamiento del Nuevo Centro de Control GPE</h3>
+                    <p>Reportaje destaca la crucial labor de integración de Conecta Ingeniería y Víctor Vilche en la
+                        inauguración y puesta en marcha del avanzado Centro de Control para la firma GPE, marcando un
+                        nuevo estándar tecnológico para el monitoreo eléctrico.</p>
+                    <a href="https://www.mch.cl" target="_blank" class="news-link">Ir a MCH.cl →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEO / PAIN SECTION (AUTHORITY) -->
+    <section id="normativa" class="pain-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Evite los Riesgos de la Inoperancia Normativa</h2>
+                <p>No permita que una auditoría fallida o un equipo obsoleto detenga su producción. Entendemos las
+                    complejas exigencias del Coordinador Eléctrico y lo guiamos paso a paso.</p>
+            </div>
+
+            <div class="pain-grid">
+                <div class="pain-feature alert">
+                    <span class="alert-badge">Riesgo Legal / Multas CEN</span>
+                    <h3>¿Atrapado por exigencias PMUS y Ley 21.663?</h3>
+                    <p>El CEN presiona a parques antiguos. Si sus medidores obsoletos no cumplen el estándar PMUS (>20
+                        MW) o su red O.T. viola la <b>Ley Marco de Ciberseguridad</b> vigente desde Marzo 2025, se
+                        expone a multas y desconexión sistemática.</p>
+                    <a href="landing_ejemplos.html" class="pain-link">📄 Cómo evitar la multa (Whitepaper)</a>
+                </div>
+
+                <div class="pain-feature">
+                    <span class="alert-badge"
+                        style="color:#ef4444; border-color:#dc2626; background: rgba(220,38,38,0.1);">Riesgo
+                        Demostrado: Fallas SCADA</span>
+                    <h3>Sanciones SEC y Multas del CEN</h3>
+                    <p>El apagón de 2025 demostró que el mal mantenimiento del SCADA de respaldo genera <b>multas
+                            millonarias ineludibles</strong>. Auditamos y blindamos su red para evitar sanciones y
+                            caídas de servicio.</p>
+                    <a href="landing_ejemplos.html" class="pain-link">📚 Ver cómo evitar estas multas (Auditoría
+                        SITR)</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CASOS DE ÉXITO (PROOF OF AUTHORITY) -->
+    <section id="experiencia" class="cases-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Experiencia Normativa Comprobada</h2>
+                <p>Nuestra ingeniería, validada por el Coordinador Eléctrico Nacional. Estas empresas confiaron en
+                    CONECTA para modernizar su infraestructura crítica y mitigar contingencias sin detener la
+                    producción.</p>
+            </div>
+
+            <div class="cases-grid">
+                <!-- Caso 1: Aela Eólica (Innergex) -->
+                <div class="case-card">
+                    <img src="assets/novatech_img/orionlx_plus.png" alt="OrionLX+" class="case-image">
+                    <span class="case-industry">Generación Renovable ERNC</span>
+                    <h3>Consignas EDAGxCE en Parques Eólicos del Sur</h3>
+                    <p>Integración de plataformas de Desconexión Automática de Carga ante contingencias extremas de
+                        sobrefrecuencia. Conexión limpia y segura entre el SCADA de planta (PPC) y el Coordinador
+                        Nacional.</p>
+                    <div class="case-footer">
+                        <span class="tech-badge">NovaTech OrionLX+</span>
+                        <span class="case-tech">Gateway Integrador</span>
+                    </div>
+                </div>
+
+                <!-- Caso 2: Minera Meridian -->
+                <div class="case-card">
+                    <img src="assets/novatech_img/orion_io.png" alt="Orion I/O" class="case-image">
+                    <span class="case-industry">Gran Minería</span>
+                    <h3>Normalización EDAC y SITR (Tiempo Real)</h3>
+                    <p>Rehabilitación y modernización de enlaces SCADA hacia los Datacenters del CEN. Incorporación
+                        paramétrica de datos para redimensionamiento paralelo, eliminando la obsolescencia técnica
+                        extractiva.</p>
+                    <div class="case-footer">
+                        <span class="tech-badge">NovaTech Orion I/O</span>
+                        <span class="case-tech">Módulos Distribuidos</span>
+                    </div>
+                </div>
+
+                <!-- Caso 3: Agrosuper -->
+                <div class="case-card">
+                    <img src="assets/novatech_img/orionlx_m.png" alt="OrionLXm" class="case-image">
+                    <span class="case-industry">Conglomerado Alimentario</span>
+                    <h3>Continuidad y Ciberseguridad SCADA SITR</h3>
+                    <p>Adecuación crítica de tasas de muestreo de señales remotas exigidas por el CEN en tiempo real.
+                        Configuración y blindaje de protocolos para cumplir la nueva normativa de Ciberseguridad.</p>
+                    <div class="case-footer">
+                        <span class="tech-badge">NovaTech OrionLXm</span>
+                        <span class="case-tech">Procesador Lógico</span>
+                    </div>
+                </div>
+
+                <!-- Caso 4: Aguas Antofagasta -->
+                <div class="case-card">
+                    <img src="assets/novatech_img/orion_io.png" alt="Orion I/O" class="case-image">
+                    <span class="case-industry">Sanitarias e Industria</span>
+                    <h3>Desconexión por Sub-Frecuencia al CDEC</h3>
+                    <p>Validación y enlace de información de infraestructura vital a gran escala hacia los centros de
+                        despacho SCADA/EMS del sistema troncal eléctrico, respaldando operaciones ininterrumpidas 24/7
+                        en el norte.</p>
+                    <div class="case-footer">
+                        <span class="tech-badge">NovaTech Orion I/O</span>
+                        <span class="case-tech">Integración Masiva</span>
+                    </div>
+                </div>
+
+                <!-- Caso 5: CRELL -->
+                <div class="case-card">
+                    <img src="assets/novatech_img/orionlx_plus.png" alt="Orion RTU" class="case-image">
+                    <span class="case-industry">Distribución Eléctrica</span>
+                    <h3>Upgrade de Remotas y Gateway DNP3</h3>
+                    <p>Reemplazo estratégico del concentrador heredado (tipo GE D20) e integración de 33 reconectadores
+                        y medidores ION8650. Traducción exitosa de protocolos DNP3 legacy hacia el sistema SCADA moderno
+                        del SITR.</p>
+                    <div class="case-footer">
+                        <span class="tech-badge">Gateway Protocolos</span>
+                        <span class="case-tech">DNP3 a IEC 61850</span>
+                    </div>
+                </div>
+
+                <!-- Caso 6: Atacama Kozan -->
+                <div class="case-card">
+                    <img src="assets/novatech_img/orionlx_m.png" alt="OrionLXm" class="case-image">
+                    <span class="case-industry">Gran Minería</span>
+                    <h3>Implementación SITR Subestación 110kV</h3>
+                    <p>Normalización de instalaciones para infraestructura de Alta Tensión y puesta en marcha del
+                        Sistema de Información en Tiempo Real, logrando validación segura de señales críticas ante
+                        contingencias.</p>
+                    <div class="case-footer">
+                        <span class="tech-badge">NovaTech OrionLXm</span>
+                        <span class="case-tech">Procesador Lógico</span>
+                    </div>
+                </div>
+
+                <!-- Caso 7: Cementos Melón -->
+                <div class="case-card">
+                    <span class="case-industry">Industria Pesada</span>
+                    <h3>Ampliación EDACxCE y Consolidación SITR</h3>
+                    <p>Adhesión sin interrupciones de decenas de nuevas señales exigidas en tiempo récord por el
+                        CDEC-SIC sobre la base EDAC actual, absorbiendo toda la complejidad del mandato técnico
+                        rápidamente.</p>
+                    <div class="case-footer">
+                        <span class="tech-badge">NovaTech OrionLX+</span>
+                        <span class="case-tech">Gateway de Alto Ruteo</span>
+                    </div>
+                </div>
+
+                <!-- Caso 8: Fundición Talleres -->
+                <div class="case-card">
+                    <span class="case-industry">Fundición Industrial</span>
+                    <h3>Upgrade de S/E y Normalización EDAC</h3>
+                    <p>Retrofit de Subestación para el Esquema de Desconexión, revirtiendo la obsolescencia subyacente
+                        de la planta energética para enlazar un SITR normalizado, robusto y auditable.</p>
+                    <div class="case-footer">
+                        <span class="tech-badge">NovaTech Orion I/O</span>
+                        <span class="case-tech">Módulos Inteligentes</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MOTOR DE LEADS (B2B CONTACT SECTION) -->
+    <section id="contacto" class="contact-section">
+        <div class="container">
+            <div class="contact-wrapper">
+
+                <!-- Info Panel -->
+                <div class="contact-info">
+                    <div>
+                        <h3>Dé el primer paso hacia su paz mental.</h3>
+                        <p>No enfrente a las autoridades normativas ni a la obsolescencia técnica en soledad. Hablemos
+                            sobre su proyecto y diseñemos juntos un plan de integración seguro.</p>
+
+                        <div class="contact-details">
+                            <div class="detail-item">
+                                <div class="detail-icon">🏢</div>
+                                <div>
+                                    <div style="font-weight: 700; color: white;">Casa Matriz</div>
+                                    <div style="color: #94a3b8; font-size: 0.95rem;">Santiago, Región Metropolitana,
+                                        Chile</div>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <div class="detail-icon">✉️</div>
+                                <div>
+                                    <div style="font-weight: 700; color: white;">Área Comercial y Proyectos</div>
+                                    <div style="color: #94a3b8; font-size: 0.95rem;">contacto@conecta.cl</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 60px;">
+                        <span
+                            style="color: #64748b; font-size: 0.85rem; font-weight: 500; text-transform: uppercase;">Partners
+                            Tecnológicos Oficiales</span>
+                    </div>
+                </div>
+
+                <!-- Form Panel -->
+                <div class="contact-form">
+                    <h4>Solicitar Evaluación Técnica</h4>
+                    <!-- Netlify Forms Integration -->
+                    <form action="/exito" method="POST" name="conecta-b2b-leads" data-netlify="true">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label">Nombre Completo</label>
+                                <input type="text" class="form-control" name="nombre"
+                                    placeholder="Ej: Roberto Ingeniero" required>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Empresa / Rut</label>
+                                <input type="text" class="form-control" name="empresa" placeholder="Razón Social"
+                                    required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Correo Corporativo</label>
+                            <input type="email" class="form-control" name="correo" placeholder="roberto@empresa.cl"
+                                required>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Área de Interés</label>
+                            <select class="form-control" name="area_interes" required>
+                                <option value="" disabled selected>Seleccione el marco de su solicitud...</option>
+                                <option value="pmus">Sincrofasores / Cumplimiento Normativo PMUS</option>
+                                <option value="scada">Sistemas SCADA Eléctrico / Centros de Control</option>
+                                <option value="procesos">Control Distribuido DCS (Procesos Industriales)</option>
+                                <option value="equipos">Cotización de Equipos (Supcon, NovaTech, Relés, etc.)</option>
+                                <option value="bess">Sistemas de Almacenamiento (EMS BESS)</option>
+                                <option value="otro">Otra consulta de ingeniería</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Detalles del Proyecto o Equipamiento Requerido</label>
+                            <textarea class="form-control" name="mensaje" rows="4"
+                                placeholder="Describa brevemente la envergadura del proyecto, la planta o el suministro que necesita..."
+                                required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-submit">Enviar Solicitud a Ingeniería</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <div class="brand">CONECTA<span>.</span></div>
+                    <p class="footer-desc">Integradores B2B de infraestructura eléctrica crítica. Expertise normativo y
+                        despliegue tecnológico multimarca en Chile.</p>
+                </div>
+                <div>
+                    <h4>Soluciones</h4>
+                    <ul class="footer-links">
+                        <li><a href="#sistemas">Control S/E (SCADA/EDAC)</a></li>
+                        <li><a href="#sistemas">Sincrofasores PMUS</a></li>
+                        <li><a href="#sistemas">Sistemas EMS / BESS</a></li>
+                        <li><a href="#sistemas">Procesos DCS/UCS (SUPCON)</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Hub Técnico</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Whitepapers Normativos</a></li>
+                        <li><a href="#">Casos de Éxito Reales</a></li>
+                        <li><a href="#">Estudios Eléctricos</a></li>
+                        <li><a href="#contacto">Contacto de Ingeniería</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 CONECTA Ingeniería. Todos los derechos reservados.</p>
+                <div style="display:flex;gap:16px;">
+                    <a href="#">Política de Privacidad</a>
+                    <a href="#">Términos B2B</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>lucide.createIcons();</script>
+</body>
+
+</html>
