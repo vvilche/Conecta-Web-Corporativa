@@ -1,0 +1,13 @@
+.DS_Store
+.agent/
+.gemini/
+__pycache__/
+*.pyc
+node_modules/
+*.pdf
+*.pptx
+*.xlsx
+temp_excel_extract/
+mientorno/
+materiales_novatech/
+*.zip
