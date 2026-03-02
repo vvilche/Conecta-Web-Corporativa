@@ -1,0 +1,720 @@
+Pag 1: Julio 202 5
+Pag 1: 1 31-07-2025 Informe Final  DMAP  DMAP/ JVC
+Pag 2: 5.2 Plan de Obras 2025 -2026  ................................ ................................ ................................ ................................ ...... 3
+Pag 2: 5.4 Requerimientos de monitoreo a partir de la operación real del SEN  ................................ ................................ . 20
+Pag 2: 5.5 Requerimientos de monitoreo en SS/EE con alta concentración de PMGD  ................................ .......................  21
+Pag 3: 7.4.4  Puntos de alta concentración PMGD (>20MW)  ................................ ................................ ..............................  51
+Pag 4: Estudio para la Implementación del Módulo de Medición Fasorial  – Julio 2025  1
+Pag 4: 2025 – diciembre de 2026).
+Pag 4: tanto existentes como en construcción,  con una  capacidad instalada mayor o igual a 9 MW . Esto aplica tanto para
+Pag 4: determinaron  como nuevos  puntos de monitoreo : paño de futura Línea Don Goyo – La Ruca 220kV de STN y paño
+Pag 5: Estudio para la Implementación del Módulo de Medición Fasorial  – Julio 2025  2
+Pag 5: Respecto al estudio de estabilizadores de sistemas de potencia (PSS)  publicado en junio  2024 , no se detectaron
+Pag 5: (PDCE) de julio de 2025 , se identificaron nuevos puntos de monitoreo. No obstante, dichos puntos ya se
+Pag 5: concentren más de 20 MW de PMGD.
+Pag 5: en subestaciones  con concentración de PMGD de más de 20 MW  y 43 corresponden  al monitoreo del  sistema de
+Pag 6: Estudio para la Implementación del Módulo de Medición Fasorial  – Julio 2025  3
+Pag 6: • IEEE C37.118 -2005:  IEEE Standard for Synchrophasors for Power Systems
+Pag 6: • IEEE C37.118.1 -2011 : IEEE Standard for Synchrophasors Measurement for Power Systems
+Pag 6: • IEEE C37.118.2 -2011 : IEEE Standard for Synchrophasors Data Transfer for Power Systems
+Pag 6: • IEEE C37.118.1a -2014 : IEEE Standard for Synchrophasors Data Transfer for Power Systems.
+Pag 6: • IEEE 60255 -118-1-2018: Measuring relays and protection equipment –
+Pag 6: • Norma Técnica de Seguridad y Calidad de Suministro (NT SyCS) , marzo  2025
+Pag 6: • Norma Técnica de Servicios Complementarios (NT SSCC), mayo 2020
+Pag 6: • Anexo Técnico Sistema de Monitoreo de la NT SyCS (ATSM) , septiembre 2020
+Pag 7: Estudio para la Implementación del Módulo de Medición Fasorial  – Julio 2025  4
+Pag 7: Gran Centro de Generación : Central o subestación del sistema que concentra 200 MW o
+Pag 8: Estudio para la Implementación del Módulo de Medición Fasorial  – Julio 2025  5
+Pag 8: • Análisis de los cambios topológicos del SEN en el período 2024-2025 y los fenómenos dinámicos en la
+Pag 8: • Estudio del plan de obras declaradas en construcción, a diciembre de 2026.
+Pag 8: en el Capítulo 3 de la Norma Técnica de Servicios Complementarios , considerando el período 2025-2026.
+Pag 9: Estudio para la Implementación del Módulo de Medición Fasorial  – Julio 2025  6
+Pag 9: plan de obras 2022 -2023 .
+Pag 10: Estudio para la Implementación del Módulo de Medición Fasorial  – Julio 2025  7
+Pag 10: o igual a 9 MW. Esto aplica tanto para máquinas sincrónicas, centrales de energías renovables, como para
+Pag 10: • Monitoreo de cargas transformadores primarios de distribución con generación de PMG D mayor a 20
+Pag 10: MW.
+Pag 11: Estudio para la Implementación del Módulo de Medición Fasorial  – Julio 2025  1
+Pag 11: 1 2016 -SIC E/S NORTE
+Pag 11: 2 2016 -SIC E/S NORTE
+Pag 11: 3 2016 -SIC E/S NORTE
+Pag 11: CHICO  MAITENCILLO  MAITENCILLO  Paño J1 de SE Diego de Almagro  DIEGO DE ALMAGRO - ILLAPA 220KV L1 C3  TRANSELEC S.A.
+Pag 11: 4 2016 -SIC E/O NORTE
+Pag 11: COORDINADOR  Paño J12 de SE Cardones  SECCIONADORA SAN ANDRES - CARDONES 220KV L2 C2  ELETRANS S.A.
+Pag 11: 5 2016 -SIC E/C NORTE
+Pag 11: 6 2016 -SIC E/S NORTE
+Pag 11: CHICO  MAITENCILLO  MAITENCILLO  Paño J5 de SE Maitencillo  GUACOLDA - MAITENCILLO 220KV L1 C2  GUACOLDA ENERGÍA SPA
+Pag 11: 7 2016 -SIC E/S NORTE
+Pag 11: CHICO  MAITENCILLO  MAITENCILLO  Paño J4 de SE Maitencillo  AGUA AMARGA - MAITENCILLO 220kV C1  TRANSELEC S.A.
+Pag 11: 8 2016 -SIC E/S NORTE
+Pag 11: CHICO  MAITENCILLO  MAITENCILLO  Paño J3 de SE Maitencillo  AGUA AMARGA - MAITENCILLO 220kV C2  TRANSELEC S.A.
+Pag 11: 9 2016 -
+Pag 11: SIC/2017  E/C NORTE
+Pag 11: 10 2016 -SIC E/S NORTE
+Pag 11: CHICO  MAITENCILLO  MAITENCILLO  Paño J3 SE Pan de Azucar  PAN DE AZUCAR - DON GOYO 220KV C1  TRANSELEC S.A.
+Pag 11: 11 2016 -SIC E/S NORTE
+Pag 11: CHICO  MAITENCILLO  MAITENCILLO  Paño J4 SE Pan de Azucar  PAN DE AZUCAR - DON GOYO 220KV C2  TRANSELEC S.A.
+Pag 11: 12 2016 -
+Pag 11: SIC/2017  E/C NORTE
+Pag 11: 13 2016 -SIC E/S CENTRO  ALTO JAHUEL  ALTO JAHUEL  Paño J8 y J9 de SE Nogales  QUILLOTA - NOGALES 220KV C1  TRANSELEC S.A.
+Pag 11: 14 2016 -SIC E/S CENTRO  ALTO JAHUEL  ALTO JAHUEL  Paño J11 y J12 de SE San Luis  SAN LUIS - QUILLOTA 220KV C1  TRANSMISORA ELÉCTRICA DE
+Pag 11: 15 2016 -SIC E/S CENTRO  ALTO JAHUEL  ALTO JAHUEL  Paño K1 de SE Polpaico  POLPAICO (TRANSELEC) - SECCIONADORA LO AGUIRRE 500KV C2  TRANSELEC S.A.
+Pag 11: 16 2016 -SIC E/S CENTRO  ALTO JAHUEL  ALTO JAHUEL  Paño K1 y K2 de SE Lo Aguirre  SECCIONADORA LO AGUIRRE - ALTO JAHUEL 500KV C2  TRANSELEC S.A.
+Pag 11: 17 2016 -SIC E/S CENTRO  ALTO JAHUEL  ALTO JAHUEL  Paño K1 de SE Alto Jahuel  ANCOA - ALTO JAHUEL 500KV L1 C1  TRANSELEC S.A.
+Pag 11: 18 2016 -SIC E/S CENTRO  ALTO JAHUEL  ALTO JAHUEL  Paño K2 de SE Alto Jahuel  ANCOA - ALTO JAHUEL 500KV L2 C1  TRANSELEC S.A.
+Pag 11: 19 2016 -SIC E/S CENTRO  ANCOA  ANCOA  Paño A1 de SE Itahue  CENTRAL CURILLINQUE - ITAHUE 154KV C1  TRANSELEC S.A.
+Pag 12: Estudio para la Implementación del Módulo de Medición Fasorial  – Julio 2025  2
+Pag 12: 20 2016 -SIC E/S* CENTRO  ALTO JAHUEL  ALTO JAHUEL  Paño A5 (trasladar a Paño J5 y J6 de
+Pag 12: 2022 ) PUENTE NEGRO - TINGUIRIRICA 220KV C2  TRANSELEC S.A.
+Pag 12: 21 2016 -SIC E/S CENTRO  ALTO JAHUEL  ALTO JAHUEL  Paño A9 de SE Tiguiririca  NUEVA MALLOA - TINGUIRIRICA 154KV C1  TRANSELEC S.A.
+Pag 12: 22 2016 -SIC E/S CENTRO  ALTO JAHUEL  ALTO JAHUEL  Paño A10 de SE Tinguiririca  NUEVA MALLOA - TINGUIRIRICA 154KV C2  TRANSELEC S.A.
+Pag 12: 23 2016 -SIC E/S CENTRO  ANCOA  ANCOA  Paño J7 de SE Colbun  PUENTE NEGRO - COLBUN 220KV C1  ALFA TRANSMISORA DE
+Pag 12: 24 2016 -SIC E/S CENTRO  ANCOA  ANCOA  Paño J4 de SE Ancoa  TAP CANAL MELADO - ANCOA 220KV C1  TRANSELEC S.A.
+Pag 12: 25 2016 -SIC E/S CENTRO  ANCOA  ANCOA  Paño K6 de SE Ancoa  ANCOA - ALTO JAHUEL 500KV L4 C1  ALTO JAHUEL TRANSMISORA DE
+Pag 12: 26 2016 -SIC E/S CENTRO  CHARRÚA  CHARRÚA  Paño J1 de SE Charrua  TAP CHOLGUAN - CHARRUA 220KV C2  TRANSELEC S.A.
+Pag 12: 27 2016 -SIC E/S CENTRO  CHARRÚA  CHARRÚA  Paño J4 de SE Charrua  ANTUCO (TRANSELEC) - CHARRUA 220KV C1  TRANSELEC S.A.
+Pag 12: 28 2016 -SIC E/S CENTRO  CHARRÚA  CHARRÚA  Paño J24 de SE Charrua  CHARRUA - LOS NOTROS 220KV C2  TRANSELEC S.A.
+Pag 12: 29 2016 -SIC E/S CENTRO  CHARRÚA  CHARRÚA  Paño K1 de SE Charrua  ENTRE RIOS - CHARRUA 500KV C1  TRANSELEC S.A.
+Pag 12: 30 2016 -SIC E/S SUR CHARRÚA  CHARRÚA  Paño J3 de SE Valdivia  VALDIVIA - EL LAUREL 220KV C2  TRANSELEC S.A.
+Pag 12: 31 2016 -SIC E/S SUR CHARRÚA  CHARRÚA  Paño J3 de SE Puerto Montt  CANUTILLAR - PUERTO MONTT 220KV C2  TRANSELEC S.A.
+Pag 12: 32 2016 -SIC E/S CENTRO  ALTO JAHUEL  ALTO JAHUEL  Paño AT6 de SE Alto Jahuel,
+Pag 12: 33 2016 -SIC E/S CENTRO  ALTO JAHUEL  ALTO JAHUEL  Paño K5 de SE Alto Jahuel  ANCOA - ALTO JAHUEL 500KV L3 C1  ALTO JAHUEL TRANSMISORA DE
+Pag 12: 34 2016 -SIC E/S CENTRO  ANCOA  ANCOA  Paño AT4 de SE Itahue, Transformador
+Pag 12: 35 2016 -SING  E/S NORTE
+Pag 12: 36 2016 -SING  E/C NORTE
+Pag 12: GRANDE  CRUCERO   Paño J3 de SE Domeyko  PURI - DOMEYKO 220KV C1  MINERA ESCONDIDA LTDA.
+Pag 12: 37 2016 -SING  E/S NORTE
+Pag 12: COORDINADOR  Paño J3 de SE Tarapacá  TARAPACA - PUERTO PATACHE 220KV C1  TRANSELEC S.A.
+Pag 12: 38 2016 -
+Pag 12: 220kV - BP1 S/E CRUCERO 220KV BP1  ENGIE ENERGÍA CHILE S.A.
+Pag 12: 39 2016 -
+Pag 12: GRANDE  CRUCERO  CRUCERO  Paño JL3 de SE Collahuasi  ENCUENTRO - COLLAHUASI 220KV C1  COMPAÑÍA DOÑA INÉS DE
+Pag 12: 40 2016 -
+Pag 12: GRANDE  CRUCERO  CRUCERO  Paño J5 de SE Angamos  ANGAMOS - KAPATUR 220KV C2  EMPRESA ELÉCTRICA ANGAMOS
+Pag 12: 41 2016 -
+Pag 12: GRANDE  CRUCERO  CRUCERO  Paño J6 de SE Domeyko  DOMEYKO - LAGUNA SECA 220KV C1  MINERA ESCONDIDA LTDA.
+Pag 12: 42 2016 -
+Pag 12: 43 2016 -
+Pag 12: 44 2016 -
+Pag 12: GRANDE  CRUCERO  CRUCERO  Paño J1 de SE Lagunas  FRONTERA - LAGUNAS 220KV  TRANSELEC S.A.
+Pag 13: Estudio para la Implementación del Módulo de Medición Fasorial  – Julio 2025  3
+Pag 13: 45 2016 -
+Pag 13: SING/2017  E/S NORTE
+Pag 13: GRANDE  CRUCERO  CRUCERO  Paño J6A de SE Tocopilla  TOCOPILLA - TAP EL LOA 220KV C2 (6A)  ENGIE ENERGÍA CHILE S.A.
+Pag 13: 46 2016 -
+Pag 13: SING/2017  E/C NORTE
+Pag 13: GRANDE  CRUCERO   Paño J3 de SE Atacama  ATACAMA - O'HIGGINS 220KV C1  KELTI S.A.
+Pag 13: 47 2017  E/C NORTE
+Pag 13: GRANDE  CRUCERO   Paño J1 de SE Parinacota  CONDORES - PARINACOTA 220KV C1  EMPRESA DE TRANSMISIÓN
+Pag 13: 48 2017  E/S NORTE
+Pag 13: GRANDE  CRUCERO  CRUCERO  Paño J15 de SE Crucero  KIMAL - CRUCERO 220KV C1  TRANSELEC S.A.
+Pag 13: 49 2017  E/S NORTE
+Pag 13: GRANDE  CRUCERO  CRUCERO  Paño J1 de SE Chacaya  CHACAYA - MEJILLONES 220KV C1  ENGIE ENERGÍA CHILE S.A.
+Pag 13: 50 2017  E/S NORTE
+Pag 13: GRANDE  CRUCERO  CRUCERO  Paño J19 y J20 de SE Kapatur  LOS CHANGOS - KAPATUR 220KV C1  TRANSELEC S.A.
+Pag 13: 51 2017  E/S NORTE
+Pag 13: CHICO  MAITENCILLO  MAITENCILLO  Paño J4 y J5 de SE Punta Colorada  PAN DE AZUCAR - PUNTA COLORADA 220KV C1  TRANSELEC S.A.
+Pag 13: 52 2017  E/S CENTRO  ALTO JAHUEL  ALTO JAHUEL  Paño J7 y J8 de SE Nogales  NOGALES - TAP OFF DOÑA CARMEN 220KV C1  TRANSELEC S.A.
+Pag 13: 53 2017  E/S CENTRO  MAITENCILLO  MAITENCILLO  Paño J2 de SE Los Vilos  NOGALES - LOS VILOS 220KV C2  TRANSELEC S.A.
+Pag 13: 54 2017  E/C CENTRO  ALTO JAHUEL   Paño H1 de SE Las Vegas  TAP OFF PACHACAMA - LAS VEGAS 110KV C1  COMPAÑÍA TRANSMISORA DEL
+Pag 13: 55 2017  E/S CENTRO  CHARRÚA  CHARRÚA  Paño K13 y K14 de SE Entre Rios  ENTRE RIOS - ANCOA 500KV C2  TRANSELEC S.A.
+Pag 13: 56 2017  E/S CENTRO  CHARRÚA  CHARRÚA  Paño A3 de SE Concepción  CONCEPCION - SAN VICENTE 154KV C1  TRANSELEC S.A.
+Pag 13: 57 2017  E/S CENTRO  CHARRÚA  CHARRÚA  Paño AT de SE Coronel  TAP QUIÑENCO - CORONEL 154KV C1  CGE TRANSMISIÓN S.A.
+Pag 13: 58 2017  E/S SUR CHARRÚA  CHARRÚA  Paño J2 de SE Rahue  NUEVA PICHIRROPULLI - RAHUE 220KV C1  TRANSELEC S.A.
+Pag 13: 59 2018  E/C NORTE
+Pag 13: 60 2018  E/C NORTE
+Pag 13: 61 2018  E/O NORTE
+Pag 13: 62 2018  E/S NORTE
+Pag 13: 63 2018  E/S NORTE
+Pag 13: 64 2018  E/C NORTE
+Pag 13: GRANDE  CRUCERO   Bornes de la unidad  TER KELAR CC1 -TG1 (U2025)  TAMAKAYA ENERGÍA SPA
+Pag 13: 65 2018  E/C NORTE
+Pag 13: 66 2018  E/S NORTE
+Pag 13: 67 2018  E/C NORTE
+Pag 13: 68 2018  E/C NORTE
+Pag 13: 69 2018  E/S NORTE
+Pag 13: CHICO  MAITENCILLO  MAITENCILLO  Paño JT6 de SE Diego de Almagro  CER SVC PLUS S/E DIEGO DE ALMAGRO JT6 MODULO 2 (+ -50 MVAR)|CER SVC
+Pag 13: PLUS S/E DIEGO DE ALMAGRO JT6 CCEE (40 MVAR)  TRANSELEC S.A.
+Pag 13: 70 2018  E/S NORTE
+Pag 13: CHICO  ALTO JAHUEL  ALTO JAHUEL  Paño JT4 de SE Cardones  CER S/E CARDONES JT4 220 KV 100 MVAR  TRANSELEC S.A.
+Pag 14: Estudio para la Implementación del Módulo de Medición Fasorial  – Julio 2025  4
+Pag 14: 71 2018  E/S NORTE
+Pag 14: 72 2018  E/C NORTE
+Pag 14: 73 2018  E/C NORTE
+Pag 14: 74 2018  E/S NORTE
+Pag 14: 75 2018  E/C NORTE
+Pag 14: 76 2018  E/C NORTE
+Pag 14: 77 2018  E/C NORTE
+Pag 14: 78 2018  E/C NORTE
+Pag 14: 79 2018  E/C CENTRO  ALTO JAHUEL   Bornes de la unidad  TER SAN ISIDRO CC1 -TG (U821)  ENEL GENERACIÓN CHILE S.A.
+Pag 14: 80 2018  E/C CENTRO  ALTO JAHUEL   Bornes de la unidad  TER SAN ISIDRO II CC1 -TG (U823)  ENEL GENERACIÓN CHILE S.A.
+Pag 14: 81 2018  E/S CENTRO  ALTO JAHUEL  ALTO JAHUEL  Bornes de la unidad  TER NEHUENCO CC1 -TG (U797)  COLBÚN S.A.
+Pag 14: 82 2018  E/S CENTRO  ALTO JAHUEL  ALTO JAHUEL  Bornes de la unidad  TER NEHUENCO II CC1 -TG (U800)  COLBÚN S.A.
+Pag 14: 83 2018  E/C CENTRO  ALTO JAHUEL   Bornes de la unidad  TER QUINTERO U1 (U762)  ENEL GENERACIÓN CHILE S.A.
+Pag 14: 84 2018  E/C CENTRO  ALTO JAHUEL   Paño JT1 de SE Quilapilún  PFV QUILAPILUN (C349)  CHUNGUNGO S.A.
+Pag 14: 85 2018  E/S CENTRO  ALTO JAHUEL  PDC
+Pag 14: 86 2018  E/S CENTRO  ANCOA  ANCOA  Bornes de la unidad  HP CHACAYES U1 (U1655)  PACIFIC HYDRO CHACAYES S.A.
+Pag 14: 87 2018  E/S CENTRO  ANCOA  ANCOA  Bornes de la unidad  HE COLBUN U2 (U848)  COLBÚN S.A.
+Pag 14: 88 2018  E/O CENTRO  ANCOA  ENEL  Bornes de la unidad  HE PEHUENCHE U2 (U75)  EMPRESA ELÉCTRICA
+Pag 14: 89 2018  E/C CENTRO  ANCOA  ENEL  Bornes de la unidad  HP CURILLINQUE U1 (U787)  EMPRESA ELÉCTRICA
+Pag 14: 90 2018  E/C NORTE
+Pag 14: GRANDE  CRUCERO   Paño J17 y J18 de SE Kimal  LABERINTO - KIMAL 220KV C1  SOCIEDAD AUSTRAL DE
+Pag 14: 91 2018  E/S NORTE
+Pag 14: CHICO  MAITENCILLO  MAITENCILLO  Paño J4 de SE Las Palmas  LOS VILOS - LAS PALMAS 220KV C1  TRANSELEC S.A.
+Pag 14: 92 2018  E/S CENTRO  ANCOA  ANCOA  Paño K1 de SE Ancoa  ANCOA - ALTO JAHUEL 500KV L1 C1  TRANSELEC S.A.
+Pag 14: 93 2018  E/C CENTRO  CHARRÚA  ENEL  Bornes de la unidad  HE ANTUCO U1 (U39)  ENEL GENERACIÓN CHILE S.A.
+Pag 14: 94 2018  E/C CENTRO  CHARRÚA  ENEL  Bornes de la unidad  HE EL TORO U3 (U256)  ENEL GENERACIÓN CHILE S.A.
+Pag 14: 95 2018  E/C SUR CHARRÚA   Paño JL1 de SE Melipulli  MELIPULLI - PARGUA 220KV C1  SISTEMA DE TRANSMISIÓN DEL
+Pag 14: 96 2018  E/O CENTRO  CHARRÚA  ENEL  Bornes de la unidad  HE PANGUE U2 (U73)  ENEL GENERACIÓN CHILE S.A.
+Pag 14: 97 2018  E/O CENTRO  CHARRÚA  ENEL  Bornes de la unidad  HE RALCO U1 (U43)  ENEL GENERACIÓN CHILE S.A.
+Pag 14: 98 2018  E/S CENTRO  ANCOA  ANCOA  Bornes de la unidad  HP LA CONFLUENCIA U1 (U54)  HIDROELÉCTRICA LA
+Pag 14: 99 2018  E/S CENTRO  ANCOA  ANCOA  Bornes de la unidad  HP LA HIGUERA U2 (U57)  HIDROELÉCTRICA LA HIGUERA
+Pag 14: 100 2018  E/S SUR CHARRÚA  CHARRÚA  Bornes de la unidad  HE ANGOSTURA U1 (U1505)  COLBÚN S.A.
+Pag 14: 101 2018  E/S SUR CHARRÚA  CHARRÚA  Paño JT41 y JT42 de SE Puerto Montt  CER S/E PUERTO MONTT JT4 220KV 70MVAR  TRANSELEC S.A.
+Pag 14: 102 2018  E/S SUR CHARRÚA  CHARRÚA  Bornes de la unidad  HE CANUTILLAR U2 (U7)  COLBÚN S.A.
+Pag 15: Estudio para la Implementación del Módulo de Medición Fasorial  – Julio 2025  5
+Pag 15: 103 2018  E/S SUR CHARRÚA  PDC
+Pag 15: 104 2018/2020  E/C NORTE
+Pag 15: 105 2019  E/S NORTE
+Pag 15: 106 2019  E/S NORTE
+Pag 15: 107 2019  E/C NORTE
+Pag 15: 108 2019  E/C NORTE
+Pag 15: 109 2019  E/C NORTE
+Pag 15: 110 2019  E/C NORTE
+Pag 15: 111 2019  E/C NORTE
+Pag 15: 112 2019  E/C CENTRO  ALTO JAHUEL   Bornes de la unidad  HP LAS LAJAS U1 (U2206)  ALTO MAIPO SPA
+Pag 15: 113 2019  E/C CENTRO  ALTO JAHUEL   Bornes de la unidad  HP ALFALFAL II U1 (U2204)  ALTO MAIPO SPA
+Pag 15: 114 2019  E/C NORTE
+Pag 15: GRANDE  CRUCERO   Paño J19 y J20 de SE Kimal  LOS CHANGOS - KIMAL 500KV C1  TRANSELEC S.A.
+Pag 15: 115 2019  E/C NORTE
+Pag 15: GRANDE  CRUCERO   Paño J11 de SE Laberinto  KAPATUR - LABERINTO 220KV C1  COMPAÑÍA TRANSMISORA DEL
+Pag 15: 116 2019  E/C NORTE
+Pag 15: GRANDE  CRUCERO   Paño J7 de SE Ohiggins  KAPATUR - O'HIGGINS 220KV C1  KELTI S.A.
+Pag 15: 117 2019  E/S CENTRO  ALTO JAHUEL  ALTO JAHUEL  Paño K5 y K6 de SE Lo Aguirre  SECCIONADORA LO AGUIRRE - ALTO JAHUEL 500KV C1  TRANSELEC S.A.
+Pag 15: 118 2019  E/S SUR CHARRÚA  CHARRÚA  Paño JT1 de SE San Gabriel  PE SAN GABRIEL (C544)  ACCIONA ENERGÍA CHILE
+Pag 15: 119 2019  E/C SUR CHARRÚA   Paño J1 de SE Aurora  PE AURORA (C512)  AELA GENERACIÓN S.A.
+Pag 15: 120 2019  E/S SUR CHARRÚA  CHARRÚA  Paño J6 de SE Ciruelos  LASTARRIA - CIRUELOS 220 KV C2  TRANSELEC S.A.
+Pag 15: 121 2020  E/C NORTE
+Pag 15: 122 2020  E/C NORTE
+Pag 15: 123 2020  E/C NORTE
+Pag 15: 124 2020  E/C NORTE
+Pag 15: 125 2020  E/S NORTE
+Pag 15: 126 2020  E/O NORTE
+Pag 15: 127 2020  E/C NORTE
+Pag 15: 128 2020  E/C NORTE
+Pag 16: Estudio para la Implementación del Módulo de Medición Fasorial  – Julio 2025  6
+Pag 16: 129 2020  E/C NORTE
+Pag 16: 130 2020  E/C NORTE
+Pag 16: 131 2020  E/C NORTE
+Pag 16: 132 2020  E/S NORTE
+Pag 16: 133 2020  E/S NORTE
+Pag 16: 134 2020  E/S NORTE
+Pag 16: 135 2020  E/S NORTE
+Pag 16: 136 2020  E/S NORTE
+Pag 16: 137 2020  E/S NORTE
+Pag 16: 138 2020  E/C NORTE
+Pag 16: Azucar  CER S/E NUEVA PAN DE AZUCAR SVC1 EZ 50 MVAR  INTERCHILE S.A.
+Pag 16: 139 2020  E/O NORTE
+Pag 16: 140 2020  E/C CENTRO  ALTO JAHUEL   Bornes de la unidad  TER CAMPICHE U1 (U1380)  EMPRESA ELÉCTRICA VENTANAS
+Pag 16: 141 2020  E/S NORTE
+Pag 16: CHICO  MAITENCILLO  MAITENCILLO  Paño HT3 de SE Diego de Almagro  DIEGO DE ALMAGRO TR3 220/110/13.8KV 120MVA 1U  TRANSELEC S.A.
+Pag 16: 142 2020  E/C CENTRO  ALTO JAHUEL   Paño H12 y H7 de SE Agua Santa  AGUA SANTA - MIRAFLORES 110KV C4  CHILQUINTA TRANSMISIÓN S.A.
+Pag 16: 143 2020  E/S SUR CHARRÚA  CHARRÚA  Paño J8 y J9 de SE Nueva Pichirropulli  TINEO - NUEVA PICHIRROPULLI 220KV C1  ELETRANS S.A./TRANSELEC S.A.
+Pag 16: 144 2020  E/S SUR CHARRÚA  CHARRÚA  Paño JT1 de SE Surco y Semilla  PE MALLECO SUR (C1706)  WPD MALLECO SPA
+Pag 16: 145 2020  E/O SUR CHARRÚA  ENEL  Paño JT2 de SE PE Renaico I  PE RENAICO I (C342)  ENEL GREEN POWER CHILE S.A.
+Pag 16: 146 2020  E/S SUR CHARRÚA  CHARRÚA  Paño JT1 de SE Agua Buena  PE MALLECO NORTE (C1707)  WPD MALLECO SPA
+Pag 16: 147 2020  E/C SUR CHARRÚA   Paño JT1 de SE Los Olmos  PE LOS OLMOS (C1757)  ENERGÍA EÓLICA LOS OLMOS
+Pag 16: 148 2020  E/S SUR CHARRÚA  PDC
+Pag 16: 149 2020  E/S SUR CHARRÚA  CHARRÚA  Paño J4 y J5 de SE Tineo  TINEO - NUEVA PICHIRROPULLI 220KV C2  TRANSELEC S.A.
+Pag 16: 150 2021  E/S NORTE
+Pag 16: 151 2021  E/S NORTE
+Pag 16: 152 2021  E/O NORTE
+Pag 16: 153 2021  E/S NORTE
+Pag 17: Estudio para la Implementación del Módulo de Medición Fasorial  – Julio 2025  7
+Pag 17: 154 2021  E/C NORTE
+Pag 17: 155 2021  E/C NORTE
+Pag 17: 156 2021  E/C NORTE
+Pag 17: 157 2021  E/O NORTE
+Pag 17: 158 2021  E/C NORTE
+Pag 17: GRANDE  CRUCERO   Paño J1 de SE Mantos Blancos  MANTOS BLANCOS 220/23 KV  MANTOS COPPER S.A.
+Pag 17: 159 2021  E/C NORTE
+Pag 17: 160 2021  E/S NORTE
+Pag 17: 161 2021  E/S CENTRO  ALTO JAHUEL  ALTO JAHUEL  Paño J1 de SE Rapel  RAPEL - SECCIONADORA ALTO MELIPILLA 220KV C1  TRANSELEC S.A.
+Pag 17: 162 2021  E/O SUR CHARRÚA  CHARRÚA  Paño J4 y J5 de SE Río Malleco  RIO MALLECO – MULCHEN 220KV C2  TRANSELEC S.A.
+Pag 17: 163 2021  E/O SUR CHARRÚA  ENEL  Paño B1 de SE Central Pilmaiquén  PILMAIQUEN - OSORNO 66KV C1  ENEL GREEN POWER CHILE S.A.
+Pag 17: 164 2021  E/C SUR CHARRÚA   Paño B2 de SE Central Pullinque  LONCOCHE - PULLINQUE 66KV L1 C1  CGE TRANSMISIÓN S.A.
+Pag 17: 165 2021/2022  E/C NORTE
+Pag 17: 166 2022  E/O NORTE
+Pag 17: 167 2022  E/C NORTE
+Pag 17: del parque  PFV CEME 1 (C2010)  GM HOLDINGS S.A.
+Pag 17: 168 2022  E/C NORTE
+Pag 17: 169 2022  E/C NORTE
+Pag 17: 170 2022  E/C CENTRO  ALTO JAHUEL   Lado AT del transformador elevador
+Pag 17: 171 2022  E/O CENTRO  ANCOA  ENEL  Bornes de la unidad  HE CIPRESES (C119)  ENEL GENERACIÓN CHILE S.A.
+Pag 17: 172 2022  E/O CENTRO  ANCOA  ENEL  Bornes de la unidad  HP ISLA (C123)  ENEL GENERACIÓN CHILE S.A.
+Pag 17: 173 2022  E/C CENTRO  ANCOA   Bornes de la unidad  TER VIÑALES U1 (U921)  ARAUCO BIOENERGÍA SPA
+Pag 17: 174 2022  E/C CENTRO  ANCOA   Bornes de la unidad  TER CELCO U1 (U707)  ARAUCO BIOENERGÍA SPA
+Pag 17: 175 2022  E/C CENTRO  ALTO JAHUEL   Paño J11 y J12 de SE Puente Negro  CENTRAL LA HIGUERA - PUENTE NEGRO 220KV C2  ALFA TRANSMISORA DE
+Pag 17: 176 2022  E/C CENTRO  CHARRÚA   Paño K3 de SE Charrua  CHARRUA - ANCOA 500KV C1  CHARRÚA TRANSMISORA DE
+Pag 17: 177 2022  E/S SUR CHARRÚA  CHARRÚA  Paño J8 y J9 de SE Tineo  TINEO - TAP LLANQUIHUE 220KV C2  TRANSELEC S.A.
+Pag 17: 178 2022  E/S SUR CHARRÚA  CHARRÚA  Paño J2 de SE Puerto Montt  TAP LLANQUIHUE - TINEO 220KV C2  TRANSELEC S.A.
+Pag 17: 179 2022  E/C SUR CHARRÚA   Paño J5 y J6 de SE Nueva Ancud  NUEVA ANCUD - TINEO 220/500 kV C2  TRANSELEC S.A.
+Pag 17: 180 2022  E/C SUR CHARRÚA   Lado AT del transformador elevador
+Pag 17: 181 2022  E/C SUR CHARRÚA   Bornes de la unidad  TER VALDIVIA U1 (U332)  ARAUCO BIOENERGÍA SPA
+Pag 17: 182 2022  E/C SUR CHARRÚA   Bornes de la unidad  HP PALMAR U1 (U2768)  HIDROENERSUR SPA
+Pag 17: 183 2022  E/O SUR CHARRÚA  ENEL  Bornes de la unidad  HE PILMAIQUEN U5 (U25)  ENEL GREEN POWER CHILE S.A.
+Pag 17: 184 2022  E/C SUR CHARRÚA   Paño J8 y J9 de SE Nueva Ancud  NUEVA ANCUD - TINEO 220/500 kV C1  TRANSELEC S.A.
+Pag 18: Estudio para la Implementación del Módulo de Medición Fasorial  – Julio 2025  8
+Pag 18: 185 2023/2024  E/S NORTE
+Pag 18: 186 2023  E/C NORTE
+Pag 18: CHICO  MAITENCILLO   Paño J8 y J9 de SE Nueva Maitencillo  NUEVA MAITENCILLO - PUNTA COLORADA 220KV C2  INTERCHILE S.A./ELETRANS III
+Pag 18: 187 2023  E/C NORTE
+Pag 18: CHICO  MAITENCILLO   Paño J16 y J17 de SE Punta Colorada  NUEVA PAN DE AZUCAR - PUNTA COLORADA 220KV C1  ELETRANS III S.A./TRANSELEC
+Pag 18: 188 2023  E/C NORTE
+Pag 18: Azucar  NUEVA PAN DE AZUCAR – PUNTA SIERRA 220KV C1  CENTELLA TRANSMISIÓN
+Pag 18: 189 2023  E/C NORTE
+Pag 18: CHICO  MAITENCILLO   Paño J14 y J15 de SE Punta Sierra  PUNTA SIERRA – CENTELLA 220kV C2  CENTELLA TRANSMISIÓN S.A.
+Pag 18: 190 2023  E/C NORTE
+Pag 18: CHICO  MAITENCILLO   Paño J2 y J3 de SE Centella  Nueva Línea 4x220 kV desde S/E Centella (ex S/E Nueva Los Pelambres) a
+Pag 18: Seccionadora del segmento de la Línea 2x220 kV Los Piuquenes - Tap Mauro)  CENTELLA TRANSMISIÓN S.A.
+Pag 18: 191 2023  E/C NORTE
+Pag 18: CHICO  MAITENCILLO   Paño J1 y J2 de SE Centella  Nueva Línea 4x220 kV desde S/E Centella (ex S/E Nueva Los Pelambres) a
+Pag 18: Seccionadora del segmento de la Línea 2x220 kV Los Piuquenes - Tap Mauro)  CENTELLA TRANSMISIÓN S.A.
+Pag 18: 192 2023  E/C NORTE
+Pag 18: 193 2023  E/C NORTE
+Pag 18: 194 2023  E/C NORTE
+Pag 18: del parque  PFV TAIRA (C2093)  PLANTA SOLAR TOCOPILLA SPA
+Pag 18: 195 2023  E/C NORTE
+Pag 18: 196 2023  E/C NORTE
+Pag 18: 197 2023  E/C NORTE
+Pag 18: 198 2023  E/C NORTE
+Pag 18: 199 2023  E/C NORTE
+Pag 18: 200 2023  E/C CENTRO  ALTO JAHUEL   Paño AT1 de SE Solis  PFV GRAN TENO (C2094)  GR ALGARROBO SPA
+Pag 18: 201 2023  E/C SUR CHARRÚA   Paño J5 de SE Mulchen  MULCHEN - LOS NOTROS 220KV C1  ALFA TRANSMISORA DE
+Pag 18: 202 2023  E/O CENTRO  ALTO JAHUEL  ALTO JAHUEL  Paño JT4 de SE Polpaico  CER S/E POLPAICO JT4 220KV 100MVAR  TRANSELEC S.A.
+Pag 18: 203 2023  E/C CENTRO  ALTO JAHUEL   Paño JT2 de SE Maipo  STATCOM S/E MAIPO BCER1  NIRIVILO TRANSMISORA DE
+Pag 18: 204 2024  E/C NORTE
+Pag 18: NORTE GRANDE   Paño J4 de SE Encuentro  ENCUENTRO - CENTINELA 220KV C1  RED ELÉCTRICA DEL NORTE 2
+Pag 18: 205 2024  E/C NORTE
+Pag 18: NORTE GRANDE   Paño J4 de SE El Cobre  CENTINELA - EL COBRE (ENGIE) 220KV C1  RED ELÉCTRICA DEL NORTE 2
+Pag 18: 206 2024  E/C CENTRO  CHARRÚA   Paño A1 de SE Parral  PARRAL - MONTERRICO 154KV C1  TRANSELEC S.A.
+Pag 18: 207 2024  E/C CENTRO  CHARRÚA   Paño AT3 de SE Chillan  PUEBLO SECO - CHILLAN 154KV C1  CGE TRANSMISIÓN S.A.
+Pag 18: 208 2024  E/C CENTRO  ALTO JAHUEL   Paño JT4 de SE Cerro Navia  STATCOM S/E CERRO NAVIA 34KV 140MVAR  TRANSELEC S.A.
+Pag 18: 209 2024  E/C CENTRO  ALTO JAHUEL   Paños J11 y J12 de SE El Chacay  STATCOM S/E EL CHACAY ET1  MLP TRANSMISION S.A.
+Pag 18: 210 2024  E/C NORTE
+Pag 18: 211 2024  E/C NORTE
+Pag 19: Estudio para la Implementación del Módulo de Medición Fasorial  – Julio 2025  9
+Pag 19: 212 2024  E/C NORTE
+Pag 19: 213 2024  E/C NORTE
+Pag 19: 214 2024  E/C CENTRO  ALTO JAHUEL   Lado AT del transformador elevador
+Pag 19: 215 2024  E/C CENTRO  CHARRÚA   Bornes de la unidad  TER ARAUCO MAPA (C1844)  ARAUCO BIOENERGÍA SPA
+Pag 19: 216 2024  E/C SUR CHARRÚA   Paño JT1 de SE La Cabaña  PE LA CABAÑA (C2122)  ENEL GREEN POWER CHILE S.A.
+Pag 19: 217 2024  E/C SUR CHARRÚA   Paño J4 y J5 de SE Gamboa  CHILOE – GAMBOA 220kV C2  SISTEMA DE TRANSMISIÓN DEL
+Pag 19: * Esta PMU debe trasladarse, según lo indicado  el estudio  de 2022 .
+Pag 20: Estudio para la Implementación del Módulo de Medición Fasorial  – Julio 2025  1
+Pag 20: PDC Corporativo  (con redundancia  Stand by ) en Data Center de ENEA , y cinco PDC Locales ubicados en las SS/EE
+Pag 21: Estudio para la Implementación del Módulo de Medición Fasorial  – Julio 2025  2
+Pag 21: El protocolo de transferencia de datos fasoriales corresponde al estándar IEEE 60255 -118-1-2018 . Además, con el
+Pag 22: Estudio para la Implementación del Módulo de Medición Fasorial  – Julio 2025  3
+Pag 22: punto de monitoreo fasorial  en todas las centrales  con potencia instalada mayor o igual a 9 MW.  Esto aplica a las
+Pag 22: 5.2 Plan de Obras 2025-2026
+Pag 22: Se consideran y evalúan todas las obras declaradas en construcción por la CNE al 30 de junio de 202 5 y los
+Pag 22: proyectos en gestión de conexión del Coordinador de junio de 2025 con fecha de puesta en servicio hasta el 31
+Pag 22: de diciembre de 2026.
+Pag 22: proyectos de generación con potencia instalada mayor o igual a 9 MW para unidades generadoras sincrónicas,
+Pag 23: Estudio para la Implementación del Módulo de Medición Fasorial  – Julio 2025  4
+Pag 23: [MW]  Punto
+Pag 23: Zañartu  Trupán  dic-20 Hidro -
+Pag 23: Pasada  20 Torre 121 Línea Abanico – Charrúa
+Pag 23: Fotovoltaico  10.7  S/E Lagunas 23 kV
+Pag 23: Fotovoltaico  10.8  S/E Mantos Blancos 23 kV
+Pag 23: Fotovoltaico  10.6  S/E Hualte 66 kV
+Pag 23: Fotovoltaico  10.5  S/E Encuentro 23 kV
+Pag 23: Fotovoltaico  11.2  S/E El Tesoro 23 kV
+Pag 23: Fotovoltaico  11.9  S/E Itahue 66 kV
+Pag 23: Fotovoltaico  9 S/E Los Vilos 23 kV
+Pag 23: Pasada  136 S/E Ancoa 220 kV
+Pag 23: Fotovoltaico  10.6  S/E Santa Marta 23 kV
+Pag 23: Fotovoltaico  10.6  S/E Monterrico 66 kV
+Pag 23: Energias Alcones SpA  Doña Luzma  dic-24 Diésel  40 S/E Alcones 66 kV
+Pag 23: Fotovoltaico  10.9  S/E Cristalerías 12 kV
+Pag 23: Fotovoltaico  220 Tap Off LT 1x220 kV El Cobre -Gaby
+Pag 23: Fotovoltaico  10.9  S/E Travesía 23 kV
+Pag 23: Fotovoltaico  9.9 S/E Caldera 23 kV
+Pag 23: Fotovoltaico  10.8  S/E Capricornio 13,8 kV
+Pag 23: Fotovoltaico  9 S/E Vallenar 13,8 kV
+Pag 23: Fotovoltaico  9 S/E Vallenar 13,8 kV
+Pag 24: Estudio para la Implementación del Módulo de Medición Fasorial  – Julio 2025  5
+Pag 24: [MW]  Punto
+Pag 24: S.A. PV Libélula  nov-25 Fotovoltaico  151.4  S/E El Manzano 220 kV
+Pag 24: PE Cancura SpA  Parque Eólico Cancura  nov-25 Eólico  36.6  S/E Seccionadora Cancura 66 kV
+Pag 24: SpA Cala Morritos  ene-26 Diésel  200 S/E Punta Sierra 220 kV
+Pag 24: + BESS  230 S/E Crucero 220 kV
+Pag 24: Alcones  mar-26 Fotovoltaico  90 S/E Portezuelo 110 kV
+Pag 24: S.A. PE Pemuco  abr-26 Eólico  165 S/E Entre Ríos 220 kV
+Pag 24: S.A. PE Pampa Fidelia  may -26 Eólico  306 S/E Parinas 220 kV
+Pag 24: Pasada  53.6  Nueva S/E Seccionadora Carimallin
+Pag 24: 220 kV, en Línea 1x220 kV Rucatayo
+Pag 24: + BESS  400 MonteMina 1x220 kV Cristales –
+Pag 24: + BESS  82.1  S/E Agua Amarga 220 kV
+Pag 24: + BESS  11.2  S/E Curacaví 12 kV
+Pag 24: neta [MW]  Punto de conexión
+Pag 24: del Norte SpA  BESS Luz del Norte  mar-25 BESS  141 S/E Luz del Norte 23 kV
+Pag 24: AES Andes S.A.  Stand Alone VR1 y VR2  mar-25 BESS  60 S/E Alfalfal 220 kV
+Pag 24: GR Lenga SpA  PFV Gabriela + BESS  abr-25 BESS  220 Tap Off LT 1x220 kV El
+Pag 24: Chile S.A.  BESS Tocopilla  jun-25 BESS  116 S/E Central Tocopilla 110
+Pag 24: Marta  BESS Santa Marta  jun-25 BESS  10 S/E Central Santa Marta 33
+Pag 24: kV, S/E San Antonio
+Pag 24: Cuatro SpA  BESS Huatacondo  nov-25 BESS  98 S/E Santa Rita 23 kV
+Pag 24: Punta del Sol SpA  BESS Arenales  nov-25 BESS  300 S/E Cochrane 220 kV
+Pag 24: Colbún S.A.  BESS Chaca  nov-25 BESS  228 S/E Roncacho 220 kV
+Pag 24: ProjectCo SpA  Arena BESS  dic-25 BESS  220 Seccionamiento de línea
+Pag 24: de transmisión 1x220 kV
+Pag 25: Estudio para la Implementación del Módulo de Medición Fasorial  – Julio 2025  6
+Pag 25: neta [MW]  Punto de conexión
+Pag 25: Estepa Solar SpA  BESS Estepa Solar  feb-26 BESS  188 S/E Crucero 220 kV
+Pag 25: S.A. BESS Arica II  feb-26 BESS  30 S/E Arica 66 kV
+Pag 25: Solar Elena SpA  BESS Elena Fase I  feb-26 BESS  430 S/E Iberelena 33 kV
+Pag 25: Chile S.A.  BESS Los Loros  mar-26 BESS  46 S/E Central Parque Solar
+Pag 25: Chile S.A.  BESS Lile  abr-26 BESS  140 S/E TEN GIS
+Pag 25: S.A. BESS Libélula  may -26 BESS  199.2  S/E Libélula 33 kV
+Pag 25: SpA BESS Estela  may -26 BESS  187 S/E elevadora en 33 kV de
+Pag 25: Cristales SpA  BESS Cristales  jun-26 BESS  340 MonteMina 1x220 kV
+Pag 25: CMS SPVI SpA  BESS Hijuela  jul-26 BESS  9 S/E Vallenar 13,8 kV
+Pag 25: CMS SPVII SpA  BESS El Olivar  jul-26 BESS  9 S/E PS Marañón 13,8 kV
+Pag 25: 13,2 kV, S/E Chillán
+Pag 25: PFV Domeyko SpA  BESS Luna de Verano  sept -26 BESS  300 S/E Agua Amarga 220 kV
+Pag 25: kV, S/E San Sebastián
+Pag 25: SpA BESS Chicha Solar  oct-26 BESS  9 S/E Curac aví 12 kV
+Pag 25: Talca 12 kV, S/E El Totoral
+Pag 25: [MW]  Punto de conexión
+Pag 25: SpA Punta de Talca  mar-24 Eólico  80 S/E Central Talinay Oriente
+Pag 25: 220 kV
+Pag 25: o 9 S/E Longaví 13,2 kV
+Pag 25: o 80 S/E Leyda 110 kV
+Pag 25: o 9 S/E Peumo 23 kV
+Pag 25: o 9 S/E Cauquenes 13,8 kV
+Pag 25: 105 MW  abr-25 Fotovoltaic
+Pag 25: o 105 S/E PEQ
+Pag 26: Estudio para la Implementación del Módulo de Medición Fasorial  – Julio 2025  7
+Pag 26: [MW]  Punto de conexión
+Pag 26: [MW]  Punto de conexión
+Pag 26: SpA Generación Solar SpA  mar-25 BESS  60.5  S/E María Elena 24 kV
+Pag 26: SpA BESS del Desierto  mar-25 BESS  200 S/E Central Sol del
+Pag 26: BESS de 105 MW  may -25 BESS  105 S/E PEQ
+Pag 26: Nirivilo Transmisora de Energía S.A.  Nueva Línea 2x220 kV Don Goyo - La Ruca  may -26
+Pag 27: Estudio para la Implementación del Módulo de Medición Fasorial  – Julio 2025  8
+Pag 27: diciembre de 202 4 [3], y se compar ó con la versión de mayo de 2024, la cual fue analizada en el Estudio para la
+Pag 27: Implementación del Módulo de Medición Fasorial elaborado en 2024.  Se constata que en la nueva versión del
+Pag 27: que aparecen en  el ERST de diciembre 2024 .
+Pag 27: • 2x500 kV Jadresic  - Cumbre : En S/E Jadresic  500 kV hay puntos de monitoreo instruidos en los paños
+Pag 27: K8/K9 y en la S/E Cumbre en el paño K3 .
+Pag 27: en la S/E Nueva Pan de Azúcar 500 kV, en los paños K7/K8 y en la S/E Polpaico 500 kV, en el paño K1 .
+Pag 27: • 4x500kV Ancoa - Alto Jahuel : Actualmente, se cuenta con unidades PMU en S/E Ancoa paños K1 y K6 y
+Pag 27: S/E Alto Jahuel paños K1, K2 y K5.
+Pag 27: • 2x500kV Entre Ríos – Ancoa : Actualmente, se cuenta con unidades PMU instruidas en S/E Entre Ríos
+Pag 27: paños K13 y K14 y en S/E Ancoa paños K1 y K6.
+Pag 27: • 1x500kV Charrúa - Ancoa L3: En S/E Charrúa 500 kV hay un punto de monitoreo instruido en el paño K3
+Pag 27: y en S/E Ancoa, en los paños K1 y K6.
+Pag 27: • 2x500kV Charrúa - Entre Ríos : Actualmente, se cuenta con unidades PMU instruidas en S/E Charrúa paño
+Pag 27: K1 y en S/E Entre Ríos en los paños K13 o K14 .
+Pag 27: • 2x220kV Tineo - Puerto Montt : Actualmente se cuenta con unidades PMU instruidas en la S/E Tineo, en
+Pag 27: los paños J8/J9, J4 y J5, y en la S/E Puerto Montt en los paños J2, J3, JT4A, JT4B.
+Pag 28: Estudio para la Implementación del Módulo de Medición Fasorial  – Julio 2025  9
+Pag 28: [MW]  Paño  de conexión
+Pag 28: MESAMÁVIDA SPA  PE MESAMAVIDA  29-07-2022  Eólica  60.00 S/E MESAMAVIDA AT1
+Pag 28: HOLDINGS S.A.  PE TOLPAN SUR  24-11-2020  Eólica  80.9 0 S/E TOLPAN SUR JT1
+Pag 28: AR ALENA SPA  PE ALENA  13-12-2021  Eólica  83.92  S/E CENTRAL EOLICA ALENA
+Pag 28: COLBÚN S.A.  PE HORIZONTE NORTE  01-12-2024  Eólica  407.8  S/E HORIZONTE NORTE J1-J2
+Pag 28: DE TALCA SPA  PE PUNTA DE TALCA  14-02-2024  Eólica  79.24  S/E PUNTA DE TALCA JT1
+Pag 28: ALMEYDA SPA  PFV ALMEYDA  05-05-2020  Fotovoltaica  56.00 S/E ALMEYDA JT1
+Pag 28: CHILE S.A.  PFV AZABACHE  En pruebas  Fotovoltaica  58.07  S/E CHIU CHIU HT3
+Pag 28: S.A. PFV CAPRICORNIO  21-11-2022  Fotovoltaica  88.6 2 S/E ELEVADORA
+Pag 28: SPA PFV PMG CARACAS II  09-08-2023  Fotovoltaica  9.00 S/E CENTRAL CHAGUAL
+Pag 28: HOLDINGS S.A.  PFV USYA  07-12-2020  Fotovoltaica  55.00 S/E USYA HT1
+Pag 28: ANDES SOLAR IV SPA  PFV ANDES SOLAR IV  30-09-2024  Fotovoltaica  129.72  S/E FUTURO FT12
+Pag 28: SPA PFV DOÑA ANTONIA  28-08-2024  Fotovoltaica  79.3 6 PA S/E DOÑA ANTONIA HT1
+Pag 28: DON ESTEBAN SPA  PFV PMG DON OSCAR  02-09-2024  Fotovoltaica  9.00  PA S/E C.R. LLANOS
+Pag 28: DON ARTURO SPA  PFV PMG  LUCAS SOLAR  08-04-2024  Fotovoltaica  9.00 S/E C.R. LLANOS BLANCOS
+Pag 28: PATAGUILLA SOLAR SPA  PFV PMG PATAGUILLA  05-02-2025  Fotovoltaica  9.00 PA S/E PATAGUILLA FT1
+Pag 28: GR LIUN SPA  PFV TAMANGO  14-08-2024  Fotovoltaica  45.8 4 PA S/E TAMANGO B1
+Pag 28: GRANDE 5 SPA  PFV URIBE SOLAR  30-03-2017  Fotovoltaica  52.75  S/E URIBE SOLAR H1
+Pag 28: CHILE S.A.  PE VALLE DE LOS VIENTOS  21-03-2014  Eólica  88.9 0 S/E VALLE DE LOS VIENTOS
+Pag 28: SIERRA SPA  PE PUNTA SIERRA  05-06-2019  Eólica  81.1 9 PA S/E PUNTA SIERRA J7 -J8
+Pag 28: EÓLICA LA ESTRELLA SPA  PE LA ESTRELLA  24-06-2021  Eólica  49.1 0 S/E LA ESTRELLA HT1
+Pag 28: MAITÉN SPA  PE EL MAITEN  26-06-2020  Eólica  10.89  S/E PARQUE EOLICO EL
+Pag 28: VIENTOS DE RENAICO SPA  PE LA FLOR  16-06-2020  Eólica  32.4 0 S/E NAHUELBUTA BT2
+Pag 28: WPD DUQUECO SPA  PE LOMAS DE DUQUECO  03-08-2022  Eólica  58.00 S/E LOS ANGELES SUR B1
+Pag 28: WPD NEGRETE SPA  PE NEGRETE  15-06-2021  Eólica  35.34  S/E NEGRETE BT2
+Pag 29: Estudio para la Implementación del Módulo de Medición Fasorial  – Julio 2025  10
+Pag 29: [MW]  Paño  de conexión
+Pag 29: CUATRO SPA  PFV HUATACONDO  05-09-2019  Fotovoltaica  88.1 0 PA S/E SANTA RITA JT1
+Pag 29: PEDRO III SPA  PFV JAMA  24-09-2016  Fotovoltaica  51.00 S/E SOLAR JAMA JT1 -JT2
+Pag 29: GRANDE 1 SPA  PFV LA CRUZ SOLAR  07-04-2022  Fotovoltaica  52.02  S/E TAP OFF LA CRUZ SOLAR
+Pag 29: SPA PFV LA HUAYCA II  04-06-2018  Fotovoltaica  25.05  S/E LA HUAYCA 2 BT1
+Pag 29: PACÍFICO SPA  PFV PMG ANTAY  03-11-2017  Fotovoltaica  9.00 S/E CENTRAL
+Pag 29: TERMOPACIFICO 220KV
+Pag 29: SOLAR S.A.  PFV CARRERA PINTO  03-05-2016  Fotovoltaica  90.6 8 S/E CARRERA PINTO J9
+Pag 29: CHILE S.A.  PFV CHAÑARES  28-05-2015  Fotovoltaica  35.89  S/E CENTRAL CHAÑARES
+Pag 29: CHILE S.A.  PFV LALACKAMA  02-06-2015  Fotovoltaica  54.8 4 PA S/E JADRESIC J5 -J6
+Pag 29: SOLAR S.A.  PFV PAMPA SOLAR NORTE  19-10-2016  Fotovoltaica  65.8 7 S/E CENTRAL PAMPA NORTE
+Pag 29: UNO SPA  PFV SOL DE LOS ANDES  31-01-2022  Fotovoltaica  89.71  S/E SOL DE LOS ANDES HT1
+Pag 29: MORADO S.A.  PFV DOÑA CARMEN SOLAR  29-11-2017  Fotovoltaica  34.54  S/E DOÑA CARMEN J2
+Pag 29: SEIS SPA  PFV LA HUELLA  23-07-2021  Fotovoltaica  84.00  S/E CENTRAL LA HUELLA JT1
+Pag 29: SANTIAGO SOLAR S.A.  PFV SANTIAGO SOLAR  31-01-2018  Fotovoltaica  90.83  S/E CENTRAL SANTIAGO
+Pag 29: CHILE S.A.  PFV MANZANO  04-01-2024  Fotovoltaica  91.74  S/E EL MANZANO (ENEL
+Pag 29: CHILE S.A.  PFV DON HUMBERTO  07-11-2024  Fotovoltaica  80.80  PA S/E DON HUMBERTO HT1
+Pag 29: SAN ANDRÉS SPA  PFV SAN ANDRES  30-04-2014  Fotovoltaica  50.6 0 S/E SECCIONADORA SAN
+Pag 29: ANDES SPA  PFV PMG  DE LOS ANDES  02-05-2022  Fotovoltaica  8.928  S/E ANDES (AES GENER)
+Pag 29: DESIERTO SPA  PFV PMG  DEL DESIERTO  02-05-2022  Fotovoltaica  8.35  S/E ANDES (AES GENER)
+Pag 29: NORTE SPA  PMGD PFV SOL DEL NORTE  02-05-2022  Fotovoltaica  2.9393  S/E VICUÑA 23 KV
+Pag 29: WEST SPA  PFV PMG NORTH WEST  19-02-2024  Fotovoltaica  8.99  S/E CENTRAL PAJONALES
+Pag 29: DISTRIBUIDA SPA  PFV PMG  SOLAR PALERMO  29-01-2025  Fotovoltaica  8.98  S/E EL PEUMO 66KV
+Pag 29: S.A. PFV PMG  EL AGUILA  04-10-2018  Fotovoltaica  2.014  TAP OFF EL ÁGUILA
+Pag 29: CALAMA SOLAR 2 SPA  PFV PMG PUERTO SECO SOLAR  01-09-2017  Fotovoltaica  8.959  S/E CALAMA 23 KV
+Pag 29: RTS ENERGÍA S.A.  PFV PMG PILAR LOS AMARILLOS  20-12-2021  Fotovoltaica  3 S/E EL SALVADOR 23KV
+Pag 30: Estudio para la Implementación del Módulo de Medición Fasorial  – Julio 2025  11
+Pag 30: Cabe señalar  que los puntos de monitoreo  correspondientes a centrales generadoras mayores o iguales a 9 MW
+Pag 30: de 2025, se determinaron las barras más débiles en cada Área de Control de Tensión (ACT) del SEN , tanto para
+Pag 30: El área Norte Grande corresponde a las instalaciones desde la S/E Los Changos hacia el  norte  y se distinguen dos
+Pag 30: subáreas de CT: subárea norte -centro, que se compone por las subestaciones al norte de las SS/EE O’higgins y
+Pag 30: Laberinto, y la subárea sur, la cual comprende las  barras de 22 0 kV  de SS/EE Andes, Nueva Zaldívar, Domeyko ,
+Pag 30: a Parinacota 220  kV. Actualmente  hay una PMU instruida  para la S/E Parinacota .
+Pag 30: en la central Lalackama  y otro en S/E Lagunas  asociado  al STATCOM .
+Pag 30: En cuanto a  la subárea sur, la barra más débil pre y post contingencia corresponde a Andes 220 kV . Para esta
+Pag 30: AES Andes, se debe habilitar y revisar el correcto funcionamiento de las PMU instruida s en S/E Andes.
+Pag 31: Estudio para la Implementación del Módulo de Medición Fasorial  – Julio 2025  12
+Pag 31: 220 kV  y 11 0 kV , entre las subestaciones Paposo 220 kV, Illapa 220 kV y Cumbre 220 kV, y la subárea centro -sur,
+Pag 31: que incluye los sistemas de 500, 220 y 110 kV comprendidos entre las barras de 500 kV de S/E Parinas y de 22 0
+Pag 31: kV de S/E Illapa por el norte, y las barras de 500 kV de S/E Polpaico y de 220 kV de las SS/EE Centella y Los Vilos ,
+Pag 31: La barra más débil  de la subárea norte del ACT Norte Chico  pre-contingencia corresponde a S/E Paposo 22 0 kV  y
+Pag 31: las barras más débiles post contingencia corresponde  a las de S/E Francisco y S/E Cachiyuyal 22 0 kV . Actualmente,
+Pag 31: el punto de monitoreo  en 220 kV más cercan o a S/E Paposo , S/E Francisco y S/E Cachiyuyal  corresponde a la PMU
+Pag 31: respecto a los parques ERV, el más efectivo para el CT en las SS/EE Paposo, Francisco y Cachiyuyal es el PFV Pampa
+Pag 31: Solar Norte  y, en la S/E Cumbre  220 kV , los más efectivos son los parques fotovoltaicos Almeyda  y Malgarida I y
+Pag 31: pre y post -contingencia corresponde a la S/E Cumbre  500 kV . Los recursos más eficaces para el control de tensión
+Pag 31: En el sistema de 220 kV, en el escenario de demanda baja con bajas transferencias por el sistema de 500 kV del
+Pag 31: ACT la barra más débil corresponde a la de la S/E Don Goyo , tanto en operación normal como post contingencia
+Pag 31: para la falla del único circuito en servicio de la línea Nueva Pan de Azúcar – Don Goyo 220 kV. En el escenario de
+Pag 31: demanda alta con altas transferencias por el sistema de 500 kV del ACT, al operar el siste ma de 220 kV abierto en
+Pag 31: la S/E Don Héctor , medida operacional que se aplica normalmente  en horas de alta generación solar, la barra más
+Pag 31: débil es la de S/E Don Héctor  que queda conectada hacia la S/E Maitencillo, tanto en operación normal como post
+Pag 31: contingencia para la desconexión de un transformador Maitencillo 500/220 kV.  Al respecto, se define la necesidad
+Pag 31: de un  nuevo punto de m onitoreo  en S/E Don Héctor , en el paño J1, correspondiente a la línea que va hacia S/E
+Pag 31: Maitencillo, pasando por S/E Agua Amarga .
+Pag 31: Para el control dinámico  de tensión de las barras de 220 kV los recursos más eficaces corresponden al CER de
+Pag 31: Esta área de control de tensión está conformada por los sistemas de 500 kV, 220 kV y 110 kV de la zona centro
+Pag 31: del SEN, comprendidos, entre las barras de Los Vilos 220 kV y las barras de Polpaico 500 kV por el norte y  las
+Pag 31: barras de Alto Jahuel 500 kV, 220 kV, 110 kV  por el sur . Esta área de control de tensión está compuesta de 3
+Pag 31: subáreas, correspondientes al área Centro 500 kV y 220 kV, la Región Metropolitana 220 kV y 110 kV, y a la Quinta
+Pag 31: región Costa 220 kV y 110 kV.
+Pag 32: Estudio para la Implementación del Módulo de Medición Fasorial  – Julio 2025  13
+Pag 32: Aconcagua , respetivamente,  corresponden a la s barras de S/E Polpaico 500 kV y S/E Rio Aconcagua 220 kV . Para
+Pag 32: del STATCOM de El Chacay cuyo aporte principal se refleja en las barras de Quillota, Nogales y Río Aconcagua 220
+Pag 32: corresponde a  S/E El Salto  220 kV . Al respecto,  para los 3 escenarios analizados en el estudio , los aportes más
+Pag 32: contingencia, corresponde a S/E San Antonio  110 kV . los aportes más eficaces corresponden a las centrales
+Pag 32: monitoreo  en S/E San Antonio 110 kV, en el paño H1, correspondiente a la línea que va hacia Alto Melipilla .
+Pag 32: Comprende las instalaciones entre la subestación Alto Jahuel 500 kV, 220 kV y 154 kV y las subestaciones Cautín
+Pag 32: 220 kV y Temuco 220 kV. Esta área de control se divide en tres subáreas, la subárea de 500/220 kV, subárea de
+Pag 32: En el sistema de 500 kV , la barra más débil pre-contingencia corresponde a  S/E Alto Jahuel, mientras que la barra
+Pag 32: más débil post contingencia corresponde a la de S/E Entre Ríos  para la falla del Statcom de la misma subestación.
+Pag 32: Para  la S/E Alto Jahuel los recursos más efectivos son los Statcom de las SS/EE Maipo y Entre Ríos , mientras que
+Pag 32: entre las SS/EE Ancoa y Charrúa el recurso más efectivo es el Statcom de S/E Entre Ríos.  Por lo tanto, no  se
+Pag 32: En el sistema de 22 0 kV , la barra más débil corresponde a la S/E Los Peumos  de 22 0 kV . Al respecto, s e determina
+Pag 32: un nuevo punto de m onitoreo  en el extremo Los Peumos del C to.1 de la  línea Mulchén - Los Peumos 220 kV (en
+Pag 32: La barra  más débil  de la subárea de 154 kV, pre y post contingencia es S/E Paine 154 kV . Para esta subárea los
+Pag 32: variaciones en la potencia reactiva corresponde  a la barra  de 154 kV de la S/E Alonso  de Ribera . Los principales
+Pag 33: Estudio para la Implementación del Módulo de Medición Fasorial  – Julio 2025  14
+Pag 33: Comprende las instalaciones desde la S/E Cautín 220 kV hacia el sur , donde l a barra más débil corresponde a la
+Pag 33: barra de S/E Gamboa 220kV . Para el control de tensión de esta área,  los elementos con mayor efectividad entre
+Pag 33: Norte Grande   Norte -Centro   Parinacota 220 kV   E/C  Línea Parinacota – Cóndores (J1
+Pag 33: Norte Grande   Sur  Andes 220 kV   E/S Barra 354 kV de S/E Andes
+Pag 33: Norte Chico   Norte   Paposo 220 kV   E/S1 PFV Conejo
+Pag 33: Norte Chico   Norte   Francisco  220kV  E/S1  PFV Conejo
+Pag 33: Norte Chico   Norte   Cachiyuyal  220kV  E/S1  PFV Conejo
+Pag 33: Norte Chico   Centro -Sur  Cumbre 500kV  E/S S/E Cumbre K3
+Pag 33: Norte Chico   Sistema 220kV   Don Goyo  220kV  E/S  Líneas Pan de Azúcar - Don Goyo
+Pag 33: Norte Chico   Sistema 220kV   Don Héctor  220kV  E/S PFV El Romero
+Pag 33: Norte Chico   Sistema 220kV   Maitencillo  220kV  E/S J3, J4 y J5  de Maitencillo 220kV
+Pag 33: Centro –Norte   500 y 220 kV   Polpaico 500 kV   E/S  Línea Polpaico – Lo Aguirre (K1
+Pag 33: Centro –Norte   500 y 220 kV   Rio Aconcagua 220kV  E/O CER Polpaico  (JT4 Polpaico)
+Pag 33: Centro –Norte   Reg. Metropolitana   El Salto 220 kV   E/O CER Polpaico (JT4 Polpaico)
+Pag 33: Centro –Norte   Quinta Región Costa   S/E San Antonio 110 kV  Nuevo Punto  Línea San Antonio – Alto Melipilla
+Pag 33: Centro –Sur  500/220 kV  Entre Ríos  500kV E/S  Línea Entre Rios – Ancoa (K13/K14
+Pag 33: Centro –Sur  500/220 kV  Alto Jahuel  500kV  E/S K1, K2  y K5 de Alto Jahuel 500kV
+Pag 33: Centro –Sur  500/220 kV  Los Peumos  220kV  Nuevo Punto  Mulchén - Los Peumos 220 kV
+Pag 33: Centro –Sur  Concepción   S/E Alonso de Ribera  154kV  E/S1  Línea Concepción - San Vicente (A3
+Pag 33: Sur - Gamboa 220kV  E/C  Chiloé - Gamboa 220 kV L2,
+Pag 34: Estudio para la Implementación del Módulo de Medición Fasorial  – Julio 2025  15
+Pag 34: S/E Lagunas  que se determina  como nuevo punto de monitoreo .
+Pag 34: Área  Subárea  S/E Paño  Capacidad  Elemento Monitoreado  Estado PMU
+Pag 34: Norte Grande  Sur Domeyko  J10 80(a)/120(i)  SVC Domeyko  E/C
+Pag 34: Centro -Sur Nueva Pan de Azúcar  K3/K6  200(a)/100(i)  SVC Nueva Pan de Azúcar  E/C
+Pag 34: Norte 500 y 220 kV  Cerro Navia  JT4 65(a)/140(i)  STATCOM Cerro Navia  E/C
+Pag 34: Centro - Sur Subárea 500/220 kV  Maipo  JT2 200(a)/200(i)  STATCOM Maipo  E/C
+Pag 34: El Plan de Recuperación de Servicio (PRS) publicado en junio 2024, especifica las secuencias de maniobras para el
+Pag 35: Estudio para la Implementación del Módulo de Medición Fasorial  – Julio 2025  16
+Pag 35: La Zona Norte Grande comprende instalaciones desde la subestación S/E Changos 500 kV hacia el norte. Esta zona
+Pag 35: La Zona Norte Chico comprende instalaciones desde S/E Parinas 220 kV, por el norte, hasta S/E Nogales 220 kV
+Pag 35: La Zona de Interconexión comprende instalaciones desde S/E Changos 500 kV, por el norte, hasta S/E Polpaico
+Pag 35: La Zona de la Quinta comprende desde S/E Quillota 110 kV por el norte, hasta S/E Las Vegas 110 kV, incluyendo
+Pag 35: La Zona Centro comprende desde S/E Polpaico 500 kV por el norte, hasta S/E Charrúa 500 kV hacia el sur. Se divide
+Pag 35: La Zona Sur comprende desde S/E Charrúa 220 kV, por el norte, hacia el sur. Por sus características, presenta dos
+Pag 35: Norte Grande  Arica  E/S Paño BT3 de S/E Arica
+Pag 35: E/S Paño J1 de S/E Lagunas
+Pag 35: Iquique  E/C Paño JT1 de S/E Parinacota
+Pag 35: Tarapacá  E/S Paño J3 de S/E Tarapacá
+Pag 35: Centro  E/S Paño J15 de S/E Crucero
+Pag 35: E/S Paño J6A de S/E Tocopilla
+Pag 35: Capricornio  E/S Paño J1 de S/E Chacaya
+Pag 35: E/C Paño J1 de S/E Mantos Blancos
+Pag 35: O’Higgins  E/S Paño J3 de S/E Domeyko
+Pag 35: E/C Paño J3 de S/E Atacama
+Pag 35: Cordillera  E/S Paño J5 de S/E Angamos
+Pag 35: Norte Chico  Diego de Almagro  E/S Paño J1 de S/E Diego de Almagro
+Pag 35: Cardones  E/S Paño J12 de S/E Cardones
+Pag 35: E/S Paño H1 de S/E Central Huasco
+Pag 35: Pan de Azúcar  E/S Paños J3 y J4 de S/E Pan de Azúcar
+Pag 35: E/C Paño HT de S/E C entral El Peñ ón
+Pag 35: Interconexión   E/C Paño K2/K3 de S/E N. Cardones
+Pag 35: E/C Paño  K7/K8 de S/E N. Maitencillo
+Pag 35: Quinta  Costa  E/S Paños J7/J8 y J8/J9 de S/E Nogales
+Pag 35: E/S Paño J11/J12 de S/E San Luis
+Pag 35: Valle  E/C Paño H1 de S/E Las Vegas
+Pag 35: Centro  Cerro Navia  E/S Paño K1 de S/E Polpaico
+Pag 35: E/S Paño K5/K6 de S/E Lo Aguirre
+Pag 35: E/S Paño J1 de S/E Rapel
+Pag 36: Estudio para la Implementación del Módulo de Medición Fasorial  – Julio 2025  17
+Pag 36: Alto Jahuel  E/S Paño K6 de S/E Ancoa
+Pag 36: Itahue  E/S Paño AT4 de S/E Itahue
+Pag 36: E/S Paños A9 y A10 de S/E Tinguiririca
+Pag 36: Sur Bío-Bío E/S Paños J1, J4, J24 y K1 de S/E Charrúa
+Pag 36: E/S Paño A3 de S/E Concepción
+Pag 36: E/S Paño A1 de S/E Coronel
+Pag 36: Araucanía  E/S Paño J3 de la S/E Valdivia
+Pag 36: E/S Paño J3 de S/E Puerto Montt
+Pag 36: E/O Paño B1 de S/E Central Pilmaiquén
+Pag 36: E/C Paño B2 de S/E Central Pullinque
+Pag 36: El estudio de sintonización de estabilizadores de sistemas de potencia (PSS) publicado en  junio de 2024, identific ó
+Pag 36: En el Estudio de Plan de Defensa contra Contingencias  del año 2024  [5], se considera n los siguientes  planes de
+Pag 37: Estudio para la Implementación del Módulo de Medición Fasorial  – Julio 2025  18
+Pag 37: El Plan de Defensa Contra Contingencias Críticas Quillota -Polpaico 2x220kV (Fase 1) consiste en un esquema
+Pag 37: automático que realiza mediciones de potencia en las líneas de 220 kV Quillota -Polpaico y Quillota -Nogales y que
+Pag 37: al detectar la apertura del doble circuito Quillota -Polpaico 2x220kV, y en función de las tra nsferencias de potencia
+Pag 37: 2x220kV Quillota -Nogales 220kV a valores admisibles, sin sobrecarga.
+Pag 37: El Plan de Defensa Contra Contingencias Críticas  San Luis -Quillota 2x220kV (Fase 3) se encuentra destinado a
+Pag 37: totalidad de la generación de la subestación San Luis (línea 2x220kV San Luis -Agua  Santa). El principal recurso
+Pag 37: disparo al doble enlace 2x220kV San Luis - Agua Santa 220kV en ambos extr emos, al detectarse la doble apertura
+Pag 37: del vínculo 2X220kV San Luis –Quillota por una contingencia de severidad 6.
+Pag 37: han instruid o PMU  para el monitoreo de todas  las centrales generadoras sobre 9 MW, entre las cuales ya se
+Pag 37: La entrada de la S/E Parinas afecta  al PDCE de la Zona Norte (actualmente en implementación) , tanto en su lógica
+Pag 37: 500 kV Los Changos – Parinas  concluyen que , al superar cierto umbral de transferencia  conjunta  con la línea  220
+Pag 38: Estudio para la Implementación del Módulo de Medición Fasorial  – Julio 2025  19
+Pag 38: - Umbral NORTE → SUR: 560 MW
+Pag 38: - Umbral SUR → NORTE: 770 MW   La medición de la potencia es realizada conjuntamente en el
+Pag 38: extremo Parinas de las líneas de 220 kV Likanantai – Parinas y
+Pag 38: - Reactor 175 MVAr en S/E Cardones
+Pag 38: - Reactores de STATCOM de la S/E Nueva Pan de Azúcar
+Pag 38: - Reactor 175 MVAr en S/E Los Changos
+Pag 38: 500 kV  190 400 MW N  → S
+Pag 38: 500 MW S  → N
+Pag 38: Maitencillo 500 kV  230 600 MW N  → S
+Pag 38: 400 MW S  → N - Puenteo CCSS de la línea Los Changos – Parinas,
+Pag 39: Estudio para la Implementación del Módulo de Medición Fasorial  – Julio 2025  20
+Pag 40: Estudio para la Implementación del Módulo de Medición Fasorial  – Julio 2025  21
+Pag 40: 5.5 Requerimientos de monitoreo en S S/EE con alta concentración de PMGD
+Pag 40: generación igual o mayor  a 20 MW de PMGD.  Estas subestaciones corresponden a:
+Pag 40: Tabla 5-15 Subestaciones con Inyección PMGD mayores a 20 MW
+Pag 40: S/E Capacidad de
+Pag 40: [MW]  Transformadores
+Pag 40: ALCONES  20.27  2 2 CGE TRANSMISIÓN S.A.
+Pag 41: Estudio para la Implementación del Módulo de Medición Fasorial  – Julio 2025  22
+Pag 41: CHIMBARONGO  20.52  2 2 CGE TRANSMISIÓN S.A.
+Pag 41: LAS COMPAÑIAS  20.56  1 1 CGE TRANSMISIÓN S.A.
+Pag 41: SAN FRANCISCO DE MOSTAZAL  20.44  2 2 CGE TRANSMISIÓN S.A.
+Pag 42: Estudio para la Implementación del Módulo de Medición Fasorial  – Julio 2025  23
+Pag 42: del año 2025 .
+Pag 43: Estudio para la Implementación del Módulo de Medición Fasorial  – Julio 2025  24
+Pag 43: implementación.  Última fecha informada p ara su puesta en servicio es el segundo semestre de 2025 .
+Pag 44: Estudio para la Implementación del Módulo de Medición Fasorial  – Julio 2025  25
+Pag 44: en las SS/EE Maitencillo, Alto Jahuel, Ancoa  y Charrúa y  el nuevo PDC Norte Grande . Lo anterior, sin perjuicio
+Pag 45: Estudio para la Implementación del Módulo de Medición Fasorial  – Julio 2025  26
+Pag 46: Estudio para la Implementación del Módulo de Medición Fasorial  – Julio 2025  27
+Pag 47: Estudio para la Implementación del Módulo de Medición Fasorial  – Julio 2025  28
+Pag 47: E/C  NORTE GRANDE  Lado AT del transformador elevador del parque  PFV CEME 1 (C2010)
+Pag 47: E/C  NORTE GRANDE  Lado AT del transformador elevador del parque  PFV TAIRA (C2093)
+Pag 47: E/C  NORTE GRANDE  Bornes de la unidad  TER KELAR CC1 -TG1 (U2025)
+Pag 48: Estudio para la Implementación del Módulo de Medición Fasorial  – Julio 2025  29
+Pag 49: Estudio para la Implementación del Módulo de Medición Fasorial  – Julio 2025  30
+Pag 50: Estudio para la Implementación del Módulo de Medición Fasorial  – Julio 2025  31
+Pag 51: Estudio para la Implementación del Módulo de Medición Fasorial  – Julio 2025  32
+Pag 51: E/C  CENTRO  Bornes de la unidad  HP ALFALFAL II U1 (U2204)
+Pag 51: E/C  CENTRO  Bornes de la unidad  HP LAS LAJAS U1 (U2206)
+Pag 51: E/C  CENTRO  Paño AT1 de SE Solis  PFV GRAN TENO (C2094)
+Pag 52: Estudio para la Implementación del Módulo de Medición Fasorial  – Julio 2025  33
+Pag 53: Estudio para la Implementación del Módulo de Medición Fasorial  – Julio 2025  34
+Pag 54: Estudio para la Implementación del Módulo de Medición Fasorial  – Julio 2025  35
+Pag 54: requerido deberá ser de 120 Kbps (0.12  Mbps ) por punto de monitoreo, no obstante, este valor tendrá que
+Pag 55: Estudio para la Implementación del Módulo de Medición Fasorial  – Julio 2025  36
+Pag 56: Estudio para la Implementación del Módulo de Medición Fasorial  – Julio 2025  37
+Pag 56: • Certificación IEEE 60255 -118-1-2018
+Pag 56: Estudio y del estándar IEEE 60255 -118-1-2018 , cuyos detalles se encuentran en el ATSM y en el Anexo 6.1
+Pag 56: S/E, entre otros).
+Pag 57: Estudio para la Implementación del Módulo de Medición Fasorial  – Julio 2025  38
+Pag 58: Estudio para la Implementación del Módulo de Medición Fasorial  – Julio 2025  39
+Pag 58: almacenamiento mayores o iguales a 9 MW.
+Pag 59: Estudio para la Implementación del Módulo de Medición Fasorial  – Julio 2025  40
+Pag 59: Clase de precisión  IEEE 60255 -118-1-2018  M-Class
+Pag 59: sincrofasores  IEEE C37.118 -2011 o IEEE 60255 -118-1-2018
+Pag 60: Estudio para la Implementación del Módulo de Medición Fasorial  – Julio 2025  41
+Pag 61: Estudio para la Implementación del Módulo de Medición Fasorial  – Julio 2025  42
+Pag 61: neta [MW]  N° PMU
+Pag 61: ACCIONA ENERGÍA CHILE HOLDINGS S.A.  PFV MALGARIDA  Fotovoltaica  204 1 0
+Pag 61: ARCADIA GENERACIÓN SOLAR S.A.  PFV DOMEYKO  Fotovoltaica  207 1 0
+Pag 61: MAIPO  HP FLORIDA II  Hidroeléctrica  20 0 2
+Pag 62: Estudio para la Implementación del Módulo de Medición Fasorial  – Julio 2025  43
+Pag 62: neta [MW]  N° PMU
+Pag 62: CENTRAL YUNGAY S.A.  TER YUNGAY  Termoeléctrica  200 0 4
+Pag 62: COMPAÑÍA BARRICK CHILE GENERACIÓN SPA  PE PUNTA COLORADA  Eólica  20 0 1
+Pag 62: ELÉCTRICA PUNTILLA S.A.  HP ITATA  Hidroeléctrica  20 0 2
+Pag 63: Estudio para la Implementación del Módulo de Medición Fasorial  – Julio 2025  44
+Pag 63: neta [MW]  N° PMU
+Pag 63: EMPRESA ELÉCTRICA CARÉN S.A.  HP CARILAFQUEN  Hidroeléctrica  20 0 2
+Pag 63: ENEL GREEN POWER CHILE S.A.  PFV LAS SALINAS  Fotovoltaica  203 1 0
+Pag 64: Estudio para la Implementación del Módulo de Medición Fasorial  – Julio 2025  45
+Pag 64: neta [MW]  N° PMU
+Pag 64: GPG SOLAR CHILE 2017 SPA  PFV SAN PEDRO  Fotovoltaica  104 1 0
+Pag 65: Estudio para la Implementación del Módulo de Medición Fasorial  – Julio 2025  46
+Pag 65: neta [MW]  N° PMU
+Pag 65: HIDROANGOL SPA  HP RIO PICOIQUEN  Hidroeléctrica  20 0 2
+Pag 65: IBEREÓLICA CABO LEONES II S.A.  PE CABO LEONES II  Eólica  207 1 0
+Pag 66: Estudio para la Implementación del Módulo de Medición Fasorial  – Julio 2025  47
+Pag 66: neta [MW]  N° PMU
+Pag 66: PLANTA SOLAR TOCOPILLA SPA  PFV TAIRA  Fotovoltaica  203 1 0
+Pag 66: Tabla 7-3 Nuevos puntos de monitoreo de la red WAMS para el período 202 5-2026 en nuevas instalaciones de generación y
+Pag 67: Estudio para la Implementación del Módulo de Medición Fasorial  – Julio 2025  48
+Pag 67: QUILLAGUA II: PARQUE FOTOVOLTAICO + BESS DE 105 MW  FOTOVOLTAICO+BESS  PARQUE FOTOVOLTAICO NUEVO QUILLAGUA SPA  2
+Pag 68: Estudio para la Implementación del Módulo de Medición Fasorial  – Julio 2025  49
+Pag 68: Tabla 7-4 Nuevos puntos de monitoreo de la red WAMS para el período 202 5-2026 en nuevas  instalaciones de transmisión
+Pag 68: PAÑO DE LÍNEA  NUEVA LÍNEA 2X220 KV
+Pag 68: PEUMOS – MULCHÉN 220KV  SE LOS PEUMOS  CONTROL DE TENSIÓN  ALFA TRANSMISORA DE
+Pag 69: Estudio para la Implementación del Módulo de Medición Fasorial  – Julio 2025  50
+Pag 70: Estudio para la Implementación del Módulo de Medición Fasorial  – Julio 2025  51
+Pag 70: 7.4.4 Puntos de alta concentración PMGD (>20MW)
+Pag 70: Tabla 7-5 Nuevos puntos de monitoreo de la red WAMS para el período 2025 -2026 en puntos con alta concentración PMGD (>20MW)
+Pag 70: S/E Inyección PMGD [MW]  Transformadores
+Pag 70: ALCONES  20.27  2 2
+Pag 70: CHIMBARONGO  20.52  2 2
+Pag 70: LAS COMPAÑIAS  20.56  1 1
+Pag 70: SAN FRANCISCO DE MOSTAZAL  20.44  2 2
+Pag 71: Estudio para la Implementación del Módulo de Medición Fasorial  – Julio 2025  52
+Pag 71: [2] Estudio para la Implementación del Módulo de Medición Fasorial , Coordinador Eléctrico Nacional, Julio  2024 .
+Pag 71: 2024 .
+Pag 71: Nacional, junio  2025.
+Pag 71: [5] Estudio  para Plan de Defensa contra Contingencias Extremas , Coordinador Eléctrico Nacional, junio  2025.
+Pag 71: [6] Estudios para Plan de Recuperación de Servicio , Coordinador Eléctrico Nacional, junio  2024.
+Pag 71: 374-Proyectos -en-Construcci ón.pdf  - Comisión Nacional de Energía, junio de 2025.
+Pag 71: [8] Estudio  de Sintonización de Estabi lizadores de Potencia (PSS) , Coordinador Eléctrico Nacional, junio  2024.
+Pag 71: [9] Estudio de Control de Frecuencia y Determinación de Reservas , Coordinador Eléctrico Nacional, junio  2025.
+Pag 71: [10] Proyectos en Gestión de Conexión , Coordinador Eléctrico Nacional, junio  2025.
+Pag 72: Estudio para la Implementación del Módulo de Medición Fasorial  – Julio 2025  53
