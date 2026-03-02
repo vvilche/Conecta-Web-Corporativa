@@ -1,0 +1,465 @@
+FCU713-S01
+MB712-S01
+MB811-S01
+CN823-S01
+xDI811-S01
+xDOR811-I01
+xAI811-I01
+xAO811-I01
+MB821-S01
+COM812-S01
+PW732-S02
+HX-ZK-128-2
+HD812-S01
+UIO811-S01
+xDIR811-I01
+xDOR812-S01
+xDI812-S01
+xDOR813-S01
+xTI811-I01
+xPT811-S01
+xPT812-S01
+CN231
+AEF6512-2T-S
+GW042-2E2S-WSN/5G-S
+GCU5001-S11
+PW5005DC-S01
+AO5008-S01
+DI5016-S01
+DO5016-S01
+UIO5008-S01
+COM5004RTU-S01
+COM5002TCP-S01
+IM扩展模块
+IM3202RJ-S01
+2路以太网口，支持星型，菊花链。最多支持扩展31个节点。
+8路模拟量输入模块(电流)
+AI3208-S01
+8路模拟量电流信号输入模块，支持（0～10）mA、（4～20）mA
+8路模拟量输出模块(电流)
+AO3208-S01
+8路模拟量电流信号输出模块，支持（0～10）mA、（4～20）mA、（0～20）mA
+16路开关量输入模块
+DI3216-S01
+16路数字量输入模块，支持无源触点信号，输入支持PNP和NPN
+16路开关量输出模块
+DO3216-S01
+16路数字量输出模块，支持无源晶体管触点输出
+空模块
+AM3200-S01
+机架-06槽
+CN3206-S01
+机架（6槽），尺寸（高×宽）：120×140
+SUP-5216
+触摸屏
+CN5018-S01
+PW733W
+PW711
+PCS
+AI5008IV-S01
+No.
+No.
+Name
+Name
+Model Description
+Model
+Model
+Qty
+Total Amount (USD)
+Remark
+CXT-SKC5SABM3A1C02AAB230AEF1
+(0~400)inH20
+SET
+SKP Pressure Transmitter (Direct Mount Type)
+CXT-SKP9SABM300A2AA000AEFLF1
+(0~6000)psi
+[9]Range:700~70000kPa;
+[S]Output:(4~20) mA+HART (7.0), linear output;
+[A]Accuracy:Standard accuracy;
+[B]Housing Type:Aluminum alloy, 1/2-14NPT(F);
+[M3]LCD display:LCD display;
+[00]EX Approval:None (for ordinary locations);
+[A]Process Connection:1/2-14NPT (female thread);
+[2A]Wetted/Diaphragm Materials:316/316L;
+[A]Filled Fluid:Silicone oil;
+[00]Mounting Bracket:None;
+[0]Tag Plate:None (Tag.?No.?on?nameplate);
+[A]Cable Entry:Plastic end cap + dust plug;
+[E]Language:English;
+[FL]Additional options (Required):APL;
+[F1]Additional Options:Factory Calibration Test Report
+SL903-5F003V4N120B201
+Measuring range: (0-2000) mm
+Process connection/Material: DN50 CLASS150 RF 304
+Flange standard: ASME
+Antenna type/material: Lens /304+PTFE
+Accuracy: ±1mm
+Blind area: 100mm
+Frequency range: 80Ghz
+Exd IIC T6 Gb
+，
+IP67
+Field display/programming: LCD
+Power supply: 24V DC, two-wire system
+Shell material: cast aluminum
+Signal output: (4-20) mA+Hart
+Electrical connection: M20*1.5
+SL901-1F03V2N120B202
+Measuring range: (0-2000) mm
+Rod length: 2000mm
+Process connection/Material: DN50 CLASS150 RF 304
+Flange standard: ASME
+Antenna type/Material: rod type /316L
+Accuracy: ±5mm
+Blind area: 300mm
+Frequency range: 1.8Ghz
+Exd IIC T6 Gb
+，
+IP67
+Field display/programming: LCD
+Power supply: 24V DC, two-wire system
+Shell material: cast aluminum
+Signal output: (4-20) mA+Hart
+Electrical connection: M20*1.5
+WZPKB1S-746/TH01ABX
+Range :(-50~450)
+℃
+;
+Length/depth: 450/300
+Index number: Pt100
+Level A
+Output signal: (4 ~ 20)mA+HART
+With liquid crystal display
+Power supply: 24VDC
+Accuracy: ±0.2%F.S
+Junction box material: cast aluminum
+Electrical connection: NPT1/2 "
+Exd
+Ⅱ
+CT6
+，
+IP65
+Armouring outer diameter: φ6/304
+Installation form: fixed thread M27*2
+Casing outer diameter: φ16
+Casing material: 304
+SFE9001-025GF0W01300100Y3DC
+DN25
+Integrated flange type
+Flange standard: HG/T20592-09 DN25 PN40 RF
+Temperature: (0 ~ 120) ℃
+Electrode :316L(two measurements)
+Lining: PTFE
+Output signal :(4 ~ 20)mA+HART
+Power supply :24VDC
+Accuracy: 0.5 grade
+No explosion-proof, protection class :IP65
+Electrical connection :M20*1.5
+Flow range: 1 ~ 10)m3/h
+Sensor housing material: carbon steel
+Body flange material: carbon steel
+Calibrator
+Price List of Control Valve
+Record No.
+：
+Q/SUPCON L 14 90 T-006   A0
+EXW Hangzhou
+Tag No.
+Media/ Temp.
+Nominal  Diameter
+Nominal Pressure
+Flange Standard/ Connection Type
+Bonnet Type
+Body Material
+Trim Material
+Leakage Class
+Air Supply/ Electricity
+Actuator
+Accessories
+QTY (Set)
+ZKLT2025HW001
+Water/AMB.
+Top-Guided Single-Seated Control Valve
+LN8100
+2"
+CL150
+ASME B16.5 RF
+Standard
+CF8
+304
+Ⅳ
+0.4MPa
+Pneumatic Diaphragm Actuator AM82B-206
+Contains SUPCON positioner, SMC air filter regulator, handwheel.
+-
+ZKLT2025HW002
+Floating Type Soft Seal Ball Valve
+SN5100
+304/PTFE
+API598
+0.5MPa
+Pneumatic Piston Actuator RT110SRK10
+Contains ASCO solenoid valve, SMC air filter regulator, SUPCON limit switch.
+This quotation include overseas freight, enclude in-site engineer service
+Total:
+RMB58/KG
+USD 8/KG
+QTY.
+Unit
+Controller
+PCS
+I/O Rack
+Serial Communication Module
+COM741-S01
+Analog Input Module
+AI711-H11
+Analog Output Module
+AO711-H11
+Digital Input Module
+DI711-S11
+Digital Output Module
+DO711-S11
+Controller Base
+Serial Communication Module Base
+MB727-S11
+SUPCON Power Supply (II_24V_10A)
+PW732
+I/O Module Base
+MB731-S01
+YFD550001
+Plastic Safety Box
+45-21
+SUPCON-license-Fundation
+VFCES
+SUPCON-license-Plus
+VF013-S00;VF014-S00;VF015-S00
+Reference Appearance
+Engineering Station Software
+VF013-S00
+Visual Field Reporting Software
+VF014-S00
+Visual Field OPC Server Software
+VF015-S00
+VisualField Historical Database Software
+Unit Pirce (USD)
+Total Price (USD)
+Total Price (USD)
+Note
+：
+EN nameplate
+[5]Range:2.5~250kPa;
+[S]Output:(4~20) mA+HART (7.0), linear output;
+[A]Accuracy:Standard accuracy;
+[B]Housing Type:Aluminum alloy, 1/2-14NPT(F);
+[M3]LCD display:LCD display;
+[A1]EX Approval:ATEX 
+Ⅱ
+ 2G D Ex db IIC T6 Gb, Ex tb IIIC T85
+℃
+Db;
+[C0]Process Connection/ Vent/drain:1/2-14NPT female thread oval flange, 1/2-14NPT connector and Induced Pressure Tube Welded/Behind;
+[2A]Wetted/Diaphragm Materials:316/316L;
+[A]Filled Fluid:Silicone oil;
+[B]Sensor O-ring:PTFE;
+[23]Mounting Bracket:Flat bracket, 2 in. pipe mounted (304 SST);
+[0]Tag Plate:None (Engraved on the nameplate);
+[A]Cable Entry:Plastic end cap + dust plug;
+[E]Language:English;
+[]Additional options (Required):None;
+[F1]Additional Options:Factory Calibration Test Report
+Controller
+I/O Rack-18 Slot
+RTU Communication Module
+AC-DC Power Supply
+Power Supply Redundancy Module
+MCGS
+TCP Communication Module
+SUPCON Switch
+Mix type Digital Module
+SUPCON Power Supply (II_24V_5A)
+DC24V input，24V/5A
+Controller Base(Redundant)
+ Communication Module
+ Communication Module Base
+Communication Terminal
+Universal 
+I/O Module
+Universal 
+I/O Module
+ 
+Base
+Pass-Through Conditioner
+Four-Wire AI Conditioner
+Optocoupler-Isolated DI Conditioner
+Relay-Isolated DI Conditioner
+Relay-Isolated DO Conditioner (Dry Contact)
+Relay-Isolated DO Conditioner (Active Drive)
+Point-to-Point Isolated DI Conditioner (220VAC)
+Point-to-Point Isolated DO Conditioner (VAC)
+Point-to-Point Isolated AI Conditioner
+Point-to-Point Isolated AO Conditioner
+Point-to-Point Isolated TI Conditioner
+Explosion-Proof Switching Power Supply
+ECI Custom Cable 1.5m
+SmartEIO Remote Explosion-Proof Chassis (Maximum Capacity: 96 Points)
+12-Port APL Field Switch
+APL Wireless Gateway
+2-Slot Rack
+Installation of COM812 Communication Module
+Communication Module: Single Card, Single Network, with Two Built-in Fiber Optic Interfaces
+
+Controller Unit
+Terminal Matching Module: Installed on the upper side of each rack, with 2 required per rack
+Universal I/O Module: Supports AI, AI+HART, AO, AO+HART, DI, DI (SOE), DO, PI, TC, RTD, NAMUR
+To be installed in the rack. Standard Universal I/O Module Base, compatible with standard conditioners, and can connect to explosion-proof or standard instruments.
+Pass-Through Conditioner: Supports AI, DI, AO, DO signals, unified isolation, maximum output current 50mA
+Pass-Through Conditioner: Supports AI, DI, AO, DO signals, unified isolation, maximum output current 0.5A
+Optically Isolated: Supports DI and PI signals
+Relay-Isolated: Supports active signals and dry contact signals
+Relay-Isolated: Contact capacity ≤0.5A, supports passive signals
+Relay-Isolated: Contact capacity ≤0.5A, supports active signals
+Active/Passive Contacts: Supports 220VAC
+Supports AI signals, with built-in signal isolator, point-to-point isolation
+Supports AO signals, with built-in signal isolator, point-to-point isolation
+Supports RTD and TC signals, with built-in signal isolator, point-to-point isolation
+External Power Distribution / System-Side Power Supply. By default, each chassis is equipped with 2 pairs: one pair for system-side power supply and one pair for external power supply. Redundant power supply modules are not required.
+Connects to the short rack to provide power distribution and communication. Contains 2 cables per unit.
+304 Stainless Steel Enclosure + Brass Nickel-Plated Gland + Wall-Mounted Installation + No Sunshade + With Coating." Requires ensuring high-quality enclosure coating without paint peeling
+12-Port APL SPUR, Two-Port APL TRUNK, Integrated Aluminum Alloy Enclosure, Suitable for Zone 2 Use
+Industrial Wireless Protocol, 2 APL Trunks, 200-meter Wireless Line-of-Sight Range
+物料编码
+Tag No
+Range
+Universal controller, supporting rack redundancy
+8 analog signal inputs, point-to-point isolation, supporting 4~20mA, 0~10mA, 0~20mA, 1~5V, 0~10V, -10~10V
+8 current signal outputs, supporting (0~10)mA, (0~20)mA, (4~20)mA
+16 digital signal inputs, supporting dry contact signals, DC24V active signals, NPN, and PNP signals
+16 digital passive transistor outputs
+8 universal I/O channels, each configurable to support dry contacts, DC24V active digital signal input, DC24V digital output, (4~20)mA input, (4~20)mA output
+4 RS-485 interfaces, supporting up to 64 serial devices, master/slave mode, with master mode supporting up to 64 slave devices and 256 commands, single serial port supporting up to 32 slave devices
+one 2×RJ45 interface, supporting 64 MODBUS TCP devices, 256 commands, master/slave mode
+Rack (18 slots), dimensions (height × width): 120 × 300
+Standard 24VDC power supply, includes 14 10/100M Ethernet RJ45 ports, 2 optical module expansion slots (supporting SFP-02M and SFP-20S modules)
+12-inch
+Rated input voltage: 180~264V, rated output voltage: 24V DC
+Cabinet：800x800x2100
+Cabinet：800x300x1000
+Unit Price USD
+Total Price USD
+LA115116
+413*166*150mm
+CN011-A0
+Cabinet
+800x800x2100mm
+Item 16 & 17 : Select Cabinet or Demo box
+Materials
+X700 HART Communicator x 1 set
+X700-EN
+80G Radar Level Meter
+SKC Differential Pressure Transmitter
+Guided Wave Radar
+Temperature Transmitter
+Electromagnetic flowmeter
+Configuration List for PRIDE , Conecta Exhibition Hall (Chilean Agent)
+I. Hardware Supply List
+Item Name
+Specification/Model
+Qty
+Unit
+Unit Price
+Total Price
+Remarks
+Wireless Temperature & Vibration Sensor
+WS300-AW-S-L
+set
+Three-channel data acquisition; main axis 1 Hz–10 kHz, two auxiliary axes 5 Hz–1 kHz
+Explosion-Proof Intelligent Gateway
+GW2010-E-LORA-S
+AC220V power supply; supports wired Ethernet and wireless LoRa protocol transmission
+Rack-Mounted Switch
+TL-SG2422F Industrial Grade
+TP-LINK TL-SG2422F industrial switch; 4 electrical + 18 optical ports; Gigabit SFP ports; supports ring network and simple configuration
+Data Application Server
+T3680:Intel Core i5-14600K(14C 3.50GHZ)2x8G/1TB SSD/T400 4G
+独显
+(3mDPyDVD-RW/
+Monitor
+Dell 24″ LED widescreen (16:9), black bezel, IPS, max resolution 1920×1080, VGA+DP (includes one DP cable)
+1. Direct single-screen connection; 2. For dual-screen setup with T5820/T7820, an additional mDP-to-DP adapter is required
+Operating System
+Windows 10 Enterprise Edition (LTSC) – Chinese/English version (premium license)
+PRIDE Dynamic Equipment Server
+On-site Network Box (Explosion-Proof)
+iMP-LNB101-S1-EX
+iMP-LNB101-S1-EX, 400×400×220, EXd IIC T6 explosion-proof rating; includes enclosure, circuit breaker, switching power supply, media converter, fiber splice box, terminals, rails, etc. Supplied as a complete set.
+Other Installation Materials
+Installation accessories
+batch
+Only includes sensor installation accessories; construction materials to be provided by the customer
+II. Software Supply List
+Unit Price/Year
+Total Price/Year
+supOS License
+supOS
+supOS software version: v6.00.01.00-C; Code: 191028002
+Under SUPCON’s unchanged subscription-based sales model, we have internally absorbed the subscription fees for the first two years as part of our support for the Chilean distributor Conecta’s market entry.
+Future renewal fees will be evaluated based on Conecta’s market promotion progress and sales performance. Subject to achieving agreed targets, subsequent renewals may be extended at no additional cost.
+PRIDE Dynamic Equipment Software
+PRIDE Dynamic Equipment Access
+For up to 500 measurement points
+III. Engineering Work List
+（
+if required
+）
+Project Name
+Engineering Implementation Service (Man-hours)
+Engineering implementation and training
+man-day
+Includes sensor and system installation, debugging, and training
+Ⅳ
+. Wired solution hardware
+（
+optional
+）
+Total Price
+Wired Sensor
+Data Acquisition Unit (DAU)
+Explosion-Proof Data Acquisition Enclosure
+CN011-S7
+Power Distribution Box Of 24Vdc
+CN721-S11
+MB735-S11
+PW715
+TUA711-AIO16
+TUA711-DIO32
+TUA711-DIR32
+TUA711-DOR32
+Change-over Terminal Unit
+DB37 (6m_black_F-F)
+DB37
+SUP-5216
+E-BUS Switches
+HD5542
+HD5526
+HD5516.OC
+HD5546
+SUPCON HD5500 Series Isolator AO
+SUPCON HD5500 Series Isolator DO
+SUPCON HD5500 Series Isolator AI
+SUPCON HD5500 Series Isolator DI
+SUPCON Series Signal Surge Protector(Two-Wire System Signal_Explosion-Proof)
+S-24-L2 Pro
+SPE Cable
+SPE-S/FTP-1P
+AEF6512-2T-S
+AEP6208-2E2F-S
+CP20.481
+APL Field Switch
+APL Power Switch
+APL Power Supply (PULS_48V_Explosion-proof)
+APL Unit Price           (USD)
+ThinkStation P2: Intel Core i5-14600K (14C_3.5GHz)/16G/1T SSD/A400 4G Dedicated Graphics/DVD-RW/1 Integrated Gigabit Ethernet Port + 2 Independent Gigabit Single-Port Network Cards/2 mDP-HDMI Adapters/3-Year Service/Compatible with WINDOWS 10 IOT ENT 2021 LTSC HIGH END.
+Workstation (Lenovo )
+Monitor(Lenovo )
+ThinkVision P27q
+R760XS: 4410Y 2G 12C / 2×64 GB 5600 MT/s / 3×1.2 TB 10K SAS (RAID5) / RAID H755 8 GB cache / redundant 800W power supply / onboard dual Gigabit Ethernet / slide rails with management arm / 3-year service. OS: Ubuntu 20.04.02

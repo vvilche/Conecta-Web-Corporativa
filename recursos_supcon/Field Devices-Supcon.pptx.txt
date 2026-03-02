@@ -1,0 +1,245 @@
+--- Slide ppt/slides/slide1.xml ---
+Conecta-
+Supcon
+ 
+Field 
+devices
+: presión, flujo, nivel, temperatura, válvulas de control, 
+plc
+, 
+dcs
+, 
+ucs
+.
+
+--- Slide ppt/slides/slide2.xml ---
+Transmisores de presión 
+El transmisor de presión inteligente de la serie CJT
+ es un instrumento de presión inteligente (presión diferencial) con función de comunicación HART, desarrollado utilizando la tecnología de sensor capacitivo de micro desplazamiento. Aplicable a la medición de presión, flujo y nivel de líquido en petróleo, energía eléctrica, industria química 
+,
+ metalurgia, farmacia, industria ligera y otros sectores.
+
+--- Slide ppt/slides/slide3.xml ---
+Transmisor de presión
+Los transmisores de presión inteligentes de alta precisión de la serie CXT 
+utilizan un chip sensor compuesto de silicio monocristalino de alto rendimiento, una estructura de cápsula integrada avanzada y un diseño de circuito modular altamente confiable para garantizar un rendimiento superior y una estabilidad a largo plazo. 
+
+--- Slide ppt/slides/slide4.xml ---
+Transmisores
+ de 
+flujo
+Caudalímetro másico SFM800
+Los medidores de caudal másico de líquidos están diseñados para aplicaciones de medición de caudal de alta gama. Cumplen con los estándares de verificación de rendimiento de China, la UE, Norteamérica y Rusia, ofreciendo un excelente rendimiento en la medición de caudal y densidad. 
+
+--- Slide ppt/slides/slide5.xml ---
+Transmisores de flujo 
+Rotámetro de tubo metálico SF20
+El rotámetro de tubo metálico es un instrumento de caudal de área variable, comúnmente utilizado en la automatización industrial. Es compacto, con un amplio rango de medición y fácil de usar, ideal para medir el caudal de líquidos, gases y vapor. Es especialmente adecuado para caudales bajos, pequeños caudales, altas temperaturas, altas presiones y medios corrosivos y no conductores.
+
+--- Slide ppt/slides/slide6.xml ---
+Transmisores de flujo 
+Medidor de caudal de vórtice LUGB
+Presenta un diseño robusto que resiste vibraciones mecánicas, impactos y contaminación. Sin piezas móviles y con un desgaste mínimo, no requiere mantenimiento mecánico. El medidor ofrece baja pérdida de presión, alta precisión, fácil instalación y rendimiento estable. Su sensor y convertidor de señal se pueden combinar libremente.
+
+--- Slide ppt/slides/slide7.xml ---
+Transmisores de flujo 
+Caudalímetro electromagnético SFE900
+El caudalímetro electromagnético SFE900 es un producto de alta precisión y fiabilidad, gracias a su continua actualización y mejora. Este caudalímetro ha alcanzado un nivel nacional avanzado en cuanto a tecnología de excitación, tecnología de revestimiento y tecnología inteligente.
+
+--- Slide ppt/slides/slide8.xml ---
+Transmisores de flujo 
+Caudalímetro electromagnético EMF89
+Utiliza técnicas de fabricación avanzadas para garantizar la calidad del sensor, mientras que el convertidor emplea una CPU dedicada de alta velocidad y tecnología avanzada de procesamiento de señales para un rendimiento estable, alta fiabilidad y precisión. El rango de medición abarca desde 0,1 m/s hasta 12 m/s. El sensor ofrece diversos materiales de electrodo y opciones de revestimiento, con modelos integrados, divididos, sanitarios, de inserción y específicos para lodos, que se adaptan a diversas condiciones de funcionamiento.
+
+--- Slide ppt/slides/slide9.xml ---
+Transmisores de nivel 
+Transmisor de nivel de flotador SL20
+El transmisor de nivel de flotador SL20 está disponible en dos versiones: transmisor y controlador.  El transmisor muestra las mediciones in situ y convierte los cambios de nivel en una señal de salida estándar de (4~20) mA, alimentada por un sistema de dos hilos de 24 V CC. Es ideal para industrias como la petrolera, química, metalúrgica y de protección ambiental, ya que proporciona medición y control en línea en tiempo real.
+
+--- Slide ppt/slides/slide10.xml ---
+Transmisores de nivel
+Medidor de nivel magnético SL10
+El medidor de nivel magnético SL10 permite detectar el nivel de líquido y la posición límite de diversas torres, tanques,   recipientes esféricos y calderas. Esto compensa las deficiencias de los medidores de nivel de líquido de tipo placa (tubo) de vidrio, como la indicación poco clara   y la facilidad de rotura. No se ve afectado por los cambios de temperatura y no presenta zonas ciegas durante todo el proceso. Su pantalla es   atractiva, la lectura es intuitiva y el rango de medición es amplio. No solo ofrece visualización in situ, sino que también cuenta con salida remota   y alarma de control. Es ampliamente utilizado en la producción de medición y control de nivel de líquidos en las industrias de energía eléctrica, petroquímica, metalurgia, protección ambiental, transporte marítimo, alimentación   y otras.
+
+--- Slide ppt/slides/slide11.xml ---
+Transmisores de nivel
+Transmisor de nivel 
+magnetoestrictivo
+ SL80
+El transmisor de nivel 
+magnetoestrictivo
+ SL80 es un producto de alta precisión ampliamente utilizado para la medición a nivel de proceso. Su transductor envía un pulso a lo largo de una guía de ondas, generando un campo magnético circular en la superficie. Este campo interactúa con el campo magnético del imán permanente del flotador, que modifica la separación reticular de la guía de ondas 
+y
+ genera un pulso torsional. Al medir la diferencia de tiempo entre los pulsos enviados y recibidos, se puede determinar el nivel exacto del líquido y convertirlo en una señal eléctrica para control remoto. La precisión de este producto no se ve afectada por las variaciones de la constante dieléctrica, la temperatura ni la presión, lo que garantiza una alta precisión y un bajo mantenimiento.
+
+--- Slide ppt/slides/slide12.xml ---
+Transmisores de nivel
+El transmisor de nivel radar de la serie SL900 
+incluye modelos como el SL901 (onda guiada), el SL902 (26 GHz) y el SL903 (80 GHz). Estos instrumentos de nivel radar, disponibles con y sin contacto, ofrecen múltiples modelos para diversas condiciones de trabajo, como alta temperatura, alta presión, anticorrosión y puntería universal. Son aptos para su uso en contenedores metálicos y no metálicos, recipientes de reacción 
+o
+ silos sólidos. Al soportar condiciones adversas como reactores o tanques de mezcla, estos instrumentos son prácticamente inafectados por características del medio como la densidad, el pH y la viscosidad.
+
+--- Slide ppt/slides/slide13.xml ---
+Transmisores de temperatura
+La serie 
+W
+ de instrumentos de temperatura está compuesta principalmente por:
+Detector de temperatura por resistencia (RTD)
+, 
+Termopar (TC)
+, 
+Transmisor de temperatura
+, 
+Transmisor de temperatura integrado
+, 
+Termómetro bimetálico
+, entre otros. Estos instrumentos son adecuados para la 
+medición de temperatura
+ en los siguientes sectores: Petróleo, Química, Energía eléctrica, Metalurgia, Materiales de construcción, Alimentación, Farmacia, Fabricación de papel, Tratamiento de agua, Construcción de carreteras y puentes, Edificación, Industria textil.
+
+--- Slide ppt/slides/slide14.xml ---
+Válvulas de control  de globo
+Válvula de control neumático de globo de asiento simple SUPCON serie LN81
+Válvula neumática de control de presión, con dos núcleos básicos de válvula de émbolo guía, tipo de compresión de manguito flotante, estructura de asiento, diseño modular, gran capacidad de flujo, alta precisión de control, rango ajustable, permite un control de flujo mínimo, estructura simple, confiable, buen rendimiento de sellado y fácil mantenimiento. Es adecuada para pequeñas diferencias de presión, fugas en el asiento y alta precisión de control.
+
+--- Slide ppt/slides/slide15.xml ---
+Válvulas de control  de globo
+Válvula de control neumático de globo de asiento simple serie LN82
+La serie LN82 es un producto con estructura de desequilibrio de presión de la serie LN8. Se basa en dos componentes básicos: buje y asiento de doble dirección. Ofrece capacidad de flujo, buena estabilidad dinámica, diseño de núcleo de válvula de cilindro poroso, que permite una separación adecuada en la superficie de sellado. Esta superficie no se ve afectada por la erosión directa a alta velocidad, y su rendimiento de sellado es bueno y confiable, previniendo la formación de rebabas, la cavitación y el ruido. Su propósito es proporcionar un medio de limpieza rápida, adecuado para la velocidad, especialmente para el control de alta diferencia de presión en gases.
+
+--- Slide ppt/slides/slide16.xml ---
+Válvulas de control  de globo
+Válvula de control de globo con guía de jaula serie LN83
+Las válvulas de control de globo con guía de jaula serie LN83 son 
+válvulas de jaula
+ 
+de control de equilibrio de presión de un solo asiento de la serie LN8 , una de las tres válvulas de base más grandes. Utilizan manguitos separados, una estructura de guía de gran tamaño, un anillo de sellado de equilibrio de presión y un anillo de sellado no metálico de alto rendimiento. Ofrecen buena estabilidad dinámica 
+,
+ alta precisión de control, permiten grandes diferencias de presión, una pequeña fuerza de operación y un gran caudal. Son adecuadas para condiciones de trabajo de temperatura normal, presión diferencial y control de tensión alterna.
+
+--- Slide ppt/slides/slide17.xml ---
+Válvulas de control  de globo
+Válvula de control de globo con guía de jaula serie LN85
+La serie LN85 es una válvula de asiento simple con equilibrio de presión de la serie LN8. Una de sus tres características básicas es el manguito separable, la estructura de guía de gran tamaño, el resorte moldeado y el anillo de equilibrio de presión con almacenamiento de energía. Presenta buena estabilidad dinámica, alta precisión de control, admite grandes diferencias de presión, baja fuerza de operación, gran capacidad de flujo y es adecuada para un amplio rango de temperaturas y grandes diferencias de presión, bajo la acción del control de tensión alterna.
+
+--- Slide ppt/slides/slide18.xml ---
+Válvulas de control  de globo
+Válvula de control de globo con guía de jaula serie LN87
+La serie LN87 son productos de válvulas de un solo asiento con equilibrio de presión de la serie LN8, uno de los tres manguitos guía básicos, válvulas de un solo asiento de tipo equilibrio de presión, con estructura de manguito separado, sello de pistón de metal de alto rendimiento, tiene buena estabilidad dinámica, alta precisión de control, permite que la diferencia de presión sea grande, la fuerza de operación es pequeña, gran capacidad de flujo, un rango más amplio de temperatura aplicable, etc. Adecuado para el control de fluidos en duras condiciones de trabajo.
+
+--- Slide ppt/slides/slide19.xml ---
+Válvulas de control  de globo
+Válvula de control de globo con fuelle serie LN81W
+La válvula de control de fuelle de un solo asiento serie LN81W/82, basada en la estructura de la válvula de un solo asiento sin equilibrio de presión de la serie LN81/82, se basa en un sello de fuelle reforzado, fuelle elástico de acero inoxidable de compresión en las piezas del cojinete conectadas al vástago de la válvula y empaquetadura de doble sello, lo que elimina las fugas del fluido. 
+Es adecuada para presiones diferenciales altamente tóxicas, inflamables, explosivas, volátiles y para el ajuste de fluidos con metales raros y preciosos.
+
+--- Slide ppt/slides/slide20.xml ---
+Válvulas de control de bola tipo o
+Válvula de bola tipo O con sello blando serie SN51/52
+La válvula de bola tipo O con sello blando de la serie Sn51/52 es una válvula de bola de paso recto completo, la pérdida de caída de presión del fluido es la más pequeña, excelente rendimiento de corte, la bola solo necesita girar 90 grados para lograr la válvula completamente abierta o cerrada, al mismo tiempo con el vástago de la válvula volando, antiestático y otras funciones.
+
+--- Slide ppt/slides/slide21.xml ---
+Válvulas de control de bola tipo o
+Válvula de bola tipo O con sello metálico serie SN53/54
+La válvula de bola tipo O de sellado rígido serie Sn53/54 es una válvula de tamaño completo con excelente rendimiento de sellado, acción sensible sin adherencias, prevención esencial de incendios y alivio seguro de presión en la cámara intermedia. Es adecuada para fluidos con partículas fijas y lodos a diferentes temperaturas y presiones.
+
+--- Slide ppt/slides/slide22.xml ---
+Válvulas de control de bola tipo o
+Válvula de bola tipo O con revestimiento de plástico SN5100F
+Las válvulas de bola con revestimiento de plástico de la serie SN5100F ofrecen una excelente resistencia a la corrosión y están separadas de las piezas en contacto con el fluido mediante 
+fluoroplástico
+. El PTFE y el FEP se utilizan principalmente como 
+fluoroplásticos
+. Se utilizan generalmente en situaciones donde los requisitos de sellado son elevados y los fluidos altamente corrosivos se pueden abrir y cerrar de forma fiable.
+
+--- Slide ppt/slides/slide23.xml ---
+Válvulas de control de bolo con muesca en v 
+La válvula de control de bola con muesca en V
+ de la serie VN6 , parte del núcleo de bola de incisión en forma de V esférico proporciona una característica de flujo de porcentaje aproximadamente igual, es un uso del núcleo de bola de incisión en forma de V dentro del alcance del pequeño grado de apertura en la rotación de la superficie de sellado y el control de la válvula reguladora de flujo de fluido, el ángulo del núcleo de bola de incisión en forma de V aumenta significativamente en la relación de flujo ajustable al mismo tiempo, con una combinación elástica única especial con el labio de la estructura del asiento de sellado, el medio de fibra y partículas tiene excelentes funciones de corte y prevención, lo que lo hace especialmente adecuado para sistemas de control de relación ajustables grandes, así como para el fluido que contiene fibra, tipo de lodo de control de fluido.
+
+--- Slide ppt/slides/slide24.xml ---
+Válvulas de control rotativa excéntrica serie Cn8
+La válvula de control rotativa excéntrica
+ serie CN8 tiene un núcleo de válvula en la superficie de la tapa esférica. Su cuerpo de rodete recto de una sola pieza permite que el centro rotatorio del núcleo no sea concéntrico con el eje de rotación, lo que reduce el desgaste del asiento y prolonga su vida útil. Ofrece excelente estabilidad, resistencia a la erosión y a la corrosión 
+,
+ un sellado fiable y un amplio rango de ajuste de caudal. Además, esta serie de válvulas de control presenta una estructura compacta, par de salida, acción rápida y estable, larga vida útil y se utiliza ampliamente en las industrias petrolera, química, química del carbón, energía eléctrica, metalurgia y otras áreas de control industrial con cargas pesadas.
+
+--- Slide ppt/slides/slide25.xml ---
+Válvula de control rotativa excéntrica SUPCON serie CN81
+La válvula rotativa excéntrica serie CN8 es un núcleo de válvula ubicado en la superficie de la tapa esférica. La válvula de control de ángulo programable excéntrico cuenta con una estructura de cuerpo de corredor recto de una sola pieza. El centro rotatorio del núcleo de la válvula no es concéntrico con el eje de rotación, lo que reduce el desgaste del asiento y prolonga su vida útil. Ofrece excelente estabilidad, resistencia a la erosión y la corrosión, un sellado confiable y las ventajas de un amplio rango de ajuste de caudal. Además, esta serie de válvulas de control presenta una estructura compacta, par de salida, acción rápida y estable, larga vida útil y se puede utilizar ampliamente en las industrias petrolera, química, química del carbón, energía eléctrica, metalurgia y otras áreas de control industrial con cargas pesadas.
+
+--- Slide ppt/slides/slide26.xml ---
+Válvula de mariposa de triple excentricidad serie BN
+Una válvula de mariposa de triple excentricidad es un tipo especializado de válvula de mariposa, diseñada para proporcionar un cierre fiable y hermético en aplicaciones de alta presión y alta temperatura. Se denomina "triple excentricidad" porque su mecanismo de sellado incluye tres excentricidades distintas en su diseño.
+
+--- Slide ppt/slides/slide27.xml ---
+Válvula de mariposa con revestimiento de plástico
+Las válvulas de mariposa con revestimiento de plástico de la serie BN1101F ofrecen la resistencia térmica de las válvulas de revestimiento duro y las características de sellado de las válvulas de revestimiento blando. Cuando la válvula funciona, solo el asiento de plástico 
+perfluorado
+ y la placa de mariposa con revestimiento de flúor están en contacto con el fluido.
+
+--- Slide ppt/slides/slide28.xml ---
+Válvula de descarga de la serie GL
+La válvula de descarga de expansión ascendente/descendente de la serie GL es una válvula reguladora especial de un solo asiento, el cuerpo de la válvula adopta una estructura de tipo Y de CC integrada, la cámara de la válvula no tiene canal de bloqueo, la superficie interna tiene un tratamiento de chorro de arena, la válvula no tiene ángulo muerto, adecuada para industrias químicas finas, farmacéuticas y otras para precipitar o contener fácilmente partículas de fluido dentro y fuera del control
+
+--- Slide ppt/slides/slide29.xml ---
+Válvula de guillotina serie PZ
+Una válvula de guillotina es un tipo de válvula diseñada para controlar el flujo de fluidos a través de una tubería mediante una cuchilla o compuerta que se desliza a lo largo de la abertura de la válvula. Este tipo de válvula se utiliza comúnmente en aplicaciones industriales, como fábricas de pulpa y papel, plantas químicas y operaciones mineras.
+
+--- Slide ppt/slides/slide30.xml ---
+Válvula de compuerta plana serie Z641/941H
+La válvula de compuerta plana eléctrica tiene una resistencia de flujo pequeña y puede realizar un posicionamiento automático en la superficie de sellado. La válvula de compuerta plana es un tipo de válvula deslizante paralela cerrada de la compuerta. La compuerta al asiento de la fuerza de sujeción es la acción y la compuerta flotante o asiento flotante de presión media para controlar, especialmente adecuado para medios con partículas suspendidas de control de encendido y apagado confiable.
+
+--- Slide ppt/slides/slide31.xml ---
+Válvula de compuerta de cuña serie Z643/943
+Válvula de compuerta de cuña eléctrica/neumática serie Z643/943, pequeña resistencia al fluido, pequeña erosión por impacto de la superficie de sellado, la dirección del flujo del medio no cambia, flujo no perturbado, pequeña caída de presión, pequeño torque de apertura-cierre, estructura más corta, buen rendimiento del proceso, amplio rango de presión y temperatura adecuados, al mismo tiempo, tiene las características de estructura de sellado hermético a la presión del medio, lo que permite realizar fácilmente el cierre y encendido hermético del medio de tuberías industriales.
+
+--- Slide ppt/slides/slide32.xml ---
+Válvula de bola de descarga serie GL
+Válvula de bola de alimentación serie GS. Su cuerpo de una sola pieza aumenta el diseño de la brida de entrada, lo que reduce el espacio de la bola y previene derrames. El eje del vástago tiene un ángulo determinado y la conexión estirada evita interferencias con el fondo de la caldera. Satisface las necesidades de espacio de operación, cuenta con vástago a prueba de explosiones y sello rígido del asiento de la válvula con resorte. Asiento no metálico resistente al calor hasta 230 grados.
+
+--- Slide ppt/slides/slide33.xml ---
+Posicionador de válvula inteligente CVP2000
+El posicionador de válvula inteligente de la serie CVP2000 es un posicionador de válvula inteligente de alto rendimiento de nueva generación equipado   con un microprocesador. Recibe señales de corriente continua (CC) del dispositivo de control y controla la   válvula de control neumática. Además de esta función básica, el CVP2000 también cuenta con funciones de comunicación,   un programa de configuración automática y una función de autodiagnóstico, lo que mejora considerablemente la productividad y   la eficiencia operativa de la fábrica. Estas características avanzadas también se pueden lograr mediante dispositivos de comunicación como HART, APL, FF, etc. La serie CVP2000 se puede utilizar de forma estable para válvulas de control de carrera lineal o angular con actuadores neumáticos de simple efecto (reinicio por resorte)   o de doble efecto.
+
+--- Slide ppt/slides/slide34.xml ---
+Calibrador y comunicador interactivo serie X600
+Los productos de la serie SUPCON X600 son productos de instrumentación portátiles con pantalla táctil capacitiva completa y pantalla HD 1080P, han logrado la integración exitosa del calibrador de proceso inteligente y el comunicador HART.
+Adopta un diseño único de operación dividida para facilitar la operación y las mediciones in situ, además de contar con las funciones de calibrador y registrador de procesos ,  lo que facilita el archivo digital de calibraciones, registros y otras operaciones. Este producto está equipado con la función de comunicación HART, que facilita la comunicación con otros dispositivos.  
+utilizando diferentes lenguajes de descripción de dispositivos electrónicos (EDDL), con el fin de lograr la configuración, 
+Calibración y diagnóstico de diversos instrumentos HART.
+
+--- Slide ppt/slides/slide35.xml ---
+plc
+SUPCON PLC está diseñado para aplicaciones SCADA y FA (Automatización de Fábrica), incorporando G5 (Net-
+Enhanced
+ 
+Hybrid
+ Control 
+System
+) y G3 (
+Distributed
+ Control 
+System
+). Basado en el protocolo de control unificado UCP, se adapta a escenarios de campo descentralizados, apoyando procesos industriales continuos/semicontinuos y control de infraestructuras a gran escala.
+
+--- Slide ppt/slides/slide36.xml ---
+dcs
+Sistema de Control Distribuido (DCS)
+OMC, parte de la serie 
+WebField
+ de SUPCON, es un sistema de control de alta fiabilidad y totalmente redundante para la automatización empresarial. Soporta múltiples protocolos industriales e integra sin problemas con diversos sistemas para operaciones estables y seguras.
+
+--- Slide ppt/slides/slide37.xml ---
+ucs
+El Sistema de Control Universal (UCS) es un sistema de control definido por software que elimina los armarios de control tradicionales, transformando las arquitecturas DCS convencionales. 
+Nyx
+, el producto UCS de SUPCON, encarna sus capacidades principales.
+
+--- Slide ppt/slides/slide38.xml ---
+ucs
+Construido sobre tecnologías basadas en la nube, el Sistema de Control Universal (UCS) es altamente escalable, elástico, extensible y fiable, permitiendo que los equipos de ingeniería ágiles y remotos colaboren con facilidad, transformando la gestión de automatización de procesos para cualquier organización.
+
+--- Slide ppt/slides/slide39.xml ---
+Gracias
+Alfonso.calderon@conecta.cl

@@ -1,0 +1,19 @@
+# Ecosistema Multi-Agente
+langgraph>=0.0.25
+langchain>=0.1.0
+langchain-openai>=0.0.2
+
+# Procesamiento Geoespacial y Datos
+geopandas==0.14.3
+shapely==2.0.3
+pandas==2.2.0
+
+# Base de Datos (PostGIS)
+SQLAlchemy==2.0.25
+psycopg2-binary==2.9.9
+geoalchemy2==0.14.4
+
+# APIs y Utils
+requests==2.31.0
+fastapi==0.109.2
+python-dotenv==1.0.1
