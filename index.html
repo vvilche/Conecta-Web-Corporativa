@@ -344,6 +344,75 @@
       gap: 20px;
     }
 
+    /* Fichas Técnicas de Capacidades Core en Hero (CONECTA) */
+    .hero-capabilities {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      margin-top: 32px;
+      margin-bottom: 32px;
+      width: 100%;
+    }
+
+    .capability-badge {
+      background-color: rgba(255, 255, 255, 0.85);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-md) !important;
+      padding: 18px 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      box-shadow: var(--shadow-sm);
+      transition: var(--transition);
+      backdrop-filter: blur(5px);
+      -webkit-backdrop-filter: blur(5px);
+    }
+
+    .capability-badge:hover {
+      border-color: rgba(37, 99, 235, 0.4);
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-md);
+      background-color: #ffffff;
+    }
+
+    .capability-badge .cap-title {
+      font-family: 'Outfit', sans-serif;
+      font-size: 14.5px;
+      font-weight: 700;
+      color: var(--brand-dark);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .capability-badge .cap-title svg {
+      color: var(--brand-accent);
+      flex-shrink: 0;
+    }
+
+    .capability-badge .cap-desc {
+      font-size: 11.5px;
+      color: var(--text-muted);
+      line-height: 1.45;
+      font-weight: 500;
+    }
+
+    @media (max-width: 1024px) {
+      .hero-capabilities {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 640px) {
+      .hero-capabilities {
+        grid-template-columns: 1fr;
+        gap: 12px;
+      }
+      .capability-badge {
+        padding: 14px 12px;
+      }
+    }
+
     .btn-primary-rect {
       display: inline-block;
       background-color: var(--brand-dark);
@@ -1532,11 +1601,43 @@
     <div class="hero-shading"></div>
     <div class="hero-container">
       <div class="hero-content">
-        <span class="hero-overline" style="color: var(--brand-accent); background-color: rgba(37,99,235,0.08); padding: 6px 16px; border-radius: 100px; font-weight: 700;">⚡ CONECTA S.A. | INTEGRACIÓN & INGENIERÍA CHILENA</span>
-        <h1 class="hero-title">Asegure la continuidad de su planta <span>sin multas ni paradas</span></h1>
+        <h1 class="hero-title">Especialistas en <span>RTU, PMU, SCADA</span> y protecciones eléctricas</h1>
         <p class="hero-subtitle">
-          Ayudamos a los Directores de Operaciones en Chile a superar la obsolescencia técnica y cumplir ante el Coordinador Eléctrico. Implementamos <b>cambios de remotas (RTU)</b>, <b>gateways de comunicaciones</b> y <b>sistemas DCS de alta disponibilidad (tecnología SUPcon)</b> con soporte local e inmediato 24/7.
+          Soporte local, ingeniería avanzada y provisión directa en Chile para marcas globales líderes de infraestructura crítica. Representantes oficiales de <b>SUPcon</b>, <b>NovaTech Automation</b>, <b>Belden/Hirschmann</b>, <b>NR Electric</b> y <b>Vizimax</b>.
         </p>
+        
+        <!-- FICHAS TÉCNICAS CORE: CLARIDAD B2B DIRECTA -->
+        <div class="hero-capabilities">
+          <div class="capability-badge">
+            <div class="cap-title">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"/><rect x="2" y="14" width="20" height="8" rx="2" ry="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
+              Sistemas RTU
+            </div>
+            <div class="cap-desc">Cambio de remotas obsoletas, retrofitting (GE D20/D200 a OrionLX+) y gateways.</div>
+          </div>
+          <div class="capability-badge">
+            <div class="cap-title">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+              Telemedida PMU
+            </div>
+            <div class="cap-desc">Sistemas de medida integrados exigidos por la norma del Coordinador Eléctrico Nacional.</div>
+          </div>
+          <div class="capability-badge">
+            <div class="cap-title">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg>
+              SCADA & EMS
+            </div>
+            <div class="cap-desc">Integración de centros de control, SCADA Elipse, DCS de procesos e interfaz HMI local.</div>
+          </div>
+          <div class="capability-badge">
+            <div class="cap-title">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              Protecciones
+            </div>
+            <div class="cap-desc">Ingeniería, pruebas y suministro de relés de protección y esquemas EDAC y SITR.</div>
+          </div>
+        </div>
+
         <div class="hero-ctas">
           <a href="#soluciones" class="btn-primary-rect">Sistemas de Automatización</a>
           <a href="#campo" class="btn-secondary-rect">Catálogo de Equipos B2B</a>
@@ -1637,7 +1738,7 @@
         <div class="stat-description">Implementación del primer anillo de Fibra Óptica industrial con switches redundantes y ciberseguridad O.T. garantizada de planta.</div>
       </div>
       <div class="stat-item" id="stat-3">
-        <span class="stat-badge">Gran Minería</span>
+        <span class="stat-badge">Minería</span>
         <div class="stat-number">M. Meridian</div>
         <div class="stat-title">Esquemas EDAC & SITR</div>
         <div class="stat-description">Ingeniería y normalización completa de esquemas EDAC y SITR para cumplimiento estricto ante el Coordinador Eléctrico Nacional.</div>
@@ -2054,7 +2155,7 @@
 
         <!-- Gran Minería -->
         <div class="client-category-card">
-          <h3 class="client-category-title">Gran Minería</h3>
+          <h3 class="client-category-title">Minería</h3>
           <div class="client-list">
             <span class="client-item">CODELCO</span>
             <span class="client-item">Minera Escondida</span>
