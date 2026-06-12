@@ -11,3 +11,6 @@ temp_excel_extract/
 mientorno/
 materiales_novatech/
 *.zip
+
+# Netlify local state
+.netlify/state.json
