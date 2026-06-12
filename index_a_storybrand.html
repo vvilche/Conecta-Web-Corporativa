@@ -25,8 +25,1538 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;700&family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
-  
-  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* ==========================================================================
+       SISTEMA DE DISEÑO & VARIABLES (Tema Claro Premium - Conecta Web Corporativa)
+       ========================================================================== */
+    :root {
+      --brand-dark: #071324;       /* Navy Profundo */
+      --brand-blue: #1e3a8a;       /* Azul B2B */
+      --brand-accent: #2563eb;     /* Azul Royal Acorde al Repositorio */
+      --brand-accent-hover: #1d4ed8;
+      --brand-alert: #eab308;      /* Amarillo Alerta Normas */
+      --brand-alert-bg: rgba(234, 179, 8, 0.05);
+      --text-main: #1e293b;        /* Slate text principal */
+      --text-muted: #64748b;       /* Gris técnico suave */
+      --bg-page: #f8fafc;          /* Fondo de página claro premium */
+      --bg-card: #ffffff;          /* Tarjetas en blanco puro */
+      --border-light: #e2e8f0;     /* Bordes finos de grilla */
+      
+      /* Radios de Bordes Suavizados del Repositorio */
+      --radius-sm: 8px;
+      --radius-md: 12px;
+      --radius-lg: 20px;
+      
+      /* Profundidad sutil mediante Sombras del Repositorio */
+      --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+      --shadow-md: 0 10px 15px -3px rgba(0, 0, 0, 0.06), 0 4px 6px -4px rgba(0, 0, 0, 0.04);
+      --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.08), 0 10px 10px -5px rgba(0, 0, 0, 0.03);
+      --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      
+      --accent-red: #d32f2f;       /* Rojo SUPcon */
+      --accent-orange: #f26522;     /* Naranja Belden */
+      --grid-gap: 24px;
+      --card-padding: 36px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      background-color: var(--bg-page);
+      color: var(--text-main);
+      font-family: 'Inter', sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    body {
+      overflow-x: hidden;
+      line-height: 1.6;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Outfit', sans-serif;
+      font-weight: 700;
+      color: var(--brand-dark);
+      line-height: 1.2;
+    }
+
+    p {
+      color: var(--text-muted);
+      margin-bottom: 1rem;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+      transition: var(--transition);
+    }
+
+    /* Grilla técnica Blueprint (Atenuada para el fondo claro) */
+    .blueprint-bg {
+      position: absolute;
+      inset: 0;
+      background-image: 
+        linear-gradient(var(--border-light) 1px, transparent 1px),
+        linear-gradient(90deg, var(--border-light) 1px, transparent 1px);
+      background-size: 40px 40px;
+      opacity: 0.45;
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    /* ==========================================================================
+       NAVEGACIÓN (STICKY, ANNOUNCEMENT BAR & BLUR CLARO)
+       ========================================================================== */
+    .announcement-bar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      height: 32px;
+      background-color: var(--brand-dark);
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 11px;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      z-index: 102;
+    }
+
+    .navbar {
+      position: fixed;
+      top: 32px;
+      width: 100%;
+      height: 72px;
+      background-color: rgba(255, 255, 255, 0.95);
+      border-bottom: 1px solid var(--border-light);
+      z-index: 100;
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      transition: var(--transition);
+      display: flex;
+      align-items: center;
+    }
+
+    .navbar-container {
+      max-width: 1280px;
+      margin: 0 auto;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 40px;
+    }
+
+    .logo-container {
+      display: flex;
+      align-items: center;
+      font-family: 'Outfit', sans-serif;
+      font-size: 22px;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      color: var(--brand-dark);
+    }
+
+    .logo-conecta {
+      color: var(--brand-dark);
+    }
+
+    .logo-separator {
+      color: var(--brand-accent);
+      margin: 0 4px;
+    }
+
+    .logo-supcon {
+      color: var(--brand-accent);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+    }
+
+    .nav-link {
+      font-size: 13.5px;
+      color: var(--text-muted);
+      font-weight: 500;
+      position: relative;
+      padding: 8px 0;
+      text-transform: none;
+      letter-spacing: 0;
+      font-family: 'Inter', sans-serif;
+    }
+
+    .nav-link:hover, .nav-link.active {
+      color: var(--brand-accent);
+    }
+
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: var(--brand-accent);
+      transform: scaleX(0);
+      transform-origin: right;
+      transition: transform 0.2s ease;
+    }
+
+    .nav-link:hover::after, .nav-link.active::after {
+      transform: scaleX(1);
+      transform-origin: left;
+    }
+
+    .btn-contact {
+      display: inline-block;
+      background-color: var(--brand-accent);
+      color: #ffffff !important;
+      font-size: 13.5px;
+      font-weight: 600;
+      padding: 10px 22px;
+      border-radius: 100px !important; /* Exclusivo de botones en el repositorio */
+      cursor: pointer;
+      text-transform: none;
+      letter-spacing: 0;
+      box-shadow: var(--shadow-sm);
+      transition: var(--transition);
+      border: none;
+    }
+
+    .btn-contact:hover {
+      background-color: var(--brand-accent-hover);
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .menu-toggle {
+      display: none;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 20px;
+      height: 14px;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      z-index: 110;
+    }
+
+    .menu-toggle span {
+      width: 100%;
+      height: 2px;
+      background-color: var(--brand-dark);
+      transition: transform 0.2s ease, opacity 0.2s ease;
+    }
+
+    /* ==========================================================================
+       HERO SECTION (TEMA CLARO SOFT & BLUEPRINT DEGRADADO)
+       ========================================================================== */
+    .hero {
+      position: relative;
+      min-height: 95vh;
+      display: flex;
+      align-items: center;
+      padding-top: 132px;
+      padding-bottom: 80px;
+      overflow: hidden;
+      background: linear-gradient(to bottom, #ffffff 0%, #f1f5f9 100%);
+    }
+
+    .hero-shading {
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at 80% 30%, rgba(37, 99, 235, 0.06), transparent 60%);
+      pointer-events: none;
+      z-index: 2;
+    }
+
+    .hero-container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 40px;
+      width: 100%;
+      position: relative;
+      z-index: 3;
+      display: grid;
+      grid-template-columns: 1.25fr 0.75fr;
+      align-items: center;
+      gap: 40px;
+    }
+
+    .hero-content {
+      max-width: 760px;
+    }
+
+    .hero-overline {
+      font-family: 'Inter', sans-serif;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--brand-accent);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 24px;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background-color: rgba(37, 99, 235, 0.1);
+      padding: 6px 16px;
+      border-radius: 100px !important;
+    }
+
+    .hero-title {
+      font-size: 54px;
+      line-height: 1.15;
+      font-weight: 800;
+      color: var(--brand-dark);
+      margin-bottom: 24px;
+      font-family: 'Outfit', sans-serif;
+      letter-spacing: -1.5px;
+    }
+
+    .hero-title span {
+      color: var(--brand-accent);
+    }
+
+    .hero-subtitle {
+      font-size: 18px;
+      line-height: 1.65;
+      color: var(--text-muted);
+      margin-bottom: 40px;
+    }
+
+    .hero-subtitle b {
+      color: var(--brand-dark);
+    }
+
+    /* Fichas Técnicas de Capacidades Core en Hero (CONECTA) */
+    .hero-capabilities {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      margin-top: 32px;
+      margin-bottom: 32px;
+      width: 100%;
+    }
+
+    .capability-badge {
+      background-color: rgba(255, 255, 255, 0.85);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-md) !important;
+      padding: 18px 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      box-shadow: var(--shadow-sm);
+      transition: var(--transition);
+      backdrop-filter: blur(5px);
+      -webkit-backdrop-filter: blur(5px);
+    }
+
+    .capability-badge:hover {
+      border-color: rgba(37, 99, 235, 0.4);
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-md);
+      background-color: #ffffff;
+    }
+
+    .capability-badge .cap-title {
+      font-family: 'Outfit', sans-serif;
+      font-size: 14.5px;
+      font-weight: 700;
+      color: var(--brand-dark);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .capability-badge .cap-title svg {
+      color: var(--brand-accent);
+      flex-shrink: 0;
+    }
+
+    .capability-badge .cap-desc {
+      font-size: 11.5px;
+      color: var(--text-muted);
+      line-height: 1.45;
+      font-weight: 500;
+    }
+
+    @media (max-width: 1024px) {
+      .hero-capabilities {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 640px) {
+      .hero-capabilities {
+        grid-template-columns: 1fr;
+        gap: 12px;
+      }
+      .capability-badge {
+        padding: 14px 12px;
+      }
+    }
+
+    .hero-ctas {
+      display: flex;
+      gap: 20px;
+    }
+
+    .btn-primary-rect {
+      display: inline-block;
+      background-color: var(--brand-dark);
+      color: #ffffff;
+      font-size: 14.5px;
+      font-weight: 600;
+      padding: 16px 32px;
+      border-radius: var(--radius-sm) !important;
+      cursor: pointer;
+      transition: var(--transition);
+      border: none;
+    }
+
+    .btn-primary-rect:hover {
+      background-color: #000000;
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .btn-secondary-rect {
+      display: inline-block;
+      background-color: #ffffff;
+      color: var(--text-main);
+      font-size: 14.5px;
+      font-weight: 600;
+      padding: 16px 32px;
+      border-radius: var(--radius-sm) !important;
+      border: 1px solid var(--border-light);
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .btn-secondary-rect:hover {
+      border-color: var(--text-muted);
+      background-color: var(--bg-page);
+    }
+
+    .hero-graphic {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+
+    .hero-blueprint {
+      width: 100%;
+      max-width: 440px;
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-lg) !important;
+      padding: 40px;
+      background-color: #ffffff;
+      position: relative;
+      box-shadow: var(--shadow-md);
+    }
+
+    .hero-blueprint::before {
+      content: 'ISA S5.1 INSTRUMENTATION PROTOCOL';
+      position: absolute;
+      top: 12px;
+      left: 16px;
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 9px;
+      color: var(--text-muted);
+    }
+
+    .hero-blueprint svg {
+      width: 100%;
+      height: auto;
+    }
+
+    /* ==========================================================================
+       BARRAS DE MARCAS ASOCIADAS (TECNOLOGÍAS B2B)
+       ========================================================================== */
+    .brands-section {
+      padding: 50px 0;
+      background-color: #ffffff;
+      border-top: 1px solid var(--border-light);
+      border-bottom: 1px solid var(--border-light);
+      position: relative;
+      z-index: 10;
+    }
+
+    .brands-container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 40px;
+    }
+
+    .brands-title {
+      text-align: center;
+      font-family: 'Inter', sans-serif;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      margin-bottom: 30px;
+    }
+
+    .brands-grid {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 30px;
+      opacity: 0.7;
+      filter: grayscale(100%);
+      transition: var(--transition);
+    }
+
+    .brands-grid:hover {
+      opacity: 1;
+      filter: grayscale(0%);
+    }
+
+    .brand-logo-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .brand-title-text {
+      font-family: 'Outfit', sans-serif;
+      font-size: 22px;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      color: var(--brand-dark);
+    }
+
+    .brand-logo-item.supcon .brand-title-text { color: var(--accent-red); }
+    .brand-logo-item.novatech .brand-title-text { color: #0033a0; }
+    .brand-logo-item.belden .brand-title-text { color: var(--accent-orange); }
+    .brand-logo-item.vizimax .brand-title-text { color: #000000; }
+    .brand-logo-item.nrelectric .brand-title-text { color: #004b87; }
+    .brand-logo-item.elpros .brand-title-text { color: #10b981; }
+
+    .brand-subtitle-text {
+      font-family: 'Inter', sans-serif;
+      font-size: 11px;
+      font-weight: 500;
+      color: var(--text-muted);
+      margin-top: 4px;
+    }
+
+    /* ==========================================================================
+       ESTADÍSTICAS / STATS (4 KPIs TEMA CLARO)
+       ========================================================================== */
+    .stats {
+      background-color: var(--bg-page);
+      padding: 80px 0;
+      position: relative;
+      z-index: 10;
+    }
+
+    .stats-container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 40px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: var(--grid-gap);
+    }
+
+    .stat-item {
+      background-color: var(--bg-card);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-md) !important;
+      padding: 30px;
+      text-align: center;
+      box-shadow: var(--shadow-sm);
+      transition: var(--transition);
+    }
+
+    .stat-item:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .stat-badge {
+      display: inline-block;
+      background-color: rgba(37, 99, 235, 0.1);
+      color: var(--brand-accent);
+      font-family: 'Inter', sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      padding: 4px 12px;
+      border-radius: 4px !important;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+
+    .stat-number {
+      font-family: 'Outfit', sans-serif;
+      font-size: 48px;
+      font-weight: 800;
+      color: var(--brand-accent);
+      line-height: 1;
+      margin-bottom: 12px;
+      letter-spacing: -1px;
+    }
+
+    .stat-title {
+      font-family: 'Outfit', sans-serif;
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--brand-dark);
+      margin-bottom: 8px;
+    }
+
+    .stat-description {
+      font-size: 13px;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    /* ==========================================================================
+       SECCIÓN GENERAL ESTRUCTURA
+       ========================================================================== */
+    .section {
+      padding: 100px 0;
+      position: relative;
+      z-index: 10;
+      background-color: var(--bg-page);
+    }
+
+    .section-container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 40px;
+    }
+
+    .section-header {
+      margin-bottom: 60px;
+      border-bottom: 1px solid var(--border-light);
+      padding-bottom: 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+
+    .section-title-wrap {
+      max-width: 750px;
+    }
+
+    .section-overline {
+      font-family: 'Inter', sans-serif;
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--brand-accent);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 12px;
+      display: block;
+    }
+
+    .section-title {
+      font-size: 38px;
+      font-weight: 700;
+      color: var(--brand-dark);
+      font-family: 'Outfit', sans-serif;
+      letter-spacing: -1px;
+    }
+
+    .section-title strong {
+      font-weight: 800;
+      color: var(--brand-accent);
+    }
+
+    .section-tagline {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--text-muted);
+      max-width: 440px;
+      text-align: right;
+      font-family: 'IBM Plex Mono', monospace;
+      margin-bottom: 8px;
+      text-transform: uppercase;
+    }
+
+    /* ==========================================================================
+       DIVISIÓN 1: SISTEMAS ELÉCTRICOS Y NORMADOS [CONECTA] (GRID 3 CARDS)
+       ========================================================================== */
+    .solutions-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--grid-gap);
+    }
+
+    .solution-card {
+      background-color: var(--bg-card);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-lg) !important;
+      padding: var(--card-padding);
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      box-shadow: var(--shadow-sm);
+      transition: var(--transition);
+    }
+
+    .solution-card:hover {
+      border-color: rgba(37, 99, 235, 0.3);
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .solution-num {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 11px;
+      color: var(--text-muted);
+      margin-bottom: 16px;
+      display: block;
+    }
+
+    .solution-card:hover .solution-num {
+      color: var(--brand-accent);
+    }
+
+    .solution-title {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--brand-dark);
+      margin-bottom: 12px;
+      font-family: 'Outfit', sans-serif;
+    }
+
+    .solution-description {
+      font-size: 14px;
+      color: var(--text-muted);
+      line-height: 1.6;
+      margin-bottom: 24px;
+      flex-grow: 1;
+    }
+
+    .solution-details {
+      margin-top: auto;
+      border-top: 1px solid var(--border-light);
+      padding-top: 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .solution-tag {
+      display: inline-block;
+      font-family: 'Inter', sans-serif;
+      font-size: 11px;
+      font-weight: 600;
+      background-color: #f1f5f9;
+      color: var(--text-muted);
+      padding: 4px 10px;
+      border-radius: 6px !important;
+    }
+
+    .solution-link {
+      font-family: 'Inter', sans-serif;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--brand-accent);
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .solution-link:hover {
+      gap: 8px;
+    }
+
+    /* ==========================================================================
+       DIVISIÓN 2: AUTOMATIZACIÓN DE PROCESOS [SUPcon] (GRID 2x2 DETALLADO)
+       ========================================================================== */
+    .processes-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: var(--grid-gap);
+    }
+
+    .process-card {
+      background-color: var(--bg-card);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-lg) !important;
+      padding: var(--card-padding);
+      display: grid;
+      grid-template-columns: 80px 1fr;
+      gap: 20px;
+      box-shadow: var(--shadow-sm);
+      transition: var(--transition);
+    }
+
+    .process-card:hover {
+      border-color: rgba(37, 99, 235, 0.3);
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .process-icon {
+      color: var(--brand-accent);
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      padding-top: 4px;
+      transition: transform 0.25s ease;
+    }
+
+    .process-card:hover .process-icon {
+      transform: translateY(-4px);
+    }
+
+    .process-content {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .process-name {
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--brand-dark);
+      margin-bottom: 12px;
+      font-family: 'Outfit', sans-serif;
+    }
+
+    .process-description {
+      font-size: 14.5px;
+      color: var(--text-muted);
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    .process-spec {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 11px;
+      color: var(--text-muted);
+      margin-top: auto;
+      border-top: 1px dashed var(--border-light);
+      padding-top: 12px;
+    }
+
+    .process-card:hover .process-spec {
+      color: var(--brand-accent);
+    }
+
+    /* ==========================================================================
+       DIVISIÓN 3: DISPOSITIVOS DE CAMPO & REDES (GRID 4x1 CLARO)
+       ========================================================================== */
+    .field-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: var(--grid-gap);
+    }
+
+    .field-card {
+      background-color: var(--bg-card);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-lg) !important;
+      padding: var(--card-padding);
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      box-shadow: var(--shadow-sm);
+      transition: var(--transition);
+    }
+
+    .field-card:hover {
+      border-color: rgba(37, 99, 235, 0.3);
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .field-icon {
+      width: 100%;
+      height: 120px;
+      border-bottom: 1px dashed var(--border-light);
+      margin-bottom: 24px;
+      color: var(--text-muted);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: color 0.3s ease;
+    }
+
+    .field-card:hover .field-icon {
+      color: var(--brand-accent);
+    }
+
+    .field-name {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--brand-dark);
+      margin-bottom: 12px;
+      font-family: 'Outfit', sans-serif;
+    }
+
+    .field-description {
+      font-size: 13.5px;
+      color: var(--text-muted);
+      line-height: 1.6;
+      margin-bottom: 20px;
+      flex-grow: 1;
+    }
+
+    .field-specs-list {
+      margin-top: auto;
+      list-style: none;
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 11px;
+      color: var(--text-muted);
+      border-top: 1px solid var(--border-light);
+      padding-top: 14px;
+    }
+
+    .field-specs-list li {
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .field-specs-list li::before {
+      content: '■';
+      font-size: 8px;
+      color: var(--brand-accent);
+    }
+
+    /* ==========================================================================
+       SECCIÓN PRENSA / NOTICIAS (REAL B2B CASE HITS)
+       ========================================================================== */
+    .news-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 32px;
+    }
+
+    .news-card {
+      background-color: var(--bg-card);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-lg) !important;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      box-shadow: var(--shadow-sm);
+      transition: var(--transition);
+    }
+
+    .news-card:hover {
+      border-color: rgba(37, 99, 235, 0.3);
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .news-source {
+      display: inline-block;
+      background-color: var(--brand-dark);
+      color: #ffffff;
+      font-family: 'Inter', sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      padding: 4px 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 20px;
+    }
+
+    .news-source.mch {
+      background-color: #ea580c;
+    }
+
+    .news-title {
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--brand-dark);
+      margin-bottom: 16px;
+      line-height: 1.3;
+      font-family: 'Outfit', sans-serif;
+    }
+
+    .news-description {
+      font-size: 14px;
+      color: var(--text-muted);
+      line-height: 1.6;
+      margin-bottom: 28px;
+    }
+
+    .news-link {
+      font-family: 'Inter', sans-serif;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--brand-accent);
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      margin-top: auto;
+    }
+
+    .news-link:hover {
+      gap: 10px;
+    }
+
+    /* ==========================================================================
+       SECCIÓN DE RIESGOS / HUB NORMATIVO (TEMA CLARO PREMIUM)
+       ========================================================================== */
+    .pain-section {
+      background-color: var(--bg-page);
+      color: var(--text-main);
+      padding: 100px 0;
+    }
+
+    .pain-section .section-header {
+      border-bottom-color: var(--border-light);
+    }
+
+    .pain-section .section-title {
+      color: var(--brand-dark);
+    }
+
+    .pain-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 40px;
+    }
+
+    .pain-card {
+      background-color: var(--bg-card);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-lg) !important;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      position: relative;
+      box-shadow: var(--shadow-sm);
+      transition: var(--transition);
+    }
+
+    .pain-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-md);
+      border-color: rgba(37, 99, 235, 0.2);
+    }
+
+    .pain-card.alert {
+      border-color: rgba(234, 179, 8, 0.4);
+      background-color: rgba(234, 179, 8, 0.02);
+    }
+
+    .pain-badge {
+      display: inline-block;
+      background-color: rgba(234, 179, 8, 0.1);
+      color: #b45309;
+      font-family: 'Inter', sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      padding: 4px 12px;
+      border-radius: 100px !important;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 20px;
+      border: 1px solid rgba(234, 179, 8, 0.3);
+    }
+
+    .pain-badge.critical {
+      background-color: rgba(220, 38, 38, 0.08);
+      color: #b91c1c;
+      border-color: rgba(220, 38, 38, 0.2);
+    }
+
+    .pain-title {
+      font-size: 24px;
+      font-weight: 700;
+      color: var(--brand-dark);
+      margin-bottom: 16px;
+      font-family: 'Outfit', sans-serif;
+    }
+
+    .pain-desc {
+      font-size: 14.5px;
+      color: var(--text-muted);
+      line-height: 1.65;
+      margin-bottom: 32px;
+      flex-grow: 1;
+    }
+
+    .pain-action-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background-color: var(--brand-accent);
+      color: #ffffff !important;
+      padding: 12px 24px;
+      font-weight: 700;
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      border-radius: var(--radius-sm) !important;
+      transition: var(--transition);
+      margin-top: auto;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .pain-action-link:hover {
+      background-color: var(--brand-accent-hover);
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-md);
+    }
+
+    /* ==========================================================================
+       SECCIÓN DE CLIENTES CATEGORIZADA (TRUST GRID)
+       ========================================================================== */
+    .client-categories-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: var(--grid-gap);
+      margin-top: 40px;
+    }
+
+    .client-category-card {
+      background-color: var(--bg-card);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-md) !important;
+      padding: var(--card-padding);
+      text-align: center;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .client-category-title {
+      font-family: 'Outfit', sans-serif;
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--brand-accent);
+      text-transform: uppercase;
+      border-bottom: 1px solid var(--border-light);
+      padding-bottom: 12px;
+      margin-bottom: 20px;
+      letter-spacing: 0.5px;
+    }
+
+    .client-list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      opacity: 0.8;
+      transition: opacity 0.2s ease;
+    }
+
+    .client-list:hover {
+      opacity: 1;
+    }
+
+    .client-item {
+      font-size: 13.5px;
+      font-weight: 600;
+      color: var(--text-main);
+    }
+
+    .client-item:hover {
+      color: var(--brand-accent);
+    }
+
+    /* ==========================================================================
+       INDUSTRIAS
+       ========================================================================== */
+    .industries-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: var(--grid-gap);
+    }
+
+    .industry-card {
+      background-color: var(--bg-card);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-lg) !important;
+      min-height: 300px;
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      position: relative;
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+      transition: var(--transition);
+    }
+
+    .industry-card:hover {
+      border-color: rgba(37, 99, 235, 0.3);
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .industry-info {
+      padding: var(--card-padding);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      z-index: 2;
+      background-color: var(--bg-card);
+    }
+
+    .industry-name {
+      font-size: 24px;
+      font-weight: 700;
+      color: var(--brand-dark);
+      margin-bottom: 12px;
+      margin-top: 8px;
+      font-family: 'Outfit', sans-serif;
+    }
+
+    .industry-description {
+      font-size: 13px;
+      color: var(--text-muted);
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    .industry-tag {
+      font-family: 'Inter', sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--brand-accent);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .industry-visual {
+      position: relative;
+      border-left: 1px solid var(--border-light);
+      background-color: #f8fafc;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    .industry-visual::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: 
+        radial-gradient(var(--border-light) 1.5px, transparent 1.5px);
+      background-size: 12px 12px;
+      opacity: 0.5;
+    }
+
+    .industry-visual svg {
+      width: 80%;
+      height: auto;
+      max-height: 180px;
+      color: var(--text-muted);
+      transition: color 0.3s ease, transform 0.5s ease;
+    }
+
+    .industry-card:hover .industry-visual svg {
+      color: var(--brand-accent);
+      transform: scale(1.05);
+    }
+
+    /* ==========================================================================
+       CTA FINAL (TEMA CLARO FORM)
+       ========================================================================== */
+    .cta-final {
+      background-color: #f1f5f9;
+      border-top: 1px solid var(--border-light);
+      border-bottom: 1px solid var(--border-light);
+      padding: 100px 0;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .cta-container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 40px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+      position: relative;
+      z-index: 2;
+    }
+
+    .cta-content {
+      max-width: 560px;
+    }
+
+    .cta-overline {
+      font-family: 'Inter', sans-serif;
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--brand-accent);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 16px;
+      display: block;
+    }
+
+    .cta-title {
+      font-size: 42px;
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: 24px;
+      color: var(--brand-dark);
+      font-family: 'Outfit', sans-serif;
+      letter-spacing: -1px;
+    }
+
+    .cta-title strong {
+      font-weight: 800;
+      color: var(--brand-accent);
+    }
+
+    .cta-subtitle {
+      font-size: 16px;
+      line-height: 1.6;
+      color: var(--text-muted);
+      margin-bottom: 32px;
+    }
+
+    .cta-technical-stamp {
+      display: flex;
+      gap: 24px;
+      font-family: 'Inter', sans-serif;
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--text-muted);
+      border-top: 1px solid var(--border-light);
+      padding-top: 24px;
+    }
+
+    .stamp-item {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .stamp-item::before {
+      content: '';
+      display: inline-block;
+      width: 6px;
+      height: 6px;
+      background-color: var(--brand-accent);
+      border-radius: 50% !important;
+    }
+
+    .cta-form-container {
+      background-color: var(--bg-card);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-lg) !important;
+      padding: 40px;
+      position: relative;
+      box-shadow: var(--shadow-xl);
+    }
+
+    .cta-form-container::before {
+      content: 'FORM: CONTROL DIAGNOSTIC PROTOCOL';
+      position: absolute;
+      top: 12px;
+      right: 16px;
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 10px;
+      color: var(--text-muted);
+    }
+
+    .form-title {
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 24px;
+      letter-spacing: 0.5px;
+      color: var(--brand-dark);
+      font-family: 'Outfit', sans-serif;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-label {
+      display: block;
+      font-family: 'Inter', sans-serif;
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--brand-dark);
+      margin-bottom: 6px;
+    }
+
+    .form-input {
+      width: 100%;
+      background-color: #f8fafc;
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-sm) !important;
+      padding: 12px 16px;
+      color: var(--text-main);
+      font-family: 'Inter', sans-serif;
+      font-size: 14px;
+      transition: var(--transition);
+    }
+
+    .form-input:focus {
+      outline: none;
+      border-color: var(--brand-accent);
+      background-color: #ffffff;
+      box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+    }
+
+    .form-input::placeholder {
+      color: var(--text-muted);
+    }
+
+    .form-submit-btn {
+      width: 100%;
+      background-color: var(--brand-accent);
+      color: #ffffff;
+      border: none;
+      border-radius: var(--radius-sm) !important;
+      padding: 14px;
+      font-size: 14px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      cursor: pointer;
+      box-shadow: var(--shadow-sm);
+      transition: var(--transition);
+      margin-top: 10px;
+    }
+
+    .form-submit-btn:hover {
+      background-color: var(--brand-accent-hover);
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .form-disclaimer {
+      font-size: 11px;
+      color: var(--text-muted);
+      margin-top: 16px;
+      text-align: center;
+      line-height: 1.4;
+    }
+
+    /* ==========================================================================
+       FOOTER (TEMA CLARO)
+       ========================================================================== */
+    .footer {
+      background-color: #ffffff;
+      border-top: 1px solid var(--border-light);
+      padding: 80px 0 40px 0;
+      font-size: 14px;
+      position: relative;
+      z-index: 10;
+    }
+
+    .footer-container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 40px;
+      display: grid;
+      grid-template-columns: 1.2fr repeat(3, 0.6fr);
+      gap: 40px;
+    }
+
+    .footer-brand {
+      max-width: 320px;
+    }
+
+    .footer-logo {
+      margin-bottom: 20px;
+    }
+
+    .footer-tagline {
+      font-size: 13.5px;
+      color: var(--text-muted);
+      line-height: 1.6;
+      margin-bottom: 24px;
+    }
+
+    .partner-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      border: 1px solid var(--border-light);
+      padding: 8px 16px;
+      background-color: #f8fafc;
+      border-radius: var(--radius-sm) !important;
+    }
+
+    .partner-badge-dot {
+      width: 6px;
+      height: 6px;
+      background-color: var(--brand-accent);
+      border-radius: 50% !important;
+    }
+
+    .partner-badge-text {
+      font-family: 'Inter', sans-serif;
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--brand-dark);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .footer-column-title {
+      font-family: 'Outfit', sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--brand-dark);
+      text-transform: uppercase;
+      margin-bottom: 24px;
+    }
+
+    .footer-links {
+      list-style: none;
+    }
+
+    .footer-link-item {
+      margin-bottom: 12px;
+    }
+
+    .footer-link-item a {
+      color: var(--text-muted);
+    }
+
+    .footer-link-item a:hover {
+      color: var(--brand-accent);
+      padding-left: 2px;
+    }
+
+    .footer-contact-info {
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    .footer-contact-info p {
+      margin-bottom: 8px;
+    }
+
+    .footer-bottom {
+      max-width: 1280px;
+      margin: 60px auto 0 auto;
+      padding: 30px 40px 0 40px;
+      border-top: 1px solid var(--border-light);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: var(--text-muted);
+      font-size: 12.5px;
+    }
+  </style>
 </head>
 <body>
 

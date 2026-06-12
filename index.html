@@ -43,7 +43,7 @@
   <header class="navbar" id="top-nav">
     <div class="navbar-container">
       <a href="#inicio" class="logo-container" aria-label="CONECTA S.A. Home">
-        <span class="logo-conecta">CONECTA</span><span>S.A.</span>
+        <span class="logo-conecta">CONECTA</span><span style="font-size: 12px; font-weight: 700; color: var(--text-muted); margin-left: 6px; letter-spacing: 1px; text-transform: uppercase;">S.A.</span>
       </a>
       
       <button class="menu-toggle" id="mobile-menu-toggle" aria-label="Abrir menú de navegación">
@@ -56,7 +56,7 @@
         <a href="#soluciones" class="nav-link">División Sistemas</a>
         <a href="#procesos" class="nav-link">SUPcon Procesos</a>
         <a href="#campo" class="nav-link">Venta de Equipos</a>
-        <a href="landing_ejemplos.html" class="nav-link">★ Biblioteca Técnica</a>
+        <a href="landing_ejemplos.html" class="nav-link" style="color: var(--brand-accent); font-weight: 600;">★ Biblioteca Técnica</a>
         <a href="#normativa" class="nav-link">Hub Normativo</a>
         <a href="#diagnostico" class="btn-contact">Evaluar Proyecto</a>
       </nav>
@@ -189,9 +189,9 @@
        3. STATS
        ========================================================================== -->
   <section class="stats" id="stats">
-    <div class="section-container">
-      <span class="section-overline">Respaldo Tecnológico y Operativo</span>
-      <h2 class="section-title">Experiencia Comprobada en <strong>Infraestructura Crítica</strong></h2>
+    <div class="section-container" style="padding-bottom: 40px; text-align: center; background-color: transparent;">
+      <span class="section-overline" style="margin-bottom: 8px;">Respaldo Tecnológico y Operativo</span>
+      <h2 class="section-title" style="font-size: 32px; color: var(--brand-dark);">Experiencia Comprobada en <strong>Infraestructura Crítica</strong></h2>
     </div>
     <div class="stats-container">
       <div class="stat-item" id="stat-1">
@@ -224,7 +224,7 @@
   <!-- ==========================================================================
        4. DIVISIÓN SISTEMAS [CONECTA INGENIERÍA]
        ========================================================================== -->
-  <section class="section section-lazy" id="soluciones">
+  <section class="section section-lazy" id="soluciones" style="background-color: #ffffff; border-top: 1px solid var(--border-light); border-bottom: 1px solid var(--border-light);">
     <div class="section-container">
       <header class="section-header">
         <div class="section-title-wrap">
@@ -277,7 +277,7 @@
         </article>
 
         <!-- Sincrofasores PMU -->
-        <article class="solution-card" id="sol-pmu">
+        <article class="solution-card" id="sol-pmu" style="border: 2px solid var(--brand-accent);">
           <span class="solution-num">CN-SYS-004 // #1 EN BASE INSTALADA CHILE</span>
           <h3 class="solution-title">Integración PMU y Software ELPROS</h3>
           <p class="solution-description">
@@ -336,8 +336,8 @@
       <div class="processes-grid">
         <!-- DCS ECS-700 -->
         <article class="process-card" id="proc-ecs700">
-          <div class="process-icon" aria-hidden="true">
-            <img src="assets/supcon_img/mapped/DCS.png" alt="DCS ECS-700">
+          <div class="process-icon" aria-hidden="true" style="display: flex; align-items: flex-start; justify-content: center; width: 64px;">
+            <img src="assets/supcon_img/mapped/DCS.png" alt="DCS ECS-700" style="width: 64px; height: 64px; object-fit: contain; filter: drop-shadow(0 4px 6px rgba(0,0,0,0.05));">
           </div>
           <div class="process-content">
             <h3 class="process-name">Control Distribuido (DCS / SIS / UCS)</h3>
@@ -350,8 +350,8 @@
 
         <!-- IA Predictiva -->
         <article class="process-card" id="proc-pride">
-          <div class="process-icon" aria-hidden="true">
-            <img src="assets/supcon_img/mapped/SIS.webp" alt="SIS PRIDE">
+          <div class="process-icon" aria-hidden="true" style="display: flex; align-items: flex-start; justify-content: center; width: 64px;">
+            <img src="assets/supcon_img/mapped/SIS.webp" alt="SIS PRIDE" style="width: 64px; height: 64px; object-fit: contain; filter: drop-shadow(0 4px 6px rgba(0,0,0,0.05));">
           </div>
           <div class="process-content">
             <h3 class="process-name">Inteligencia Artificial Industrial (PRIDE)</h3>
@@ -364,8 +364,8 @@
 
         <!-- APC V11.2 -->
         <article class="process-card" id="proc-apc">
-          <div class="process-icon" aria-hidden="true">
-            <img src="assets/supcon_img/mapped/PLC.png" alt="APC V11.2">
+          <div class="process-icon" aria-hidden="true" style="display: flex; align-items: flex-start; justify-content: center; width: 64px;">
+            <img src="assets/supcon_img/mapped/PLC.png" alt="APC V11.2" style="width: 64px; height: 64px; object-fit: contain; filter: drop-shadow(0 4px 6px rgba(0,0,0,0.05));">
           </div>
           <div class="process-content">
             <h3 class="process-name">Optimización de Procesos (APC V11.2)</h3>
@@ -378,8 +378,8 @@
 
         <!-- supOS IIoT -->
         <article class="process-card" id="proc-supos">
-          <div class="process-icon" aria-hidden="true">
-            <img src="assets/supcon_img/mapped/LoRa_Gateway.webp" alt="supOS IIoT">
+          <div class="process-icon" aria-hidden="true" style="display: flex; align-items: flex-start; justify-content: center; width: 64px;">
+            <img src="assets/supcon_img/mapped/LoRa_Gateway.webp" alt="supOS IIoT" style="width: 64px; height: 64px; object-fit: contain; filter: drop-shadow(0 4px 6px rgba(0,0,0,0.05));">
           </div>
           <div class="process-content">
             <h3 class="process-name">Plataforma IIoT supOS</h3>
@@ -396,7 +396,7 @@
   <!-- ==========================================================================
        6. DIVISIÓN COMERCIAL: VENTA DE EQUIPOS E INSTRUMENTACIÓN
        ========================================================================== -->
-  <section class="section section-lazy" id="campo">
+  <section class="section section-lazy" id="campo" style="background-color: #ffffff; border-top: 1px solid var(--border-light); border-bottom: 1px solid var(--border-light);">
     <div class="section-container">
       <header class="section-header">
         <div class="section-title-wrap">
@@ -410,9 +410,9 @@
 
       <div class="field-grid">
         <!-- Instrumentación SUPCON -->
-        <article class="field-card" id="field-cxt">
-          <div class="field-icon" aria-hidden="true">
-            <img src="assets/supcon_img/mapped/SFE900.webp" alt="Caudalímetro SFE900">
+        <article class="field-card" id="field-cxt" style="border-top: 4px solid var(--accent-red);">
+          <div class="field-icon" aria-hidden="true" style="height: 110px; display: flex; align-items: center; justify-content: center; margin-bottom: 24px;">
+            <img src="assets/supcon_img/mapped/SFE900.webp" alt="Caudalímetro SFE900" style="max-height: 100%; width: auto; object-fit: contain; filter: drop-shadow(0 4px 6px rgba(0,0,0,0.05));">
           </div>
           <h3 class="field-name">Instrumentación Inteligente</h3>
           <p class="field-description">
@@ -423,16 +423,16 @@
             <li>Exactitud: ±0.075% FS</li>
             <li>Protocolos: HART, Modbus, FF</li>
           </ul>
-          <div>
+          <div style="margin-top: 20px; padding-top: 16px; border-top: 1px solid var(--border-light); display: flex; justify-content: space-between; align-items: center; width: 100%;">
             <span class="solution-tag">SUPcon</span>
-            <a href="catalogo_supcon.html" class="solution-link">Ver Catálogo SUPcon →</a>
+            <a href="catalogo_supcon.html" class="solution-link" style="color: var(--accent-red); font-size: 13.5px; font-weight: 600;">Ver Catálogo SUPcon →</a>
           </div>
         </article>
 
         <!-- Gateways NovaTech -->
-        <article class="field-card" id="field-gateways">
-          <div class="field-icon" aria-hidden="true">
-            <img src="assets/novatech_img/orionlx_plus.webp" alt="OrionLX+">
+        <article class="field-card" id="field-gateways" style="border-top: 4px solid #0033a0;">
+          <div class="field-icon" aria-hidden="true" style="height: 110px; display: flex; align-items: center; justify-content: center; margin-bottom: 24px;">
+            <img src="assets/novatech_img/orionlx_plus.webp" alt="OrionLX+" style="max-height: 100%; width: auto; object-fit: contain; filter: drop-shadow(0 4px 6px rgba(0,0,0,0.05));">
           </div>
           <h3 class="field-name">Gateways de Comunicaciones</h3>
           <p class="field-description">
@@ -443,16 +443,16 @@
             <li>Modelos: OrionLX / OrionLX+</li>
             <li>Retrofit: Reemplazo GE D20</li>
           </ul>
-          <div>
+          <div style="margin-top: 20px; padding-top: 16px; border-top: 1px solid var(--border-light); display: flex; justify-content: space-between; align-items: center; width: 100%;">
             <span class="solution-tag">NovaTech</span>
-            <a href="catalogo_novatech.html" class="solution-link">Ver Catálogo NovaTech →</a>
+            <a href="catalogo_novatech.html" class="solution-link" style="color: #0033a0; font-size: 13.5px; font-weight: 600;">Ver Catálogo NovaTech →</a>
           </div>
         </article>
 
         <!-- Redes Belden / Hirschmann -->
-        <article class="field-card" id="field-redes">
-          <div class="field-icon" aria-hidden="true">
-            <img src="assets/novatech_img/orion_io.webp" alt="Orion I/O">
+        <article class="field-card" id="field-redes" style="border-top: 4px solid var(--accent-orange);">
+          <div class="field-icon" aria-hidden="true" style="height: 110px; display: flex; align-items: center; justify-content: center; margin-bottom: 24px;">
+            <img src="assets/novatech_img/orion_io.webp" alt="Orion I/O" style="max-height: 100%; width: auto; object-fit: contain; filter: drop-shadow(0 4px 6px rgba(0,0,0,0.05));">
           </div>
           <h3 class="field-name">Switches OT & Redes</h3>
           <p class="field-description">
@@ -463,16 +463,16 @@
             <li>Estándar: IEC 61850-3 Substation</li>
             <li>Seguridad: Firewalls de Celda</li>
           </ul>
-          <div>
+          <div style="margin-top: 20px; padding-top: 16px; border-top: 1px solid var(--border-light); display: flex; justify-content: space-between; align-items: center; width: 100%;">
             <span class="solution-tag">Belden</span>
-            <a href="#diagnostico" class="solution-link">Cotizar Solución →</a>
+            <a href="#diagnostico" class="solution-link" style="color: var(--accent-orange); font-size: 13.5px; font-weight: 600;">Cotizar Solución →</a>
           </div>
         </article>
 
         <!-- Protecciones NR Electric / Vizimax -->
-        <article class="field-card" id="field-protecciones">
-          <div class="field-icon" aria-hidden="true">
-            <img src="assets/novatech_img/orionlx_m.webp" alt="OrionLXm">
+        <article class="field-card" id="field-protecciones" style="border-top: 4px solid #004b87;">
+          <div class="field-icon" aria-hidden="true" style="height: 110px; display: flex; align-items: center; justify-content: center; margin-bottom: 24px;">
+            <img src="assets/novatech_img/orionlx_m.webp" alt="OrionLXm" style="max-height: 100%; width: auto; object-fit: contain; filter: drop-shadow(0 4px 6px rgba(0,0,0,0.05));">
           </div>
           <h3 class="field-name">Protecciones & Retrofit</h3>
           <p class="field-description">
@@ -483,9 +483,9 @@
             <li>Homologación: Aprobado CEN</li>
             <li>Especialidad: Control de Transformador</li>
           </ul>
-          <div>
+          <div style="margin-top: 20px; padding-top: 16px; border-top: 1px solid var(--border-light); display: flex; justify-content: space-between; align-items: center; width: 100%;">
             <span class="solution-tag">NR & Vizimax</span>
-            <a href="#diagnostico" class="solution-link">Cotizar Solución →</a>
+            <a href="#diagnostico" class="solution-link" style="color: #004b87; font-size: 13.5px; font-weight: 600;">Cotizar Solución →</a>
           </div>
         </article>
       </div>
@@ -538,7 +538,7 @@
     <div class="section-container">
       <header class="section-header">
         <div class="section-title-wrap">
-          <span class="section-overline">Seguridad Legal y Cumplimiento Técnico</span>
+          <span class="section-overline" style="color: var(--brand-accent);">Seguridad Legal y Cumplimiento Técnico</span>
           <h2 class="section-title">Evite los Riesgos de la <strong>Inoperancia Normativa</strong></h2>
         </div>
         <div class="section-tagline">
@@ -554,9 +554,9 @@
           <p class="pain-desc">
             El CEN presiona a parques antiguos. Si sus medidores obsoletos no cumplen el estándar de sincronización PMUS (>20 MW) o su red O.T. expone vulnerabilidades violando la nueva <b>Ley Marco de Ciberseguridad</b>, se expone a multas millonarias y desconexión sistemática del sistema.
           </p>
-          <div>
-            <a href="whitepaper_apagon_feb2025.html" class="pain-action-link">📄 Apagón Feb-2025</a>
-            <a href="whitepaper_estrategia_pmus_2025.html" class="pain-action-link">📄 Estrategia PMUS 2025</a>
+          <div style="display: flex; gap: 12px; margin-top: auto; flex-wrap: wrap;">
+            <a href="whitepaper_apagon_feb2025.html" class="pain-action-link" style="margin-top:0;">📄 Apagón Feb-2025</a>
+            <a href="whitepaper_estrategia_pmus_2025.html" class="pain-action-link" style="margin-top:0; background-color: var(--brand-blue);">📄 Estrategia PMUS 2025</a>
           </div>
         </article>
 
@@ -567,9 +567,9 @@
           <p class="pain-desc">
             Las últimas contingencias del sistema eléctrico chileno demostraron que el mal funcionamiento de los SCADA de respaldo y la desincronización de remotas (RTUs) gatillan <b>multas del CEN y sanciones de la SEC ineludibles</b>. Auditamos y blindamos su centro de control antes de que ocurra.
           </p>
-          <div>
-            <a href="whitepaper_auditoria_sitr_stn.html" class="pain-action-link">📚 Auditoría SITR/SCADA</a>
-            <a href="whitepaper_visita_terreno.html" class="pain-action-link">📚 Visita Terreno</a>
+          <div style="display: flex; gap: 12px; margin-top: auto; flex-wrap: wrap;">
+            <a href="whitepaper_auditoria_sitr_stn.html" class="pain-action-link" style="margin-top:0;">📚 Auditoría SITR/SCADA</a>
+            <a href="whitepaper_visita_terreno.html" class="pain-action-link" style="margin-top:0; background-color: var(--brand-blue);">📚 Visita Terreno</a>
           </div>
         </article>
       </div>
@@ -658,7 +658,7 @@
   <!-- ==========================================================================
        INDUSTRIAS
        ========================================================================== -->
-  <section class="section section-lazy" id="industrias">
+  <section class="section section-lazy" id="industrias" style="background-color: #ffffff; border-top: 1px solid var(--border-light);">
     <div class="section-container">
       <header class="section-header">
         <div class="section-title-wrap">
@@ -681,7 +681,7 @@
                 Soluciones robustas para molienda, flotación y espesadores. Control avanzado de procesos y DCS redundantes para mantener la continuidad operativa y mitigar paradas imprevistas bajo condiciones ambientales críticas.
               </p>
             </div>
-            <a href="#diagnostico" class="btn-secondary">Ver Casos</a>
+            <a href="#diagnostico" class="btn-secondary" style="align-self: flex-start; font-size: 12px; padding: 8px 16px; border-radius: var(--radius-sm);">Ver Casos</a>
           </div>
           <div class="industry-visual" aria-hidden="true">
             <svg viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="1.2">
@@ -708,7 +708,7 @@
                 Interconexión segura de parques solares y eólicos al sistema de transmisión nacional. Controladores de planta homologados por la CEN, sistemas PMU de medición síncrona y lógica de automatización robusta.
               </p>
             </div>
-            <a href="#diagnostico" class="btn-secondary">Ver Casos</a>
+            <a href="#diagnostico" class="btn-secondary" style="align-self: flex-start; font-size: 12px; padding: 8px 16px; border-radius: var(--radius-sm);">Ver Casos</a>
           </div>
           <div class="industry-visual" aria-hidden="true">
             <svg viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="1.2">
@@ -735,7 +735,7 @@
                 Control continuo de calderas recuperadoras, reactores químicos y bobinadoras de papel. Redundancia crítica y arquitecturas DCS avanzadas para mantener tolerancias estrictas de humedad, peso y consistencia de fibra.
               </p>
             </div>
-            <a href="#diagnostico" class="btn-secondary">Ver Casos</a>
+            <a href="#diagnostico" class="btn-secondary" style="align-self: flex-start; font-size: 12px; padding: 8px 16px; border-radius: var(--radius-sm);">Ver Casos</a>
           </div>
           <div class="industry-visual" aria-hidden="true">
             <svg viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="1.2">
@@ -758,7 +758,7 @@
                 Optimización de líneas de envasado, control higiénico de reactores y gestión de recetas complejas por batch bajo estándar ISA-88. Monitoreo constante del consumo de servicios como vapor, gas y agua.
               </p>
             </div>
-            <a href="#diagnostico" class="btn-secondary">Ver Casos</a>
+            <a href="#diagnostico" class="btn-secondary" style="align-self: flex-start; font-size: 12px; padding: 8px 16px; border-radius: var(--radius-sm);">Ver Casos</a>
           </div>
           <div class="industry-visual" aria-hidden="true">
             <svg viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="1.2">
@@ -779,7 +779,7 @@
        8. CTA FINAL (INTERACTIVO, UN EQUIPO. CUATRO SEMANAS. CERO RIESGO)
        ========================================================================== -->
   <section class="cta-final" id="diagnostico">
-    <div class="blueprint-bg"></div>
+    <div class="blueprint-bg" style="opacity: 0.05;"></div>
     <div class="cta-container">
       <div class="cta-content">
         <span class="cta-overline">Diagnóstico de Planta Sin Costo</span>
@@ -829,7 +829,7 @@
     <div class="footer-container">
       <div class="footer-brand">
         <div class="logo-container footer-logo">
-          <span class="logo-conecta">CONECTA</span><span>S.A.</span>
+          <span class="logo-conecta">CONECTA</span><span style="font-size: 12px; font-weight: 700; color: var(--text-muted); margin-left: 6px; letter-spacing: 1px; text-transform: uppercase;">S.A.</span>
         </div>
         <p class="footer-tagline">
           Ingeniería de clase mundial y soporte local de CONECTA en Chile. 34 años garantizando la estabilidad operativa del país e integrando tecnologías líderes globales.
@@ -857,7 +857,7 @@
           <p><strong>CONECTA S.A.</strong></p>
           <p>Av. Apoquindo 4700, Las Condes,</p>
           <p>Santiago, Chile.</p>
-          <p>Soporte 24/7 en tu idioma:</p>
+          <p style="margin-top: 16px; color: var(--brand-accent);">Soporte 24/7 en tu idioma:</p>
           <p>+56 2 2490 0000</p>
         </div>
       </div>
@@ -867,7 +867,7 @@
         <ul class="footer-links">
           <li class="footer-link-item"><a href="https://conecta.cl/" target="_blank" rel="noopener">conecta.cl</a></li>
           <li class="footer-link-item"><a href="https://global.supcon.com/" target="_blank" rel="noopener">global.supcon.com</a></li>
-          <li class="footer-link-item"><a href="landing_ejemplos.html">★ Ejemplos de Ingeniería</a></li>
+          <li class="footer-link-item"><a href="landing_ejemplos.html" style="color: var(--brand-accent); font-weight: 600;">★ Ejemplos de Ingeniería</a></li>
           <li class="footer-link-item"><a href="#soluciones">División Sistemas</a></li>
           <li class="footer-link-item"><a href="#campo">Venta de Equipos</a></li>
         </ul>
@@ -878,7 +878,7 @@
       <div>
         &copy; 2026 CONECTA S.A. & SUPcon Technology. Todos los derechos reservados.
       </div>
-      <div>
+      <div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: var(--text-muted);">
         ID OPERATIVO: CL-SCL-SUP-2026 // ISO 9001:2015 CERTIFIED // VICTOR VILCHE DIAZ
       </div>
     </div>
@@ -957,15 +957,15 @@
   </script>
 
   <!-- WIDGET DE SELECCIÓN A/B PARA EVALUACIÓN -->
-  <div id="ab-testing-widget">
-    <div>
+  <div id="ab-testing-widget" style="position: fixed; bottom: 20px; right: 20px; background: rgba(15, 23, 42, 0.95); border: 1px solid rgba(255,255,255,0.1); color: #ffffff; z-index: 9999; font-family: 'Inter', sans-serif; font-size: 12px; padding: 16px; border-radius: 12px; box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3); max-width: 320px; backdrop-filter: blur(10px);">
+    <div style="font-weight: 700; font-size: 13px; color: #38bdf8; margin-bottom: 6px; display: flex; align-items: center; gap: 6px;">
       <span>⚡</span> Evaluación A/B
     </div>
-    <p>Compara las estrategias de posicionamiento para CONECTA S.A.:</p>
-    <div>
-      <a href="index_a_storybrand.html" id="btn-opt-a" onmouseover="this.style.background='rgba(255,255,255,0.2)'" onmouseout="this.style.background='rgba(255,255,255,0.1)'">Opción A: StoryBrand Journey</a>
-      <a href="index_b_portfolio.html" id="btn-opt-b" onmouseover="this.style.background='rgba(255,255,255,0.2)'" onmouseout="this.style.background='rgba(255,255,255,0.1)'">Opción B: Portafolio Técnico</a>
-      <a href="index.html">✓ Inicio (Estilo Base Claro)</a>
+    <p style="color: #94a3b8; font-size: 11px; margin-bottom: 12px; line-height: 1.4;">Compara las estrategias de posicionamiento para CONECTA S.A.:</p>
+    <div style="display: flex; flex-direction: column; gap: 8px;">
+      <a href="index_a_storybrand.html" id="btn-opt-a" style="background: rgba(255,255,255,0.1); color: #e2e8f0; padding: 8px 12px; border-radius: 6px; text-decoration: none; text-align: center; font-weight: 600; display: block; transition: all 0.2s;" onmouseover="this.style.background='rgba(255,255,255,0.2)'" onmouseout="this.style.background='rgba(255,255,255,0.1)'">Opción A: StoryBrand Journey</a>
+      <a href="index_b_portfolio.html" id="btn-opt-b" style="background: rgba(255,255,255,0.1); color: #e2e8f0; padding: 8px 12px; border-radius: 6px; text-decoration: none; text-align: center; font-weight: 600; display: block; transition: all 0.2s;" onmouseover="this.style.background='rgba(255,255,255,0.2)'" onmouseout="this.style.background='rgba(255,255,255,0.1)'">Opción B: Portafolio Técnico</a>
+      <a href="index.html" style="background: #2563eb; color: white; padding: 8px 12px; border-radius: 6px; text-decoration: none; text-align: center; font-weight: 700; display: block; border: 1px solid #60a5fa; box-shadow: 0 0 10px rgba(59,130,246,0.5);">✓ Inicio (Estilo Base Claro)</a>
     </div>
   </div>
 </body>
