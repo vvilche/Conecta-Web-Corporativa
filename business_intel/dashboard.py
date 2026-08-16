@@ -154,6 +154,10 @@ def generate_dashboard():
         except Exception:
             continue
 
+    # Sort by actual report date (descending) so the newest report is "latest",
+    # not whichever filename happens to sort last alphabetically.
+    reports.sort(key=lambda r: r['date'] or '', reverse=True)
+
     if not reports:
         return "<html><body><div class='empty'>No reports yet. Run the intel scan first.</div></body></html>"
 
