@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>CONECTA Business Intelligence</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;700&family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root {
+    --navy: #071324;
+    --blue: #1e3a8a;
+    --accent: #2563eb;
+    --accent-hover: #1d4ed8;
+    --bg: #f8fafc;
+    --card: #ffffff;
+    --text: #1e293b;
+    --muted: #64748b;
+    --border: #e2e8f0;
+    --radius-card: 20px;
+    --radius-btn: 100px;
+    --shadow: 0 4px 6px -1px rgba(0,0,0,0.05), 0 2px 4px -2px rgba(0,0,0,0.05);
+    --shadow-lg: 0 20px 25px -5px rgba(0,0,0,0.08);
+    --green: #10b981;
+    --amber: #eab308;
+    --red: #ef4444;
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+body { background:var(--bg); color:var(--text); font-family:'Inter',-apple-system,sans-serif; line-height:1.6; }
+header { background:var(--navy); color:white; padding:2rem 3rem; }
+header h1 { font-family:'Outfit',sans-serif; font-size:1.8rem; font-weight:800; }
+header h1 span { color:var(--accent); }
+header .sub { color:#94a3b8; font-size:0.85rem; margin-top:0.25rem; }
+.stats { display:flex; gap:2rem; margin-top:1.5rem; flex-wrap:wrap; }
+.stat { background:rgba(255,255,255,0.08); border-radius:12px; padding:1rem 1.5rem; min-width:120px; }
+.stat .num { font-family:'IBM Plex Mono',monospace; font-size:2rem; font-weight:700; color:var(--accent); }
+.stat .label { font-size:0.7rem; color:#94a3b8; text-transform:uppercase; letter-spacing:0.05em; }
+.container { max-width:1280px; margin:0 auto; padding:2rem; }
+h2 { font-family:'Outfit',sans-serif; font-size:1.4rem; color:var(--navy); margin-bottom:1rem; margin-top:2rem; }
+h2:first-of-type { margin-top:0; }
+.grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(380px,1fr)); gap:1.5rem; }
+.card { background:var(--card); border:1px solid var(--border); border-radius:var(--radius-card); padding:1.5rem; box-shadow:var(--shadow); transition:all 0.2s; }
+.card:hover { border-color:rgba(37,99,235,0.3); transform:translateY(-2px); box-shadow:var(--shadow-lg); }
+.card .source { font-size:0.7rem; color:var(--muted); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:0.5rem; }
+.card h3 { font-family:'Outfit',sans-serif; font-size:1.05rem; color:var(--navy); margin-bottom:0.5rem; line-height:1.3; }
+.card p { font-size:0.9rem; color:var(--muted); margin-bottom:0.75rem; }
+.card .tags { display:flex; gap:0.5rem; flex-wrap:wrap; margin-top:0.5rem; }
+.tag { font-size:0.65rem; padding:0.25rem 0.75rem; border-radius:var(--radius-btn); font-weight:600; text-transform:uppercase; letter-spacing:0.05em; }
+.tag-urgent { background:var(--red); color:white; }
+.tag-high { background:#fef3c7; color:#92400e; }
+.tag-medium { background:#dbeafe; color:#1e40af; }
+.tag-low { background:#f1f5f9; color:var(--muted); }
+.tag-segment { background:rgba(37,99,235,0.1); color:var(--blue); }
+.tag-competitor { background:#fee2e2; color:#991b1b; }
+.tag-opportunity { background:#d1fae5; color:#065f46; }
+.tag-signal { background:#fef3c7; color:#92400e; }
+.timeline { display:flex; flex-direction:column; gap:0.5rem; }
+.timeline-item { display:flex; gap:1rem; align-items:baseline; padding:0.75rem 1rem; background:var(--card); border:1px solid var(--border); border-radius:12px; transition:all 0.2s; }
+.timeline-item:hover { border-color:var(--accent); }
+.timeline-item .date { font-family:'IBM Plex Mono',monospace; font-size:0.8rem; color:var(--accent); white-space:nowrap; font-weight:600; min-width:85px; }
+.timeline-item .summary { font-size:0.9rem; color:var(--text); }
+.timeline-item .counts { font-size:0.7rem; color:var(--muted); margin-left:auto; white-space:nowrap; }
+.actions { background:var(--card); border:2px solid var(--accent); border-radius:var(--radius-card); padding:1.5rem; margin-top:1.5rem; }
+.actions h3 { color:var(--accent); font-family:'Outfit',sans-serif; margin-bottom:0.75rem; }
+.actions ol { padding-left:1.2rem; }
+.actions li { margin-bottom:0.5rem; font-size:0.9rem; }
+.footer { text-align:center; padding:2rem; color:var(--muted); font-size:0.75rem; border-top:1px solid var(--border); margin-top:3rem; }
+.footer a { color:var(--accent); }
+.empty { text-align:center; padding:3rem; color:var(--muted); }
+.report-meta { display:flex; gap:1rem; flex-wrap:wrap; align-items:center; margin-bottom:1.5rem; color:var(--muted); font-size:0.8rem; }
+.nav-tabs { display:flex; gap:0.5rem; margin-bottom:1.5rem; flex-wrap:wrap; }
+.nav-tab { padding:0.5rem 1.2rem; border-radius:var(--radius-btn); border:1px solid var(--border); background:white; cursor:pointer; font-size:0.8rem; font-weight:500; transition:all 0.2s; }
+.nav-tab:hover, .nav-tab.active { background:var(--accent); color:white; border-color:var(--accent); }
+.card-link { display:inline-block; font-size:0.75rem; color:var(--accent); margin-bottom:0.5rem; font-weight:600; }
+.card-link:hover { text-decoration:underline; }
+.cta-contact { display:flex; gap:1.5rem; flex-wrap:wrap; margin-top:1rem; }
+.cta-contact a { display:inline-flex; align-items:center; gap:0.4rem; padding:0.6rem 1.2rem; background:var(--accent); color:white; border-radius:var(--radius-btn); font-size:0.8rem; font-weight:600; text-decoration:none; }
+.cta-contact a:hover { background:var(--accent-hover); }
+@media (max-width:768px) {
+    header { padding:1.5rem; }
+    .container { padding:1rem; }
+    .grid { grid-template-columns:1fr; }
+    .stats { gap:1rem; }
+    .stat { flex:1; min-width:80px; }
+}
+</style>
+</head>
+<body>
+<header>
+    <h1>CONECTA <span>Business Intelligence</span></h1>
+    <div class="sub">Radar competitivo y de oportunidades — Chile industrial</div>
+    <div class="stats">
+        <div class="stat">
+            <div class="num">198</div>
+            <div class="label">Oportunidades detectadas</div>
+        </div>
+        <div class="stat">
+            <div class="num">6</div>
+            <div class="label">Movimientos competidores</div>
+        </div>
+        <div class="stat">
+            <div class="num">20</div>
+            <div class="label">Semanas escaneadas</div>
+        </div>
+        <div class="stat">
+            <div class="num">2026-07-07</div>
+            <div class="label">Ultimo reporte</div>
+        </div>
+    </div>
+</header>
+
+<div class="container">
+    <div class="report-meta">
+        <strong>Reporte actual:</strong> 2026-07-07 &nbsp;|&nbsp;
+        <strong>Historial:</strong> 23 reportes &nbsp;|&nbsp;
+        <strong>Generado:</strong> 2026-08-16 11:59
+    </div>
+
+    <div class="nav-tabs">
+        <button class="nav-tab active" onclick="showSection('latest')">📊 Ultimo Reporte</button>
+        <button class="nav-tab" onclick="showSection('timeline')">📅 Historial</button>
+    </div>
+
+    <div id="section-latest">
+        <h2>🔴 NUEVO — Edelnor en Chuquicamata (0)</h2><div class="card"><p>- **Decreto**: Correccion de decreto — Ministerio de Energia reconoce a Edelnor como titular de obra de transmision en **Nueva Chuquicamata**
+- **Fecha**: Junio 2026
+- **Fuente**: Actualidad Juridica (DOE)
+- **URL**: https://actualidadjuridica.doe.cl/ministerio-de-energia-corrige-decreto-y-reconoce-a-edelnor-como-titular-de-obra-de-transmision-en-nueva-chuquicamata/
+- **Impacto**: Codelco Chuquicamata = subestacion + transmision. Oportunidad: Orion RTU + NR Electric + SynchroTeq
+- **Accion**: Contactar Codelco — ¿hay necesidad de RTU/protecciones para la obra de Edelnor?</p></div><h2>🟡 CEN — Convenio Ciberseguridad (1 julio) (0)</h2><div class="card"><p>- **Que**: Coordinador Electrico + Universidad Adolfo Ibañez firman convenio para fortalecer ciberseguridad e innovacion
+- **Señal**: CEN esta priorizando ciberseguridad. Refuerza la urgencia del cumplimiento OT para todos los coordinados.
+- **Accion**: Usar esto en propuestas de ciberseguridad — &quot;el CEN esta invirtiendo en ciberseguridad, ¿tu empresa tambien?&quot;</p></div><h2>🟡 CEN — Estudio Exigencia Operacional (2 julio) (0)</h2><div class="card"><p>- **Que**: Estudio identifica escenarios de mayor exigencia operacional y refuerza monitoreo del abastecimiento electrico
+- **Señal**: Puede derivar en nuevos requisitos para generadores/coordinados
+- **Accion**: Monitorear — si salen nuevas exigencias, ofrecer cumplimiento</p></div><h2>🔵 CNE — Registro de Instituciones (17 junio) (0)</h2><div class="card"><p>- **Res. Exenta 311** — Crea Registro de Instituciones y Usuarios Interesados
+- **Accion**: Verificar si CONECTA debe inscribirse</p></div><h2>✅ SIN NOVEDAD — Julio 2026 (hasta ahora) (0)</h2><div class="card"><p>- No hay decretos nuevos de transmision en julio
+- No hay resoluciones CNE nuevas sobre PMGD/BESS en junio-julio
+- No hay anexos tecnicos nuevos del CEN en el periodo
+- **NT PMGD (Res. 69, feb-2026)** sigue siendo la version vigente
+
+---
+
+*Busqueda: AIsa GPT-5-Search-API · 2026-07-07*</p></div>
+        
+    </div>
+
+    <div id="section-timeline" style="display:none">
+        <h2>Historial de Reportes</h2>
+        <div class="timeline"><div class="timeline-item">
+            <span class="date">2026-07-07</span>
+            <span class="summary">normativa-2026-07-07.md</span>
+            <span class="counts">🔵 0 oportunidades &nbsp; 🔴 0 competidores &nbsp; 🟡 0 señales</span>
+        </div><div class="timeline-item">
+            <span class="date">2026-07-04</span>
+            <span class="summary">normativa-2026-07-04.md</span>
+            <span class="counts">🔵 0 oportunidades &nbsp; 🔴 0 competidores &nbsp; 🟡 0 señales</span>
+        </div><div class="timeline-item">
+            <span class="date">2023-03-31</span>
+            <span class="summary">lista-cen-2025-completa.md</span>
+            <span class="counts">🔵 0 oportunidades &nbsp; 🔴 0 competidores &nbsp; 🟡 0 señales</span>
+        </div><div class="timeline-item">
+            <span class="date">2026-07-07</span>
+            <span class="summary">fuentes-inteligencia.md</span>
+            <span class="counts">🔵 0 oportunidades &nbsp; 🔴 0 competidores &nbsp; 🟡 0 señales</span>
+        </div><div class="timeline-item">
+            <span class="date">2026-08-16</span>
+            <span class="summary">2026-08-16.md</span>
+            <span class="counts">🔵 0 oportunidades &nbsp; 🔴 0 competidores &nbsp; 🟡 0 señales</span>
+        </div><div class="timeline-item">
+            <span class="date">2026-08-10</span>
+            <span class="summary">2026-08-10.md</span>
+            <span class="counts">🔵 0 oportunidades &nbsp; 🔴 0 competidores &nbsp; 🟡 5 señales</span>
+        </div><div class="timeline-item">
+            <span class="date">2026-08-04</span>
+            <span class="summary">2026-08-04.md</span>
+            <span class="counts">🔵 0 oportunidades &nbsp; 🔴 0 competidores &nbsp; 🟡 5 señales</span>
+        </div><div class="timeline-item">
+            <span class="date">2026-08-03</span>
+            <span class="summary">2026-08-03.md</span>
+            <span class="counts">🔵 0 oportunidades &nbsp; 🔴 0 competidores &nbsp; 🟡 9 señales</span>
+        </div><div class="timeline-item">
+            <span class="date">2026-07-31</span>
+            <span class="summary">2026-07-31.md</span>
+            <span class="counts">🔵 13 oportunidades &nbsp; 🔴 0 competidores &nbsp; 🟡 0 señales</span>
+        </div><div class="timeline-item">
+            <span class="date">2026-07-30</span>
+            <span class="summary">2026-07-30.md</span>
+            <span class="counts">🔵 0 oportunidades &nbsp; 🔴 0 competidores &nbsp; 🟡 10 señales</span>
+        </div><div class="timeline-item">
+            <span class="date">2026-07-29</span>
+            <span class="summary">2026-07-29.md</span>
+            <span class="counts">🔵 8 oportunidades &nbsp; 🔴 0 competidores &nbsp; 🟡 0 señales</span>
+        </div><div class="timeline-item">
+            <span class="date">2026-07-28</span>
+            <span class="summary">2026-07-28.md</span>
+            <span class="counts">🔵 0 oportunidades &nbsp; 🔴 0 competidores &nbsp; 🟡 8 señales</span>
+        </div><div class="timeline-item">
+            <span class="date">2026-07-27</span>
+            <span class="summary">2026-07-27.md</span>
+            <span class="counts">🔵 0 oportunidades &nbsp; 🔴 6 competidores &nbsp; 🟡 0 señales</span>
+        </div><div class="timeline-item">
+            <span class="date">2026-07-23</span>
+            <span class="summary">2026-07-23.md</span>
+            <span class="counts">🔵 0 oportunidades &nbsp; 🔴 0 competidores &nbsp; 🟡 0 señales</span>
+        </div><div class="timeline-item">
+            <span class="date">2026-07-21</span>
+            <span class="summary">2026-07-21.md</span>
+            <span class="counts">🔵 0 oportunidades &nbsp; 🔴 0 competidores &nbsp; 🟡 6 señales</span>
+        </div><div class="timeline-item">
+            <span class="date">2026-07-20</span>
+            <span class="summary">2026-07-20.md</span>
+            <span class="counts">🔵 0 oportunidades &nbsp; 🔴 0 competidores &nbsp; 🟡 0 señales</span>
+        </div><div class="timeline-item">
+            <span class="date">2025-10-14</span>
+            <span class="summary">2026-07-20-customer-support.md</span>
+            <span class="counts">🔵 0 oportunidades &nbsp; 🔴 0 competidores &nbsp; 🟡 0 señales</span>
+        </div><div class="timeline-item">
+            <span class="date">2026-06-24</span>
+            <span class="summary">2026-07-15.md</span>
+            <span class="counts">🔵 0 oportunidades &nbsp; 🔴 0 competidores &nbsp; 🟡 0 señales</span>
+        </div><div class="timeline-item">
+            <span class="date">2026-07-14</span>
+            <span class="summary">2026-07-14-tender-scan.md</span>
+            <span class="counts">🔵 58 oportunidades &nbsp; 🔴 0 competidores &nbsp; 🟡 0 señales</span>
+        </div><div class="timeline-item">
+            <span class="date">2026-07-13</span>
+            <span class="summary">2026-07-13.md</span>
+            <span class="counts">🔵 0 oportunidades &nbsp; 🔴 0 competidores &nbsp; 🟡 0 señales</span>
+        </div><div class="timeline-item">
+            <span class="date">2026-07-09</span>
+            <span class="summary">2026-07-10-friday-wrapup.md</span>
+            <span class="counts">🔵 0 oportunidades &nbsp; 🔴 0 competidores &nbsp; 🟡 0 señales</span>
+        </div><div class="timeline-item">
+            <span class="date">2026-07-09</span>
+            <span class="summary">2026-07-09.md</span>
+            <span class="counts">🔵 0 oportunidades &nbsp; 🔴 0 competidores &nbsp; 🟡 0 señales</span>
+        </div><div class="timeline-item">
+            <span class="date">2026-07-04</span>
+            <span class="summary">2026-07-04.md</span>
+            <span class="counts">🔵 0 oportunidades &nbsp; 🔴 0 competidores &nbsp; 🟡 0 señales</span>
+        </div></div>
+    </div>
+</div>
+
+<footer class="footer">
+    <div style="margin-bottom:1rem;font-size:1rem;">¿Ves una oportunidad? Actúa:</div>
+    <div class="cta-contact">
+        <a href="mailto:victor@conecta.cl">📧 victor@conecta.cl</a>
+        <a href="https://wa.me/569" target="_blank">💬 WhatsApp</a>
+        <a href="https://conecta.cl" target="_blank">🌐 conecta.cl</a>
+    </div>
+    <div style="margin-top:1.5rem;">
+        CONECTA Ingeniería S.A. — Business Intelligence automatizado con <a href="https://hermes-agent.nousresearch.com">Hermes Agent</a> &nbsp;|&nbsp; Próximo escaneo: cada lunes 08:00 CLT
+    </div>
+</footer>
+
+<script>
+function showSection(name) {
+    document.getElementById('section-latest').style.display = name==='latest'?'block':'none';
+    document.getElementById('section-timeline').style.display = name==='timeline'?'block':'none';
+    document.querySelectorAll('.nav-tab').forEach((t,i) => {
+        t.classList.toggle('active', (name==='latest'&&i===0)||(name==='timeline'&&i===1));
+    });
+}
+</script>
+</body>
+</html>
